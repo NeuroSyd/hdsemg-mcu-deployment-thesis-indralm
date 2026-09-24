@@ -30,10 +30,6 @@ End-to-end pipeline from raw HD-sEMG extraction through to on-device deployment,
 - Compression order is PTQ → QAT → pruning (not pruning first), so sparsity is set on weights that already reflect their deployed quantised distribution.
 - Every MCU parameter sweep reports accuracy, latency, size, and power together — no existing HD-sEMG MCU deployment work does this jointly.
 
-## Status
-
-Currently at Week 6 of Thesis A (Sem 2 2026). Framework design complete; Stage 0–1 (extraction/preprocessing) implementation in progress. See weekly progress reports for full detail.
-
 ## Supervisor
 
 Omid Kavehei, School of Biomedical Engineering, University of Sydney

@@ -1,0 +1,24 @@
+# Stage 3 - Model architecture configs.
+# input_shape and num_classes are placeholders until Stage 2 windowing output
+# is finalised and the full 34-gesture label set is confirmed; update before
+# the Week 7-9 model development sweep.
+
+input_shape: [256, 410]   # [channels, window_samples] for 200 ms @ 2048 Hz
+num_classes: 34
+
+cnn1d:
+  filters: [32, 64, 128]
+  kernel_size: 5
+  pool_size: 2
+  dropout: 0.3
+
+gru:
+  units: [128, 64]
+  dropout: 0.3
+  bidirectional: false
+
+tcn:
+  filters: 64
+  kernel_size: 3
+  dilations: [1, 2, 4, 8, 16]
+  dropout: 0.3

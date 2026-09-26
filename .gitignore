@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dataset downloads (large, redistributed under PhysioNet/Zenodo terms, not committed)
+data/raw/
+data/processed/
+
+# Trained checkpoints, compressed artifacts, and generated manifests
+results/
+manifests/*.csv
+!manifests/.gitkeep
+
+# macOS
+.DS_Store

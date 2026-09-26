@@ -1,0 +1,25 @@
+# Stage 3 - Training config.
+# Subject-dependent split is the primary evaluation protocol (Week 6
+# framework decision); accuracy is reported both per-window and per-trial
+# (majority vote across a trial's windows).
+
+architecture: cnn1d   # cnn1d | gru | tcn
+dataset: hyser
+
+input_manifest: manifests/hyser_windowed_manifest.csv
+model_config_path: configs/models.yaml
+
+split:
+  method: subject_dependent   # trials are split within each subject, not across subjects
+  train_fraction: 0.7
+  val_fraction: 0.15
+  test_fraction: 0.15
+  random_seed: 42
+
+training:
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.001
+  early_stopping_patience: 10
+
+output_dir: results/checkpoints

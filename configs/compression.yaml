@@ -1,0 +1,30 @@
+# Stage 4 - Compression config.
+# Order is fixed by the Week 6 framework decision: post-training
+# quantisation, then quantisation-aware training, then pruning - so
+# sparsity is set on weights that already reflect their deployed quantised
+# distribution, not the other way round. All three architectures go through
+# this independently (the scope change agreed after Week 6): architecture
+# selection happens after compression, not before, since compression can
+# reshuffle the uncompressed accuracy ranking.
+
+architectures: [cnn1d, gru, tcn]
+dataset: hyser
+
+checkpoint_dir: results/checkpoints
+model_config_path: configs/models.yaml
+input_manifest: manifests/hyser_windowed_manifest.csv
+
+quantization:
+  post_training:
+    representative_dataset_size: 200   # trials sampled from train split to calibrate PTQ
+  quantization_aware_training:
+    epochs: 20
+    learning_rate: 0.0001
+
+pruning:
+  target_sparsity: 0.5
+  epochs: 20
+  learning_rate: 0.0001
+
+output_dir: results/compression
+retention_manifest: manifests/compression_retention.csv

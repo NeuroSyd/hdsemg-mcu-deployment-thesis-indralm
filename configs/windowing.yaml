@@ -1,0 +1,15 @@
+# Stage 2a - Windowing config
+# 200 ms window / 50% overlap matches CEMHSEY's own published LDA benchmark
+# protocol, applied to both datasets for cross-dataset comparability.
+
+window_ms: 200
+overlap: 0.5
+sampling_rate_hz: 2048
+
+input_manifest: manifests/hyser_preprocessed_manifest.csv
+output_dir: data/processed/hyser/windows
+output_manifest: manifests/hyser_windowed_manifest.csv
+
+# Deep models (1D CNN / GRU / TCN) consume the windowed tensors directly.
+# Classical time-domain features for the LDA baseline are computed
+# downstream, per window, in src/features.

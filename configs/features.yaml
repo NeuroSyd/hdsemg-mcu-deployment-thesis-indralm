@@ -1,0 +1,12 @@
+# Stage 2b - Classical time-domain features, LDA baseline only.
+# Deep architectures (1D CNN, GRU, TCN) do not use this stage - they train
+# directly on the windowed tensors from src/windowing.
+# Feature set per Phinyomark & Scheme (2018).
+
+features: [mav, rms, zc, wl, ssc]
+zc_threshold: 0.0
+ssc_threshold: 0.0
+
+input_manifest: manifests/hyser_windowed_manifest.csv
+output_dir: data/processed/hyser/features
+output_path: data/processed/hyser/features/lda_baseline_features.csv

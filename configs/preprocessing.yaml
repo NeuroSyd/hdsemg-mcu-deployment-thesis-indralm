@@ -1,0 +1,26 @@
+# Stage 1 - Preprocessing config (Hyser HD-sEMG)
+# Filter and normalisation choices are fixed by the Week 6 project framework
+# decision: shared 10-500 Hz Butterworth bandpass + 50 Hz notch for both
+# retained datasets, since only Hyser ships a pre-filtered signal variant.
+
+dataset: hyser
+sampling_rate_hz: 2048
+
+bandpass:
+  low_hz: 10
+  high_hz: 500
+  order: 4
+
+notch:
+  freq_hz: 50
+  quality_factor: 30
+
+normalization:
+  method: zscore
+  scope: per_subject_session   # mean/std computed independently per subject-session recording
+
+signal_source: raw            # raw | preprocess (Hyser's own pre-filtered variant, for comparison runs)
+
+input_manifest: manifests/hyser_manifest.csv
+output_dir: data/processed/hyser/preprocessed
+output_manifest: manifests/hyser_preprocessed_manifest.csv

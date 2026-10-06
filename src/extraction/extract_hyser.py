@@ -40,6 +40,8 @@ import argparse
 import hashlib
 import re
 import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.request import urlretrieve
 from urllib.error import URLError
@@ -74,15 +76,21 @@ def sha256_of_file(path: Path, chunk_size: int = 1 << 20) -> str:
     return h.hexdigest()
 
 
-def download_file(url: str, dest: Path) -> None:
-    """Download a single file, skipping if it already exists on disk."""
+def download_file(url: str, dest: Path, retries: int = 3) -> None:
+    """Download a single file atomically (.part then rename), skipping if it exists."""
     if dest.exists():
         return
     dest.parent.mkdir(parents=True, exist_ok=True)
-    try:
-        urlretrieve(url, dest)
-    except URLError as e:
-        raise RuntimeError(f"Failed to download {url}: {e}") from e
+    tmp = dest.with_name(dest.name + ".part")
+    last_err = None
+    for _ in range(retries):
+        try:
+            urlretrieve(url, tmp)
+            tmp.replace(dest)
+            return
+        except URLError as e:
+            last_err = e
+    raise RuntimeError(f"Failed to download {url}: {last_err}") from last_err
 
 
 def load_pr_dataset_hashes(work_dir: Path) -> dict[str, str]:
@@ -152,6 +160,7 @@ def extract_hyser(
     sig_types: set[str] | None = None,
     subjects: set[str] | None = None,
     verify_hashes: bool = True,
+    workers: int = 12,
 ) -> pd.DataFrame:
     """
     Download Hyser's pr_dataset from PhysioNet into `out_dir` (preserving
@@ -173,47 +182,60 @@ def extract_hyser(
             file=sys.stderr,
         )
 
-    manifest_rows = []
-    total = len(all_hashes)
-
-    for i, (rel_path, expected_hash) in enumerate(all_hashes.items(), start=1):
+    # 1) Filter first, so only the requested files are touched.
+    jobs = []
+    for rel_path, expected_hash in all_hashes.items():
         parsed = parse_pr_path(rel_path)
         if parsed is None:
-            continue  # unrecognised file, skip
-
+            continue
         if subjects and parsed["subject_id"].replace("subject", "") not in subjects:
             continue
         if sig_types and parsed["sig_type"] is not None and parsed["sig_type"] not in sig_types:
             continue
+        jobs.append((rel_path, expected_hash, parsed))
 
-        dest_path = out_dir / rel_path[len(PR_PREFIX):]  # drop leading "pr_dataset/"
-        print(f"[{i}/{total}] Fetching {rel_path} ...")
+    total = len(jobs)
+    print(f"{total} files to fetch with {workers} parallel workers.")
+    counter = {"n": 0}
+    lock = threading.Lock()
+
+    # 2) Download + verify in parallel (I/O bound, so threads work well).
+    def fetch(job):
+        rel_path, expected_hash, parsed = job
+        dest_path = out_dir / rel_path[len(PR_PREFIX):]
         download_file(PHYSIONET_BASE_URL + rel_path, dest_path)
-
-        if verify_hashes:
+        if verify_hashes and sha256_of_file(dest_path) != expected_hash:
+            dest_path.unlink()  # corrupt or stale file: redownload once
+            download_file(PHYSIONET_BASE_URL + rel_path, dest_path)
             actual_hash = sha256_of_file(dest_path)
             if actual_hash != expected_hash:
                 raise RuntimeError(
                     f"Hash mismatch for {rel_path}: "
-                    f"expected {expected_hash}, got {actual_hash}. "
-                    "Re-download or check for a corrupted file."
+                    f"expected {expected_hash}, got {actual_hash}."
                 )
+        with lock:
+            counter["n"] += 1
+            print(f"[{counter['n']}/{total}] OK {rel_path}")
+        return {
+            "dataset": "hyser",
+            "subject_id": parsed["subject_id"],
+            "session": parsed["session"],
+            "day": None,  # Hyser uses sessions, not days (that's CEMHSEY)
+            "task_type": parsed["task_type"],
+            "sig_type": parsed["sig_type"],
+            "sample_index": parsed["sample_index"],
+            "file_kind": parsed["file_kind"],
+            "filename": parsed["filename"],
+            "file_path": str(dest_path),
+            "sha256": expected_hash,
+        }
 
-        manifest_rows.append(
-            {
-                "dataset": "hyser",
-                "subject_id": parsed["subject_id"],
-                "session": parsed["session"],
-                "day": None,  # Hyser uses sessions, not days (that's CEMHSEY)
-                "task_type": parsed["task_type"],
-                "sig_type": parsed["sig_type"],
-                "sample_index": parsed["sample_index"],
-                "file_kind": parsed["file_kind"],
-                "filename": parsed["filename"],
-                "file_path": str(dest_path),
-                "sha256": expected_hash,
-            }
-        )
+    manifest_rows = []
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(fetch, j) for j in jobs]
+        for fut in as_completed(futures):
+            manifest_rows.append(fut.result())  # re-raises any worker error
+    manifest_rows.sort(key=lambda r: r["file_path"])
 
     return pd.DataFrame(manifest_rows)
 
@@ -249,6 +271,12 @@ def main():
         action="store_true",
         help="Skip SHA256 hash verification against PhysioNet's published sums (not recommended).",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=12,
+        help="Parallel download threads (default: 12; keep <=16 to be polite to PhysioNet)",
+    )
     args = parser.parse_args()
 
     sig_types = set(s.strip().lower() for s in args.sig_types.split(",")) if args.sig_types else None
@@ -259,6 +287,7 @@ def main():
         sig_types=sig_types,
         subjects=subjects,
         verify_hashes=not args.no_verify,
+        workers=args.workers,
     )
 
     args.manifest_out.parent.mkdir(parents=True, exist_ok=True)

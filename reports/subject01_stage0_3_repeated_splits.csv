@@ -1,0 +1,5 @@
+model,splits,per_window_%,per_trial_%,xsession_window_%,xsession_trial_%
+LDA (baseline),4,84.0 ± 4.5,91.2 ± 5.4,32.6 ± 0.6,35.3 ± 1.7
+1D CNN,4,79.4 ± 1.9,87.5 ± 2.8,65.9 ± 3.6,79.2 ± 5.7
+TCN,4,75.9 ± 3.3,84.6 ± 1.5,58.7 ± 5.0,72.1 ± 8.1
+"GRU, time pooled x8",4,67.3 ± 4.9,81.6 ± 9.4,55.2 ± 1.0,68.9 ± 1.5

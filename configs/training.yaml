@@ -9,6 +9,14 @@ dataset: hyser
 input_manifest: manifests/hyser_windowed_manifest.csv
 model_config_path: configs/models.yaml
 
+# Scope of the proof run. Subject 01 only; train/val/test are carved from
+# train_sessions, and cross_session_eval then scores the untouched other
+# session(s) as a preview of Stage 6.
+data:
+  task_type: dynamic
+  train_sessions: [1]
+cross_session_eval: true
+
 split:
   method: subject_dependent   # trials are split within each subject, not across subjects
   train_fraction: 0.7

@@ -6,10 +6,10 @@ windows, and saves each recording's windows as a single .npz (array `X` of
 shape (n_windows, n_channels, window_len)) so Stage 3 training and Stage 2b
 feature extraction share one windowed representation.
 
-Gesture-label association per window is left for the dataset-specific label
-loader (label_<task>.txt for Hyser) to attach once its column layout is
-confirmed against the Hyser documentation; window boundaries alone are
-produced here.
+Each trial's gesture label (1 to 34, parsed from Hyser's label_<task>.txt by
+src/common/labels.py) is attached to the output manifest as `gesture_label`;
+every window inherits its parent trial's label. Windows never cross a trial
+boundary because each trial is windowed on its own.
 
 Usage:
     python src/windowing/pipeline.py --config configs/windowing.yaml
@@ -25,6 +25,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
+from src.common.labels import gesture_label_for_row
 from src.common.manifest import load_manifest, write_manifest
 from src.windowing.windowing import compute_window_params, sliding_windows
 
@@ -50,7 +51,8 @@ def run_windowing(config_path: str | Path) -> None:
         print(f"[{i + 1}/{len(manifest)}] Windowing {row['preprocessed_path']} ...")
 
         signal = np.load(row["preprocessed_path"])
-        windows = sliding_windows(signal, window_len, step)
+        windows = sliding_windows(signal, window_len, step).astype(np.float32)
+        gesture_label = gesture_label_for_row(row)
 
         out_path = output_dir / f"{Path(row['preprocessed_path']).stem}_windows.npz"
         np.savez(out_path, X=windows)
@@ -58,6 +60,7 @@ def run_windowing(config_path: str | Path) -> None:
         output_rows.append(
             {
                 **row.to_dict(),
+                "gesture_label": gesture_label,
                 "windowed_path": str(out_path),
                 "n_windows": windows.shape[0],
                 "window_len_samples": window_len,

@@ -19,6 +19,12 @@ normalization:
   method: zscore
   scope: per_subject_session   # mean/std computed independently per subject-session recording
 
+# Scope filters (leave a key out or empty to process everything in the manifest).
+# Subject 01 only for the Stage 0-3 proof run; widen to ["01","02","03"] etc. later.
+subjects: ["01"]
+sessions: [1, 2]
+task_types: [dynamic]
+
 signal_source: raw            # raw | preprocess (Hyser's own pre-filtered variant, for comparison runs)
 
 input_manifest: manifests/hyser_manifest.csv

@@ -43,6 +43,9 @@ def run_feature_extraction(config_path: str | Path) -> None:
                 {
                     "subject_id": row["subject_id"],
                     "session": row["session"],
+                    "task_type": row["task_type"],
+                    "sample_index": row["sample_index"],
+                    "gesture_label": row["gesture_label"],
                     "windowed_path": row["windowed_path"],
                     "window_index": window_idx,
                     **{f"feat_{j}": v for j, v in enumerate(vector)},

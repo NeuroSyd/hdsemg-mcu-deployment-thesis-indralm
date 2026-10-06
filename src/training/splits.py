@@ -2,17 +2,35 @@
 Subject-dependent train/val/test splitting for Stage 3.
 
 Split happens at trial granularity (one manifest row = one WFDB sample/trial)
-within each subject, not at the individual window level, so overlapping
-windows from the same trial never end up split across train and test - that
-split-by-trial rule is what keeps the 50% window overlap from leaking
-information between sets. This is also why the split is "subject-dependent":
-every subject contributes trials to train, val, and test alike, rather than
-holding whole subjects out (that would be a subject-independent protocol,
-not used here per the Week 6 framework decision).
+within each subject, never at the individual window level, so overlapping
+windows from the same trial cannot be split across train and test. That
+split-by-trial rule is what stops the 50% window overlap leaking information
+between sets. "Subject-dependent" means every subject contributes trials to
+train, val and test alike (a subject-independent protocol would hold out
+whole subjects; not used here per the Week 6 framework decision).
+
+When the manifest carries a `gesture_label` column the split is also
+stratified: each (subject, gesture) group of repetitions is split on its own,
+so every gesture appears in every split whenever it has at least 3 trials.
+Hyser has only ~6 repetitions per gesture, so an unstratified random split
+would regularly leave whole gestures out of the test set.
 """
 
 import numpy as np
 import pandas as pd
+
+
+def _split_indices(indices: np.ndarray, train_f: float, val_f: float, rng) -> tuple:
+    indices = indices.copy()
+    rng.shuffle(indices)
+    n = len(indices)
+    if n >= 3:
+        n_val = max(1, int(round(n * val_f)))
+        n_test = max(1, n - int(round(n * train_f)) - n_val)
+        n_train = n - n_val - n_test
+    else:
+        n_train, n_val = n, 0
+    return indices[:n_train], indices[n_train:n_train + n_val], indices[n_train + n_val:]
 
 
 def subject_dependent_split(
@@ -21,34 +39,35 @@ def subject_dependent_split(
     val_fraction: float,
     test_fraction: float,
     random_seed: int,
+    stratify_col: str | None = "gesture_label",
 ) -> dict[str, pd.DataFrame]:
     """
-    Split a windowed-stage manifest into train/val/test, per subject.
+    Split a windowed-stage manifest into train/val/test, per subject
+    (and per gesture when `stratify_col` is present in the manifest).
 
     Returns {"train": df, "val": df, "test": df}, each a subset of rows from
-    `manifest` with the original index preserved.
+    `manifest`, with the manifest's original index kept in column `manifest_index`.
     """
     fractions_sum = train_fraction + val_fraction + test_fraction
     if not np.isclose(fractions_sum, 1.0):
         raise ValueError(f"Split fractions must sum to 1.0, got {fractions_sum}")
 
     rng = np.random.default_rng(random_seed)
-    train_rows, val_rows, test_rows = [], [], []
+    parts = {"train": [], "val": [], "test": []}
 
-    for _, subject_rows in manifest.groupby("subject_id"):
-        indices = subject_rows.index.to_numpy()
-        rng.shuffle(indices)
+    group_cols = ["subject_id"]
+    if stratify_col and stratify_col in manifest.columns:
+        group_cols.append(stratify_col)
 
-        n = len(indices)
-        n_train = int(round(n * train_fraction))
-        n_val = int(round(n * val_fraction))
+    for _, group in manifest.groupby(group_cols, sort=True):
+        tr, va, te = _split_indices(group.index.to_numpy(), train_fraction, val_fraction, rng)
+        parts["train"].append(group.loc[tr])
+        parts["val"].append(group.loc[va])
+        parts["test"].append(group.loc[te])
 
-        train_rows.append(subject_rows.loc[indices[:n_train]])
-        val_rows.append(subject_rows.loc[indices[n_train:n_train + n_val]])
-        test_rows.append(subject_rows.loc[indices[n_train + n_val:]])
-
-    return {
-        "train": pd.concat(train_rows).reset_index(drop=True),
-        "val": pd.concat(val_rows).reset_index(drop=True),
-        "test": pd.concat(test_rows).reset_index(drop=True),
-    }
+    out = {}
+    for name, frames in parts.items():
+        df = pd.concat(frames)
+        df.index.name = "manifest_index"
+        out[name] = df.reset_index()
+    return out

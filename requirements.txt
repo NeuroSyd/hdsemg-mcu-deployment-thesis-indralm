@@ -9,3 +9,4 @@ tensorflow-model-optimization>=0.7
 matplotlib>=3.8
 tabulate>=0.9
 pytest>=8.0
+zipfile-deflate64

@@ -1,0 +1,4 @@
+weights,acc,sd
+none (mean probability),38.75045650774862,22.198137934735605
+"other subjects, same-session",38.84949464844178,21.922363182007203
+"other subjects, cross-session",37.343090212732896,22.34970631677151

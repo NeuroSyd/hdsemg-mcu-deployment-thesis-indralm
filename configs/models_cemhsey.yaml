@@ -1,0 +1,21 @@
+# Model configs for CEMHSEY GESTURE: 320 channels, 11 classes. Architecture
+# hyperparameters are identical to configs/models.yaml.
+input_shape: [320, 410]
+num_classes: 11
+
+cnn1d:
+  filters: [32, 64, 128]
+  kernel_size: 5
+  pool_size: 2
+  dropout: 0.3
+
+gru:
+  units: [128, 64]
+  dropout: 0.3
+  bidirectional: false
+
+tcn:
+  filters: 64
+  kernel_size: 3
+  dilations: [1, 2, 4, 8, 16]
+  dropout: 0.3

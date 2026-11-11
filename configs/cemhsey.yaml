@@ -1,0 +1,31 @@
+# CEMHSEY GESTURE (subject S4) Stage 0-3 config.
+# Protocol follows the dataset paper's own LDA benchmark: Day 1 trials 1-4 train,
+# Day 1 trial 5 within-day test, Days 2-11 cross-day test. Trial 4 doubles as the
+# validation set for the deep models; LDA folds it into training (so LDA trains on
+# trials 1-4 exactly as in the paper).
+
+dataset: cemhsey
+subject: 4
+sampling_rate_hz: 2048
+train_day: 1
+
+bandpass: {low_hz: 10, high_hz: 500, order: 4}
+notch: {freq_hz: 50, quality_factor: 30}
+normalization: {method: zscore, scope: train_day_train_trials}   # Day 1 trials 1-4 statistics applied to all days
+
+windowing:
+  window_ms: 200
+  train_day_overlap: 0.5      # 98 windows per 10 s hold (paper reports 1089 per trial, i.e. 99 per hold)
+  eval_day_overlap: 0.0       # later days: non-overlapping windows, about 49 per hold, to halve disk use
+  dtype: float16              # stored as float16, cast to float32 when loaded
+
+split:
+  method: by_trial
+  train_trials: [1, 2, 3]     # deep-model training trials
+  val_trials: [4]
+  stats_trials: [1, 2, 3, 4]  # Day 1 trials used for z-score statistics
+  test_trials: [5]
+  random_seed: 42
+  train_fraction: 0.6
+  val_fraction: 0.2
+  test_fraction: 0.2

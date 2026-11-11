@@ -37,13 +37,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from src.common.manifest import load_manifest
 from src.models.registry import build_model
-from src.training.dataset import build_dataset, load_trial_label
+from src.training.dataset import build_dataset, load_trial_label, set_class_map
+from src.training.class_maps import resolve_class_map
 from src.training.metrics import (
+    per_session_accuracies,
     per_trial_majority_vote_accuracy,
     per_window_accuracy,
     trial_majority_vote,
+    trial_mean_probability,
 )
-from src.training.splits import subject_dependent_split
+from src.training.splits import make_split
 
 
 def load_config(config_path: str | Path) -> dict:
@@ -108,15 +111,17 @@ def measure_latency_ms(model, input_shape, n_runs: int = 50) -> float:
 
 
 def predict_trials(model, trials, batch_size: int):
-    """Stream trial by trial (keeps RAM low). Returns y_true, y_pred, trial_id."""
-    y_true, y_pred, tid = [], [], []
+    """Stream trial by trial (keeps RAM low). Returns y_true, y_pred, trial_id, y_prob (softmax per window)."""
+    y_true, y_pred, tid, prob = [], [], [], []
     for i, (_, row) in enumerate(trials.iterrows()):
         w = np.load(row["windowed_path"])["X"].astype(np.float32)
-        p = model.predict(w, batch_size=batch_size, verbose=0).argmax(-1)
+        pr = model.predict(w, batch_size=batch_size, verbose=0)
+        p = pr.argmax(-1)
+        prob.append(pr.astype(np.float32))
         y_pred.append(p)
         y_true.append(np.full(len(p), load_trial_label(row)))
         tid.append(np.full(len(p), i))
-    return np.concatenate(y_true), np.concatenate(y_pred), np.concatenate(tid)
+    return np.concatenate(y_true), np.concatenate(y_pred), np.concatenate(tid), np.concatenate(prob)
 
 
 def run_training(
@@ -126,9 +131,14 @@ def run_training(
     seed: int | None = None,
     variant: str | None = None,
     model_opts: dict | None = None,
+    class_map: str | None = None,
 ) -> dict:
     cfg = load_config(config_path)
     model_cfg = load_config(cfg["model_config_path"])
+    n_classes = set_class_map(resolve_class_map(class_map) if class_map else None)
+    if class_map:
+        model_cfg["num_classes"] = n_classes
+        print(f"Gesture grouping {class_map}: {n_classes} classes")
     architecture = architecture or cfg["architecture"]
     train_cfg = dict(cfg["training"])
     if epochs:
@@ -147,13 +157,7 @@ def run_training(
     in_scope = manifest[manifest["session"].astype(str).isin(train_sessions)].reset_index(drop=True)
 
     split_cfg = cfg["split"]
-    splits = subject_dependent_split(
-        in_scope,
-        split_cfg["train_fraction"],
-        split_cfg["val_fraction"],
-        split_cfg["test_fraction"],
-        split_cfg["random_seed"],
-    )
+    splits = make_split(in_scope, split_cfg)
 
     # Leakage guard: no trial may appear in more than one split.
     keys = {k: set(v["windowed_path"]) for k, v in splits.items()}
@@ -203,7 +207,7 @@ def run_training(
     del X_train, y_train, X_val, y_val
 
     # Held-out test split (trials never seen in training or validation).
-    y_test, y_pred, trial_id_test = predict_trials(model, splits["test"], train_cfg["batch_size"])
+    y_test, y_pred, trial_id_test, prob_test = predict_trials(model, splits["test"], train_cfg["batch_size"])
     window_acc = per_window_accuracy(y_test, y_pred)
     trial_acc = per_trial_majority_vote_accuracy(trial_id_test, y_test, y_pred)
     trial_true, trial_pred = trial_majority_vote(trial_id_test, y_test, y_pred)
@@ -217,6 +221,8 @@ def run_training(
         "subjects": sorted(in_scope["subject_id"].unique().tolist()),
         "task_type": data_cfg.get("task_type"),
         "train_sessions": sorted(train_sessions),
+        "class_map": class_map,
+        "num_classes": int(model_cfg["num_classes"]),
         "n_trials": {k: int(len(v)) for k, v in splits.items()},
         "n_test_windows": int(len(y_test)),
         "per_window_accuracy": window_acc,
@@ -233,7 +239,15 @@ def run_training(
         output_dir / "test_predictions.npz",
         y_true=y_test, y_pred=y_pred, trial_id=trial_id_test,
         trial_true=trial_true, trial_pred=trial_pred,
+        y_prob=prob_test, trial_prob=trial_mean_probability(trial_id_test, prob_test),
     )
+    # Validation-split predictions (session 1, never used as test). Saved so a second-layer
+    # classifier can be trained on predictions the base models did not fit. Note the val split
+    # chose the early-stopping epoch, so these are slightly optimistic.
+    yv, ypv, tidv, pbv = predict_trials(model, splits["val"], train_cfg["batch_size"])
+    vt, vp = trial_majority_vote(tidv, yv, ypv)
+    np.savez(output_dir / "val_predictions.npz", y_true=yv, y_pred=ypv, trial_id=tidv,
+             trial_true=vt, trial_pred=vp, y_prob=pbv, trial_prob=trial_mean_probability(tidv, pbv))
     with open(output_dir / "history.json", "w") as f:
         json.dump({k: [float(v) for v in vs] for k, vs in history.history.items()}, f)
 
@@ -241,12 +255,17 @@ def run_training(
     if cfg.get("cross_session_eval"):
         other = manifest[~manifest["session"].astype(str).isin(train_sessions)].reset_index(drop=True)
         if len(other):
-            yt, yp, tid = predict_trials(model, other, train_cfg["batch_size"])
+            yt, yp, tid, pb = predict_trials(model, other, train_cfg["batch_size"])
+            ct, cp = trial_majority_vote(tid, yt, yp)
+            np.savez(output_dir / "cross_session_predictions.npz", y_true=yt, y_pred=yp, trial_id=tid,
+                     trial_true=ct, trial_pred=cp, trial_session=other["session"].to_numpy(),
+                     y_prob=pb, trial_prob=trial_mean_probability(tid, pb))
             metrics["cross_session"] = {
                 "eval_sessions": sorted(other["session"].astype(str).unique().tolist()),
                 "n_trials": int(len(other)),
                 "per_window_accuracy": per_window_accuracy(yt, yp),
                 "per_trial_accuracy": per_trial_majority_vote_accuracy(tid, yt, yp),
+                "per_session": per_session_accuracies(other["session"].to_numpy(), tid, yt, yp),
             }
 
     with open(output_dir / "metrics.json", "w") as f:
@@ -271,12 +290,14 @@ def main():
     parser.add_argument("--variant", default=None, help="Label for a model-config variant, e.g. pool8")
     parser.add_argument("--model-opt", action="append", default=[], metavar="KEY=VALUE",
                         help="Override a key of this architecture's model config, e.g. input_pool=8")
+    parser.add_argument("--class-map", default=None,
+                        help="Gesture grouping: A1, A1b, A2-s1:22, A2-s2:22 or a JSON file (see src/training/class_maps.py)")
     args = parser.parse_args()
     opts = {}
     for kv in args.model_opt:
         k, v = kv.split("=", 1)
         opts[k] = yaml.safe_load(v)
-    run_training(args.config, args.architecture, args.epochs, args.seed, args.variant, opts or None)
+    run_training(args.config, args.architecture, args.epochs, args.seed, args.variant, opts or None, args.class_map)
 
 
 if __name__ == "__main__":

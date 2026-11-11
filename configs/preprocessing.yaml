@@ -17,7 +17,10 @@ notch:
 
 normalization:
   method: zscore
-  scope: per_subject_session   # mean/std computed independently per subject-session recording
+  scope: per_subject_session   # per_subject_session | reference_session | per_recording
+  # per_subject_session: mean/std computed independently per subject-session (current results)
+  # reference_session:   every session is z-scored with the statistics of `reference_session` (deployment-like)
+  # reference_session: 1
 
 # Scope filters (leave a key out or empty to process everything in the manifest).
 # Subject 01 only for the Stage 0-3 proof run; widen to ["01","02","03"] etc. later.

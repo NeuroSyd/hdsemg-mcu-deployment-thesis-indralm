@@ -71,3 +71,30 @@ def subject_dependent_split(
         df.index.name = "manifest_index"
         out[name] = df.reset_index()
     return out
+
+
+def trial_index_split(manifest: pd.DataFrame, train_trials, val_trials, test_trials) -> dict[str, pd.DataFrame]:
+    """
+    Split by a fixed `trial` column (CEMHSEY protocol: trials 1-3 train, 4 val, 5 test).
+    Every gesture performance of a given recording trial goes to the same split, so
+    overlapping windows can never straddle train and test.
+    """
+    out = {}
+    for name, trials in (("train", train_trials), ("val", val_trials), ("test", test_trials)):
+        df = manifest[manifest["trial"].isin(list(trials))].copy()
+        df.index.name = "manifest_index"
+        out[name] = df.reset_index()
+    return out
+
+
+def make_split(manifest: pd.DataFrame, split_cfg: dict) -> dict[str, pd.DataFrame]:
+    """Dispatch on split.method: `by_trial` (fixed trial indices) or the default random per-gesture split."""
+    if split_cfg.get("method") == "by_trial":
+        return trial_index_split(manifest, split_cfg["train_trials"], split_cfg["val_trials"], split_cfg["test_trials"])
+    return subject_dependent_split(
+        manifest,
+        split_cfg["train_fraction"],
+        split_cfg["val_fraction"],
+        split_cfg["test_fraction"],
+        split_cfg["random_seed"],
+    )

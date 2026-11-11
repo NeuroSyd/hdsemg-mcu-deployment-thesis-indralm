@@ -1,0 +1,5417 @@
+subject,model,split,gesture,n_trials,trials_correct,n_windows,windows_correct
+S01,LDA,same,1,1,1,8,4
+S01,LDA,same,2,1,1,8,4
+S01,LDA,same,3,1,1,8,8
+S01,LDA,same,4,1,1,8,8
+S01,LDA,same,5,1,1,8,8
+S01,LDA,same,6,1,0,8,0
+S01,LDA,same,7,1,1,8,8
+S01,LDA,same,8,1,1,8,7
+S01,LDA,same,9,1,1,8,7
+S01,LDA,same,10,1,1,8,8
+S01,LDA,same,11,1,0,8,2
+S01,LDA,same,12,1,1,8,8
+S01,LDA,same,13,1,1,8,8
+S01,LDA,same,14,1,1,8,8
+S01,LDA,same,15,1,1,8,7
+S01,LDA,same,16,1,1,8,8
+S01,LDA,same,17,1,1,8,5
+S01,LDA,same,18,1,0,8,2
+S01,LDA,same,19,1,1,8,7
+S01,LDA,same,20,1,1,8,8
+S01,LDA,same,21,1,0,8,1
+S01,LDA,same,22,1,1,8,8
+S01,LDA,same,23,1,1,8,7
+S01,LDA,same,24,1,1,8,7
+S01,LDA,same,25,1,1,8,8
+S01,LDA,same,26,1,1,8,8
+S01,LDA,same,27,1,1,8,7
+S01,LDA,same,28,1,1,8,7
+S01,LDA,same,29,1,0,8,2
+S01,LDA,same,30,1,1,8,8
+S01,LDA,same,31,1,1,8,7
+S01,LDA,same,32,1,1,8,5
+S01,LDA,same,33,1,1,8,8
+S01,LDA,same,34,1,1,8,7
+S01,LDA,cross,1,6,6,48,46
+S01,LDA,cross,2,6,6,48,39
+S01,LDA,cross,3,6,6,48,34
+S01,LDA,cross,4,6,6,48,37
+S01,LDA,cross,5,6,4,48,28
+S01,LDA,cross,6,6,2,48,18
+S01,LDA,cross,7,6,1,48,3
+S01,LDA,cross,8,6,0,48,0
+S01,LDA,cross,9,6,2,48,13
+S01,LDA,cross,10,6,1,48,12
+S01,LDA,cross,11,6,0,48,4
+S01,LDA,cross,12,6,0,48,0
+S01,LDA,cross,13,6,0,48,0
+S01,LDA,cross,14,6,3,48,17
+S01,LDA,cross,15,6,2,48,11
+S01,LDA,cross,16,5,2,40,9
+S01,LDA,cross,17,6,1,48,12
+S01,LDA,cross,18,6,1,48,5
+S01,LDA,cross,19,6,0,48,10
+S01,LDA,cross,20,6,1,48,6
+S01,LDA,cross,21,6,6,48,44
+S01,LDA,cross,22,6,1,48,14
+S01,LDA,cross,23,6,1,48,17
+S01,LDA,cross,24,6,5,48,41
+S01,LDA,cross,26,6,0,48,1
+S01,LDA,cross,27,6,3,48,24
+S01,LDA,cross,28,6,4,48,18
+S01,LDA,cross,29,6,1,48,7
+S01,LDA,cross,30,6,1,48,9
+S01,LDA,cross,31,6,0,48,0
+S01,LDA,cross,32,6,3,48,21
+S01,LDA,cross,33,6,4,48,23
+S01,LDA,cross,34,6,0,48,5
+S01,1D CNN,same,1,1,0,8,2
+S01,1D CNN,same,2,1,1,8,6
+S01,1D CNN,same,3,1,1,8,8
+S01,1D CNN,same,4,1,1,8,8
+S01,1D CNN,same,5,1,1,8,8
+S01,1D CNN,same,6,1,0,8,0
+S01,1D CNN,same,7,1,1,8,8
+S01,1D CNN,same,8,1,1,8,6
+S01,1D CNN,same,9,1,1,8,7
+S01,1D CNN,same,10,1,1,8,7
+S01,1D CNN,same,11,1,0,8,3
+S01,1D CNN,same,12,1,1,8,7
+S01,1D CNN,same,13,1,1,8,8
+S01,1D CNN,same,14,1,1,8,8
+S01,1D CNN,same,15,1,1,8,5
+S01,1D CNN,same,16,1,1,8,6
+S01,1D CNN,same,17,1,1,8,6
+S01,1D CNN,same,18,1,0,8,3
+S01,1D CNN,same,19,1,1,8,7
+S01,1D CNN,same,20,1,1,8,8
+S01,1D CNN,same,21,1,1,8,7
+S01,1D CNN,same,22,1,1,8,7
+S01,1D CNN,same,23,1,1,8,6
+S01,1D CNN,same,24,1,1,8,6
+S01,1D CNN,same,25,1,1,8,8
+S01,1D CNN,same,26,1,1,8,8
+S01,1D CNN,same,27,1,1,8,8
+S01,1D CNN,same,28,1,1,8,8
+S01,1D CNN,same,29,1,1,8,5
+S01,1D CNN,same,30,1,1,8,5
+S01,1D CNN,same,31,1,1,8,8
+S01,1D CNN,same,32,1,1,8,8
+S01,1D CNN,same,33,1,1,8,7
+S01,1D CNN,same,34,1,1,8,7
+S01,1D CNN,cross,1,6,3,48,18
+S01,1D CNN,cross,2,6,6,48,46
+S01,1D CNN,cross,3,6,6,48,35
+S01,1D CNN,cross,4,6,6,48,38
+S01,1D CNN,cross,5,6,6,48,32
+S01,1D CNN,cross,6,6,5,48,35
+S01,1D CNN,cross,7,6,6,48,30
+S01,1D CNN,cross,8,6,4,48,16
+S01,1D CNN,cross,9,6,6,48,43
+S01,1D CNN,cross,10,6,6,48,39
+S01,1D CNN,cross,11,6,6,48,34
+S01,1D CNN,cross,12,6,5,48,31
+S01,1D CNN,cross,13,6,0,48,3
+S01,1D CNN,cross,14,6,4,48,19
+S01,1D CNN,cross,15,6,4,48,18
+S01,1D CNN,cross,16,5,2,40,16
+S01,1D CNN,cross,17,6,2,48,14
+S01,1D CNN,cross,18,6,5,48,32
+S01,1D CNN,cross,19,6,6,48,43
+S01,1D CNN,cross,20,6,4,48,37
+S01,1D CNN,cross,21,6,6,48,48
+S01,1D CNN,cross,22,6,0,48,0
+S01,1D CNN,cross,23,6,6,48,41
+S01,1D CNN,cross,24,6,5,48,36
+S01,1D CNN,cross,26,6,6,48,36
+S01,1D CNN,cross,27,6,6,48,39
+S01,1D CNN,cross,28,6,5,48,31
+S01,1D CNN,cross,29,6,1,48,10
+S01,1D CNN,cross,30,6,5,48,28
+S01,1D CNN,cross,31,6,3,48,27
+S01,1D CNN,cross,32,6,5,48,39
+S01,1D CNN,cross,33,6,5,48,25
+S01,1D CNN,cross,34,6,6,48,36
+S01,TCN,same,1,1,0,8,2
+S01,TCN,same,2,1,1,8,4
+S01,TCN,same,3,1,1,8,8
+S01,TCN,same,4,1,1,8,8
+S01,TCN,same,5,1,1,8,8
+S01,TCN,same,6,1,0,8,0
+S01,TCN,same,7,1,1,8,8
+S01,TCN,same,8,1,1,8,6
+S01,TCN,same,9,1,1,8,7
+S01,TCN,same,10,1,1,8,7
+S01,TCN,same,11,1,0,8,2
+S01,TCN,same,12,1,1,8,7
+S01,TCN,same,13,1,1,8,8
+S01,TCN,same,14,1,1,8,8
+S01,TCN,same,15,1,1,8,8
+S01,TCN,same,16,1,1,8,5
+S01,TCN,same,17,1,1,8,5
+S01,TCN,same,18,1,0,8,2
+S01,TCN,same,19,1,1,8,7
+S01,TCN,same,20,1,1,8,8
+S01,TCN,same,21,1,0,8,0
+S01,TCN,same,22,1,0,8,3
+S01,TCN,same,23,1,1,8,5
+S01,TCN,same,24,1,1,8,7
+S01,TCN,same,25,1,1,8,8
+S01,TCN,same,26,1,1,8,8
+S01,TCN,same,27,1,1,8,5
+S01,TCN,same,28,1,1,8,8
+S01,TCN,same,29,1,1,8,3
+S01,TCN,same,30,1,0,8,2
+S01,TCN,same,31,1,1,8,7
+S01,TCN,same,32,1,1,8,7
+S01,TCN,same,33,1,1,8,7
+S01,TCN,same,34,1,1,8,7
+S01,TCN,cross,1,6,1,48,11
+S01,TCN,cross,2,6,6,48,40
+S01,TCN,cross,3,6,6,48,44
+S01,TCN,cross,4,6,6,48,38
+S01,TCN,cross,5,6,6,48,46
+S01,TCN,cross,6,6,6,48,37
+S01,TCN,cross,7,6,0,48,3
+S01,TCN,cross,8,6,6,48,31
+S01,TCN,cross,9,6,6,48,47
+S01,TCN,cross,10,6,6,48,36
+S01,TCN,cross,11,6,6,48,35
+S01,TCN,cross,12,6,3,48,20
+S01,TCN,cross,13,6,0,48,0
+S01,TCN,cross,14,6,5,48,36
+S01,TCN,cross,15,6,5,48,32
+S01,TCN,cross,16,5,2,40,15
+S01,TCN,cross,17,6,0,48,7
+S01,TCN,cross,18,6,5,48,32
+S01,TCN,cross,19,6,6,48,36
+S01,TCN,cross,20,6,4,48,21
+S01,TCN,cross,21,6,6,48,36
+S01,TCN,cross,22,6,3,48,22
+S01,TCN,cross,23,6,6,48,37
+S01,TCN,cross,24,6,6,48,43
+S01,TCN,cross,26,6,5,48,35
+S01,TCN,cross,27,6,5,48,29
+S01,TCN,cross,28,6,5,48,36
+S01,TCN,cross,29,6,2,48,16
+S01,TCN,cross,30,6,2,48,18
+S01,TCN,cross,31,6,3,48,25
+S01,TCN,cross,32,6,6,48,37
+S01,TCN,cross,33,6,5,48,25
+S01,TCN,cross,34,6,6,48,40
+S01,GRU,same,1,1,0,8,2
+S01,GRU,same,2,1,0,8,1
+S01,GRU,same,3,1,1,8,8
+S01,GRU,same,4,1,1,8,7
+S01,GRU,same,5,1,1,8,6
+S01,GRU,same,6,1,0,8,0
+S01,GRU,same,7,1,1,8,8
+S01,GRU,same,8,1,1,8,7
+S01,GRU,same,9,1,1,8,5
+S01,GRU,same,10,1,1,8,8
+S01,GRU,same,11,1,0,8,2
+S01,GRU,same,12,1,1,8,7
+S01,GRU,same,13,1,1,8,5
+S01,GRU,same,14,1,1,8,8
+S01,GRU,same,15,1,0,8,2
+S01,GRU,same,16,1,0,8,3
+S01,GRU,same,17,1,1,8,4
+S01,GRU,same,18,1,0,8,1
+S01,GRU,same,19,1,1,8,7
+S01,GRU,same,20,1,1,8,8
+S01,GRU,same,21,1,0,8,0
+S01,GRU,same,22,1,0,8,0
+S01,GRU,same,23,1,0,8,2
+S01,GRU,same,24,1,0,8,1
+S01,GRU,same,25,1,1,8,8
+S01,GRU,same,26,1,1,8,7
+S01,GRU,same,27,1,1,8,6
+S01,GRU,same,28,1,1,8,8
+S01,GRU,same,29,1,1,8,5
+S01,GRU,same,30,1,1,8,7
+S01,GRU,same,31,1,1,8,5
+S01,GRU,same,32,1,1,8,7
+S01,GRU,same,33,1,1,8,4
+S01,GRU,same,34,1,1,8,8
+S01,GRU,cross,1,6,1,48,16
+S01,GRU,cross,2,6,6,48,39
+S01,GRU,cross,3,6,6,48,26
+S01,GRU,cross,4,6,6,48,37
+S01,GRU,cross,5,6,6,48,36
+S01,GRU,cross,6,6,6,48,41
+S01,GRU,cross,7,6,4,48,22
+S01,GRU,cross,8,6,6,48,37
+S01,GRU,cross,9,6,6,48,43
+S01,GRU,cross,10,6,6,48,39
+S01,GRU,cross,11,6,6,48,44
+S01,GRU,cross,12,6,6,48,44
+S01,GRU,cross,13,6,0,48,3
+S01,GRU,cross,14,6,0,48,4
+S01,GRU,cross,15,6,5,48,28
+S01,GRU,cross,16,5,2,40,14
+S01,GRU,cross,17,6,2,48,16
+S01,GRU,cross,18,6,6,48,22
+S01,GRU,cross,19,6,6,48,41
+S01,GRU,cross,20,6,1,48,10
+S01,GRU,cross,21,6,5,48,23
+S01,GRU,cross,22,6,0,48,10
+S01,GRU,cross,23,6,4,48,28
+S01,GRU,cross,24,6,5,48,30
+S01,GRU,cross,26,6,6,48,36
+S01,GRU,cross,27,6,3,48,15
+S01,GRU,cross,28,6,2,48,18
+S01,GRU,cross,29,6,2,48,13
+S01,GRU,cross,30,6,6,48,35
+S01,GRU,cross,31,6,6,48,29
+S01,GRU,cross,32,6,1,48,9
+S01,GRU,cross,33,6,4,48,18
+S01,GRU,cross,34,6,4,48,21
+S02,LDA,same,1,1,1,8,8
+S02,LDA,same,2,1,1,8,8
+S02,LDA,same,3,1,1,8,7
+S02,LDA,same,4,1,1,8,8
+S02,LDA,same,5,1,1,8,8
+S02,LDA,same,6,1,1,8,8
+S02,LDA,same,7,1,1,8,8
+S02,LDA,same,8,1,1,8,8
+S02,LDA,same,9,1,1,8,8
+S02,LDA,same,10,1,1,8,5
+S02,LDA,same,11,1,1,8,5
+S02,LDA,same,12,1,1,8,8
+S02,LDA,same,13,1,1,8,7
+S02,LDA,same,14,1,1,8,8
+S02,LDA,same,15,1,1,8,6
+S02,LDA,same,16,1,1,8,7
+S02,LDA,same,17,1,1,8,8
+S02,LDA,same,18,1,1,8,5
+S02,LDA,same,19,1,1,8,8
+S02,LDA,same,20,1,1,8,8
+S02,LDA,same,21,1,1,8,5
+S02,LDA,same,22,1,1,8,5
+S02,LDA,same,23,1,1,8,4
+S02,LDA,same,24,1,1,8,8
+S02,LDA,same,25,1,1,8,6
+S02,LDA,same,26,1,1,8,6
+S02,LDA,same,27,1,1,8,7
+S02,LDA,same,28,1,1,8,5
+S02,LDA,same,29,1,1,8,8
+S02,LDA,same,30,1,1,8,6
+S02,LDA,same,31,1,1,8,8
+S02,LDA,same,32,1,1,8,5
+S02,LDA,same,33,1,1,8,7
+S02,LDA,same,34,1,1,8,7
+S02,LDA,cross,1,6,0,48,0
+S02,LDA,cross,2,6,0,48,0
+S02,LDA,cross,3,6,0,48,0
+S02,LDA,cross,4,6,1,48,3
+S02,LDA,cross,5,6,0,48,0
+S02,LDA,cross,6,6,0,48,0
+S02,LDA,cross,7,6,0,48,0
+S02,LDA,cross,8,6,0,48,0
+S02,LDA,cross,9,5,0,40,0
+S02,LDA,cross,10,5,0,40,7
+S02,LDA,cross,11,6,0,48,0
+S02,LDA,cross,12,6,0,48,0
+S02,LDA,cross,13,6,0,48,0
+S02,LDA,cross,14,6,0,48,0
+S02,LDA,cross,15,6,0,48,0
+S02,LDA,cross,16,6,1,48,5
+S02,LDA,cross,17,6,0,48,0
+S02,LDA,cross,18,6,0,48,0
+S02,LDA,cross,19,6,6,48,47
+S02,LDA,cross,20,6,1,48,18
+S02,LDA,cross,21,6,2,48,12
+S02,LDA,cross,22,6,5,48,18
+S02,LDA,cross,23,6,3,48,19
+S02,LDA,cross,24,6,0,48,2
+S02,LDA,cross,25,6,0,48,1
+S02,LDA,cross,26,6,0,48,0
+S02,LDA,cross,27,6,0,48,1
+S02,LDA,cross,28,6,0,48,7
+S02,LDA,cross,29,6,0,48,0
+S02,LDA,cross,30,6,0,48,0
+S02,LDA,cross,31,6,0,48,0
+S02,LDA,cross,32,6,0,48,0
+S02,LDA,cross,33,6,0,48,0
+S02,LDA,cross,34,6,0,48,0
+S02,1D CNN,same,1,1,1,8,8
+S02,1D CNN,same,2,1,1,8,7
+S02,1D CNN,same,3,1,1,8,7
+S02,1D CNN,same,4,1,1,8,8
+S02,1D CNN,same,5,1,1,8,7
+S02,1D CNN,same,6,1,1,8,6
+S02,1D CNN,same,7,1,1,8,7
+S02,1D CNN,same,8,1,1,8,8
+S02,1D CNN,same,9,1,1,8,8
+S02,1D CNN,same,10,1,1,8,3
+S02,1D CNN,same,11,1,1,8,8
+S02,1D CNN,same,12,1,1,8,8
+S02,1D CNN,same,13,1,1,8,5
+S02,1D CNN,same,14,1,1,8,6
+S02,1D CNN,same,15,1,1,8,7
+S02,1D CNN,same,16,1,1,8,8
+S02,1D CNN,same,17,1,1,8,7
+S02,1D CNN,same,18,1,1,8,8
+S02,1D CNN,same,19,1,1,8,6
+S02,1D CNN,same,20,1,1,8,8
+S02,1D CNN,same,21,1,1,8,5
+S02,1D CNN,same,22,1,1,8,7
+S02,1D CNN,same,23,1,1,8,3
+S02,1D CNN,same,24,1,1,8,8
+S02,1D CNN,same,25,1,1,8,5
+S02,1D CNN,same,26,1,1,8,6
+S02,1D CNN,same,27,1,1,8,8
+S02,1D CNN,same,28,1,1,8,5
+S02,1D CNN,same,29,1,1,8,6
+S02,1D CNN,same,30,1,1,8,8
+S02,1D CNN,same,31,1,1,8,6
+S02,1D CNN,same,32,1,1,8,6
+S02,1D CNN,same,33,1,1,8,8
+S02,1D CNN,same,34,1,1,8,8
+S02,1D CNN,cross,1,6,0,48,0
+S02,1D CNN,cross,2,6,1,48,8
+S02,1D CNN,cross,3,6,0,48,3
+S02,1D CNN,cross,4,6,5,48,28
+S02,1D CNN,cross,5,6,0,48,0
+S02,1D CNN,cross,6,6,1,48,6
+S02,1D CNN,cross,7,6,0,48,2
+S02,1D CNN,cross,8,6,0,48,0
+S02,1D CNN,cross,9,5,0,40,0
+S02,1D CNN,cross,10,5,0,40,0
+S02,1D CNN,cross,11,6,5,48,26
+S02,1D CNN,cross,12,6,0,48,0
+S02,1D CNN,cross,13,6,0,48,0
+S02,1D CNN,cross,14,6,0,48,0
+S02,1D CNN,cross,15,6,2,48,8
+S02,1D CNN,cross,16,6,0,48,1
+S02,1D CNN,cross,17,6,0,48,0
+S02,1D CNN,cross,18,6,6,48,42
+S02,1D CNN,cross,19,6,4,48,26
+S02,1D CNN,cross,20,6,0,48,2
+S02,1D CNN,cross,21,6,6,48,31
+S02,1D CNN,cross,22,6,0,48,0
+S02,1D CNN,cross,23,6,2,48,15
+S02,1D CNN,cross,24,6,0,48,5
+S02,1D CNN,cross,25,6,4,48,17
+S02,1D CNN,cross,26,6,0,48,0
+S02,1D CNN,cross,27,6,5,48,29
+S02,1D CNN,cross,28,6,0,48,1
+S02,1D CNN,cross,29,6,0,48,4
+S02,1D CNN,cross,30,6,0,48,0
+S02,1D CNN,cross,31,6,0,48,0
+S02,1D CNN,cross,32,6,3,48,21
+S02,1D CNN,cross,33,6,0,48,0
+S02,1D CNN,cross,34,6,0,48,0
+S02,TCN,same,1,1,1,8,8
+S02,TCN,same,2,1,1,8,8
+S02,TCN,same,3,1,1,8,7
+S02,TCN,same,4,1,1,8,8
+S02,TCN,same,5,1,1,8,7
+S02,TCN,same,6,1,1,8,8
+S02,TCN,same,7,1,1,8,8
+S02,TCN,same,8,1,1,8,8
+S02,TCN,same,9,1,1,8,5
+S02,TCN,same,10,1,1,8,4
+S02,TCN,same,11,1,1,8,6
+S02,TCN,same,12,1,1,8,6
+S02,TCN,same,13,1,1,8,5
+S02,TCN,same,14,1,1,8,5
+S02,TCN,same,15,1,1,8,8
+S02,TCN,same,16,1,1,8,8
+S02,TCN,same,17,1,1,8,7
+S02,TCN,same,18,1,1,8,5
+S02,TCN,same,19,1,1,8,6
+S02,TCN,same,20,1,1,8,6
+S02,TCN,same,21,1,1,8,6
+S02,TCN,same,22,1,1,8,7
+S02,TCN,same,23,1,1,8,6
+S02,TCN,same,24,1,1,8,8
+S02,TCN,same,25,1,1,8,4
+S02,TCN,same,26,1,1,8,5
+S02,TCN,same,27,1,1,8,7
+S02,TCN,same,28,1,1,8,6
+S02,TCN,same,29,1,1,8,7
+S02,TCN,same,30,1,1,8,5
+S02,TCN,same,31,1,0,8,2
+S02,TCN,same,32,1,1,8,6
+S02,TCN,same,33,1,1,8,8
+S02,TCN,same,34,1,1,8,8
+S02,TCN,cross,1,6,0,48,0
+S02,TCN,cross,2,6,0,48,2
+S02,TCN,cross,3,6,5,48,25
+S02,TCN,cross,4,6,0,48,1
+S02,TCN,cross,5,6,0,48,1
+S02,TCN,cross,6,6,0,48,3
+S02,TCN,cross,7,6,0,48,0
+S02,TCN,cross,8,6,0,48,0
+S02,TCN,cross,9,5,0,40,0
+S02,TCN,cross,10,5,0,40,0
+S02,TCN,cross,11,6,6,48,46
+S02,TCN,cross,12,6,0,48,0
+S02,TCN,cross,13,6,0,48,3
+S02,TCN,cross,14,6,0,48,4
+S02,TCN,cross,15,6,3,48,14
+S02,TCN,cross,16,6,0,48,4
+S02,TCN,cross,17,6,2,48,10
+S02,TCN,cross,18,6,0,48,2
+S02,TCN,cross,19,6,0,48,1
+S02,TCN,cross,20,6,3,48,20
+S02,TCN,cross,21,6,6,48,39
+S02,TCN,cross,22,6,0,48,2
+S02,TCN,cross,23,6,2,48,16
+S02,TCN,cross,24,6,0,48,1
+S02,TCN,cross,25,6,3,48,20
+S02,TCN,cross,26,6,0,48,3
+S02,TCN,cross,27,6,5,48,27
+S02,TCN,cross,28,6,0,48,4
+S02,TCN,cross,29,6,0,48,0
+S02,TCN,cross,30,6,4,48,24
+S02,TCN,cross,31,6,0,48,0
+S02,TCN,cross,32,6,3,48,21
+S02,TCN,cross,33,6,0,48,2
+S02,TCN,cross,34,6,0,48,2
+S02,GRU,same,1,1,1,8,8
+S02,GRU,same,2,1,1,8,8
+S02,GRU,same,3,1,1,8,3
+S02,GRU,same,4,1,1,8,6
+S02,GRU,same,5,1,1,8,8
+S02,GRU,same,6,1,1,8,5
+S02,GRU,same,7,1,1,8,5
+S02,GRU,same,8,1,1,8,6
+S02,GRU,same,9,1,1,8,6
+S02,GRU,same,10,1,1,8,5
+S02,GRU,same,11,1,1,8,4
+S02,GRU,same,12,1,1,8,7
+S02,GRU,same,13,1,1,8,5
+S02,GRU,same,14,1,0,8,2
+S02,GRU,same,15,1,1,8,7
+S02,GRU,same,16,1,0,8,2
+S02,GRU,same,17,1,1,8,7
+S02,GRU,same,18,1,1,8,5
+S02,GRU,same,19,1,1,8,6
+S02,GRU,same,20,1,1,8,7
+S02,GRU,same,21,1,1,8,5
+S02,GRU,same,22,1,1,8,7
+S02,GRU,same,23,1,1,8,4
+S02,GRU,same,24,1,1,8,6
+S02,GRU,same,25,1,0,8,1
+S02,GRU,same,26,1,0,8,2
+S02,GRU,same,27,1,1,8,8
+S02,GRU,same,28,1,1,8,4
+S02,GRU,same,29,1,1,8,7
+S02,GRU,same,30,1,0,8,2
+S02,GRU,same,31,1,1,8,4
+S02,GRU,same,32,1,1,8,7
+S02,GRU,same,33,1,1,8,5
+S02,GRU,same,34,1,1,8,8
+S02,GRU,cross,1,6,0,48,0
+S02,GRU,cross,2,6,6,48,38
+S02,GRU,cross,3,6,3,48,23
+S02,GRU,cross,4,6,0,48,1
+S02,GRU,cross,5,6,5,48,28
+S02,GRU,cross,6,6,0,48,6
+S02,GRU,cross,7,6,0,48,10
+S02,GRU,cross,8,6,0,48,1
+S02,GRU,cross,9,5,5,40,24
+S02,GRU,cross,10,5,1,40,7
+S02,GRU,cross,11,6,4,48,11
+S02,GRU,cross,12,6,0,48,5
+S02,GRU,cross,13,6,6,48,25
+S02,GRU,cross,14,6,0,48,2
+S02,GRU,cross,15,6,4,48,19
+S02,GRU,cross,16,6,1,48,9
+S02,GRU,cross,17,6,1,48,6
+S02,GRU,cross,18,6,5,48,20
+S02,GRU,cross,19,6,0,48,2
+S02,GRU,cross,20,6,0,48,0
+S02,GRU,cross,21,6,5,48,17
+S02,GRU,cross,22,6,0,48,0
+S02,GRU,cross,23,6,3,48,16
+S02,GRU,cross,24,6,3,48,15
+S02,GRU,cross,25,6,0,48,2
+S02,GRU,cross,26,6,0,48,0
+S02,GRU,cross,27,6,6,48,36
+S02,GRU,cross,28,6,5,48,28
+S02,GRU,cross,29,6,1,48,7
+S02,GRU,cross,30,6,0,48,0
+S02,GRU,cross,31,6,0,48,0
+S02,GRU,cross,32,6,1,48,12
+S02,GRU,cross,33,6,0,48,3
+S02,GRU,cross,34,6,1,48,10
+S03,LDA,same,1,1,0,8,1
+S03,LDA,same,2,1,1,8,8
+S03,LDA,same,3,1,1,8,7
+S03,LDA,same,5,1,1,8,8
+S03,LDA,same,6,1,1,8,8
+S03,LDA,same,7,1,1,8,8
+S03,LDA,same,8,1,1,8,8
+S03,LDA,same,9,1,1,8,8
+S03,LDA,same,10,1,1,8,6
+S03,LDA,same,11,1,0,8,4
+S03,LDA,same,12,1,1,8,8
+S03,LDA,same,13,1,1,8,8
+S03,LDA,same,14,1,1,8,8
+S03,LDA,same,15,1,1,8,8
+S03,LDA,same,16,1,1,8,8
+S03,LDA,same,17,1,1,8,8
+S03,LDA,same,18,1,1,8,7
+S03,LDA,same,19,1,1,8,8
+S03,LDA,same,20,1,1,8,8
+S03,LDA,same,21,1,1,8,8
+S03,LDA,same,22,1,1,8,8
+S03,LDA,same,23,1,1,8,5
+S03,LDA,same,24,1,1,8,8
+S03,LDA,same,25,1,1,8,8
+S03,LDA,same,26,1,1,8,8
+S03,LDA,same,27,1,1,8,8
+S03,LDA,same,28,1,1,8,8
+S03,LDA,same,29,1,1,8,8
+S03,LDA,same,30,1,1,8,7
+S03,LDA,same,31,1,1,8,8
+S03,LDA,same,32,1,1,8,8
+S03,LDA,same,33,1,1,8,8
+S03,LDA,same,34,1,1,8,7
+S03,LDA,cross,1,6,0,48,1
+S03,LDA,cross,2,6,0,48,0
+S03,LDA,cross,3,6,0,48,0
+S03,LDA,cross,5,6,1,48,3
+S03,LDA,cross,6,6,5,48,26
+S03,LDA,cross,7,6,0,48,9
+S03,LDA,cross,8,6,3,48,16
+S03,LDA,cross,9,6,0,48,7
+S03,LDA,cross,10,6,0,48,1
+S03,LDA,cross,11,6,0,48,0
+S03,LDA,cross,12,6,6,48,30
+S03,LDA,cross,13,6,0,48,0
+S03,LDA,cross,14,6,1,48,8
+S03,LDA,cross,15,6,2,48,9
+S03,LDA,cross,16,6,6,48,23
+S03,LDA,cross,17,5,3,40,16
+S03,LDA,cross,18,6,0,48,0
+S03,LDA,cross,19,6,2,48,11
+S03,LDA,cross,20,6,0,48,5
+S03,LDA,cross,21,6,4,48,22
+S03,LDA,cross,22,6,0,48,0
+S03,LDA,cross,23,6,5,48,24
+S03,LDA,cross,24,6,0,48,8
+S03,LDA,cross,25,6,0,48,2
+S03,LDA,cross,26,6,0,48,0
+S03,LDA,cross,27,6,1,48,7
+S03,LDA,cross,28,6,6,48,42
+S03,LDA,cross,29,6,6,48,46
+S03,LDA,cross,30,6,4,48,33
+S03,LDA,cross,31,6,0,48,1
+S03,LDA,cross,32,6,3,48,27
+S03,LDA,cross,33,6,6,48,43
+S03,LDA,cross,34,6,1,48,7
+S03,1D CNN,same,1,1,1,8,8
+S03,1D CNN,same,2,1,1,8,8
+S03,1D CNN,same,3,1,1,8,7
+S03,1D CNN,same,5,1,1,8,8
+S03,1D CNN,same,6,1,0,8,2
+S03,1D CNN,same,7,1,1,8,8
+S03,1D CNN,same,8,1,1,8,6
+S03,1D CNN,same,9,1,1,8,7
+S03,1D CNN,same,10,1,1,8,3
+S03,1D CNN,same,11,1,1,8,6
+S03,1D CNN,same,12,1,1,8,7
+S03,1D CNN,same,13,1,1,8,8
+S03,1D CNN,same,14,1,1,8,7
+S03,1D CNN,same,15,1,1,8,8
+S03,1D CNN,same,16,1,1,8,8
+S03,1D CNN,same,17,1,1,8,8
+S03,1D CNN,same,18,1,1,8,8
+S03,1D CNN,same,19,1,1,8,8
+S03,1D CNN,same,20,1,1,8,8
+S03,1D CNN,same,21,1,1,8,7
+S03,1D CNN,same,22,1,1,8,8
+S03,1D CNN,same,23,1,1,8,6
+S03,1D CNN,same,24,1,1,8,8
+S03,1D CNN,same,25,1,1,8,8
+S03,1D CNN,same,26,1,1,8,8
+S03,1D CNN,same,27,1,1,8,8
+S03,1D CNN,same,28,1,1,8,8
+S03,1D CNN,same,29,1,1,8,8
+S03,1D CNN,same,30,1,1,8,7
+S03,1D CNN,same,31,1,1,8,7
+S03,1D CNN,same,32,1,1,8,8
+S03,1D CNN,same,33,1,1,8,8
+S03,1D CNN,same,34,1,1,8,8
+S03,1D CNN,cross,1,6,1,48,10
+S03,1D CNN,cross,2,6,5,48,26
+S03,1D CNN,cross,3,6,6,48,44
+S03,1D CNN,cross,5,6,6,48,33
+S03,1D CNN,cross,6,6,4,48,32
+S03,1D CNN,cross,7,6,6,48,41
+S03,1D CNN,cross,8,6,5,48,27
+S03,1D CNN,cross,9,6,6,48,44
+S03,1D CNN,cross,10,6,4,48,27
+S03,1D CNN,cross,11,6,3,48,16
+S03,1D CNN,cross,12,6,6,48,44
+S03,1D CNN,cross,13,6,6,48,45
+S03,1D CNN,cross,14,6,2,48,23
+S03,1D CNN,cross,15,6,4,48,33
+S03,1D CNN,cross,16,6,6,48,41
+S03,1D CNN,cross,17,5,4,40,19
+S03,1D CNN,cross,18,6,5,48,28
+S03,1D CNN,cross,19,6,6,48,38
+S03,1D CNN,cross,20,6,0,48,0
+S03,1D CNN,cross,21,6,6,48,41
+S03,1D CNN,cross,22,6,6,48,31
+S03,1D CNN,cross,23,6,1,48,9
+S03,1D CNN,cross,24,6,6,48,47
+S03,1D CNN,cross,25,6,6,48,36
+S03,1D CNN,cross,26,6,4,48,21
+S03,1D CNN,cross,27,6,5,48,34
+S03,1D CNN,cross,28,6,2,48,19
+S03,1D CNN,cross,29,6,6,48,40
+S03,1D CNN,cross,30,6,6,48,46
+S03,1D CNN,cross,31,6,0,48,3
+S03,1D CNN,cross,32,6,2,48,14
+S03,1D CNN,cross,33,6,6,48,46
+S03,1D CNN,cross,34,6,5,48,36
+S03,TCN,same,1,1,1,8,8
+S03,TCN,same,2,1,1,8,8
+S03,TCN,same,3,1,1,8,7
+S03,TCN,same,5,1,1,8,7
+S03,TCN,same,6,1,1,8,6
+S03,TCN,same,7,1,1,8,7
+S03,TCN,same,8,1,1,8,8
+S03,TCN,same,9,1,1,8,8
+S03,TCN,same,10,1,1,8,7
+S03,TCN,same,11,1,1,8,7
+S03,TCN,same,12,1,1,8,6
+S03,TCN,same,13,1,1,8,8
+S03,TCN,same,14,1,1,8,8
+S03,TCN,same,15,1,1,8,8
+S03,TCN,same,16,1,1,8,8
+S03,TCN,same,17,1,1,8,8
+S03,TCN,same,18,1,1,8,7
+S03,TCN,same,19,1,1,8,8
+S03,TCN,same,20,1,1,8,8
+S03,TCN,same,21,1,1,8,7
+S03,TCN,same,22,1,1,8,7
+S03,TCN,same,23,1,1,8,5
+S03,TCN,same,24,1,1,8,8
+S03,TCN,same,25,1,1,8,8
+S03,TCN,same,26,1,1,8,7
+S03,TCN,same,27,1,1,8,8
+S03,TCN,same,28,1,1,8,8
+S03,TCN,same,29,1,1,8,8
+S03,TCN,same,30,1,1,8,7
+S03,TCN,same,31,1,1,8,7
+S03,TCN,same,32,1,1,8,8
+S03,TCN,same,33,1,1,8,5
+S03,TCN,same,34,1,1,8,8
+S03,TCN,cross,1,6,3,48,19
+S03,TCN,cross,2,6,6,48,42
+S03,TCN,cross,3,6,6,48,42
+S03,TCN,cross,5,6,5,48,31
+S03,TCN,cross,6,6,6,48,34
+S03,TCN,cross,7,6,5,48,29
+S03,TCN,cross,8,6,5,48,30
+S03,TCN,cross,9,6,6,48,40
+S03,TCN,cross,10,6,2,48,13
+S03,TCN,cross,11,6,1,48,10
+S03,TCN,cross,12,6,2,48,17
+S03,TCN,cross,13,6,5,48,33
+S03,TCN,cross,14,6,5,48,28
+S03,TCN,cross,15,6,6,48,33
+S03,TCN,cross,16,6,0,48,3
+S03,TCN,cross,17,5,3,40,21
+S03,TCN,cross,18,6,0,48,0
+S03,TCN,cross,19,6,0,48,0
+S03,TCN,cross,20,6,2,48,20
+S03,TCN,cross,21,6,6,48,39
+S03,TCN,cross,22,6,0,48,2
+S03,TCN,cross,23,6,5,48,34
+S03,TCN,cross,24,6,5,48,36
+S03,TCN,cross,25,6,6,48,28
+S03,TCN,cross,26,6,0,48,1
+S03,TCN,cross,27,6,4,48,31
+S03,TCN,cross,28,6,5,48,39
+S03,TCN,cross,29,6,5,48,32
+S03,TCN,cross,30,6,6,48,43
+S03,TCN,cross,31,6,1,48,11
+S03,TCN,cross,32,6,5,48,37
+S03,TCN,cross,33,6,2,48,19
+S03,TCN,cross,34,6,5,48,39
+S03,GRU,same,1,1,1,8,3
+S03,GRU,same,2,1,1,8,7
+S03,GRU,same,3,1,1,8,6
+S03,GRU,same,5,1,1,8,5
+S03,GRU,same,6,1,1,8,6
+S03,GRU,same,7,1,1,8,7
+S03,GRU,same,8,1,1,8,4
+S03,GRU,same,9,1,1,8,6
+S03,GRU,same,10,1,1,8,5
+S03,GRU,same,11,1,1,8,4
+S03,GRU,same,12,1,1,8,8
+S03,GRU,same,13,1,1,8,7
+S03,GRU,same,14,1,1,8,6
+S03,GRU,same,15,1,1,8,8
+S03,GRU,same,16,1,1,8,8
+S03,GRU,same,17,1,1,8,8
+S03,GRU,same,18,1,1,8,8
+S03,GRU,same,19,1,1,8,6
+S03,GRU,same,20,1,1,8,7
+S03,GRU,same,21,1,1,8,7
+S03,GRU,same,22,1,1,8,6
+S03,GRU,same,23,1,1,8,5
+S03,GRU,same,24,1,0,8,3
+S03,GRU,same,25,1,1,8,8
+S03,GRU,same,26,1,1,8,6
+S03,GRU,same,27,1,1,8,5
+S03,GRU,same,28,1,1,8,8
+S03,GRU,same,29,1,1,8,6
+S03,GRU,same,30,1,1,8,5
+S03,GRU,same,31,1,1,8,5
+S03,GRU,same,32,1,1,8,7
+S03,GRU,same,33,1,0,8,3
+S03,GRU,same,34,1,1,8,6
+S03,GRU,cross,1,6,5,48,26
+S03,GRU,cross,2,6,3,48,15
+S03,GRU,cross,3,6,6,48,34
+S03,GRU,cross,5,6,4,48,25
+S03,GRU,cross,6,6,6,48,37
+S03,GRU,cross,7,6,5,48,32
+S03,GRU,cross,8,6,2,48,6
+S03,GRU,cross,9,6,1,48,15
+S03,GRU,cross,10,6,4,48,23
+S03,GRU,cross,11,6,0,48,6
+S03,GRU,cross,12,6,6,48,42
+S03,GRU,cross,13,6,3,48,22
+S03,GRU,cross,14,6,6,48,37
+S03,GRU,cross,15,6,0,48,4
+S03,GRU,cross,16,6,5,48,25
+S03,GRU,cross,17,5,5,40,31
+S03,GRU,cross,18,6,0,48,1
+S03,GRU,cross,19,6,0,48,1
+S03,GRU,cross,20,6,0,48,2
+S03,GRU,cross,21,6,6,48,41
+S03,GRU,cross,22,6,6,48,36
+S03,GRU,cross,23,6,5,48,23
+S03,GRU,cross,24,6,2,48,10
+S03,GRU,cross,25,6,2,48,14
+S03,GRU,cross,26,6,3,48,30
+S03,GRU,cross,27,6,6,48,33
+S03,GRU,cross,28,6,6,48,41
+S03,GRU,cross,29,6,6,48,35
+S03,GRU,cross,30,6,6,48,46
+S03,GRU,cross,31,6,4,48,19
+S03,GRU,cross,32,6,4,48,29
+S03,GRU,cross,33,6,0,48,0
+S03,GRU,cross,34,6,6,48,38
+S04,LDA,same,1,1,1,8,8
+S04,LDA,same,2,1,1,8,8
+S04,LDA,same,3,1,1,8,8
+S04,LDA,same,4,1,1,8,8
+S04,LDA,same,5,1,1,8,8
+S04,LDA,same,6,1,1,8,5
+S04,LDA,same,7,1,1,8,7
+S04,LDA,same,8,1,1,8,8
+S04,LDA,same,9,1,1,8,8
+S04,LDA,same,10,1,1,8,7
+S04,LDA,same,11,1,1,8,6
+S04,LDA,same,12,1,1,8,8
+S04,LDA,same,13,1,1,8,8
+S04,LDA,same,14,1,1,8,7
+S04,LDA,same,15,1,1,8,7
+S04,LDA,same,16,1,1,8,6
+S04,LDA,same,17,1,1,8,6
+S04,LDA,same,18,1,1,8,4
+S04,LDA,same,19,1,1,8,8
+S04,LDA,same,20,1,1,8,7
+S04,LDA,same,21,1,1,8,6
+S04,LDA,same,22,1,1,8,6
+S04,LDA,same,23,1,1,8,8
+S04,LDA,same,24,1,1,8,5
+S04,LDA,same,25,1,1,8,8
+S04,LDA,same,26,1,1,8,8
+S04,LDA,same,27,1,1,8,7
+S04,LDA,same,28,1,1,8,6
+S04,LDA,same,29,1,1,8,6
+S04,LDA,same,30,1,1,8,8
+S04,LDA,same,31,1,1,8,6
+S04,LDA,same,32,1,1,8,8
+S04,LDA,same,33,1,1,8,7
+S04,LDA,same,34,1,1,8,6
+S04,LDA,cross,1,6,4,48,29
+S04,LDA,cross,2,6,6,48,48
+S04,LDA,cross,3,6,2,48,15
+S04,LDA,cross,4,6,0,48,0
+S04,LDA,cross,5,6,6,48,39
+S04,LDA,cross,6,6,1,48,10
+S04,LDA,cross,7,6,4,48,22
+S04,LDA,cross,8,6,6,48,46
+S04,LDA,cross,9,6,5,48,40
+S04,LDA,cross,10,6,6,48,38
+S04,LDA,cross,11,6,1,48,11
+S04,LDA,cross,12,6,1,48,13
+S04,LDA,cross,13,6,5,48,30
+S04,LDA,cross,14,6,5,48,34
+S04,LDA,cross,15,6,1,48,7
+S04,LDA,cross,16,6,2,48,10
+S04,LDA,cross,17,6,4,48,30
+S04,LDA,cross,18,6,6,48,38
+S04,LDA,cross,19,6,0,48,0
+S04,LDA,cross,20,6,0,48,2
+S04,LDA,cross,21,6,4,48,19
+S04,LDA,cross,22,6,6,48,43
+S04,LDA,cross,23,6,6,48,39
+S04,LDA,cross,24,6,6,48,35
+S04,LDA,cross,25,6,4,48,28
+S04,LDA,cross,26,6,0,48,5
+S04,LDA,cross,27,6,3,48,17
+S04,LDA,cross,28,6,5,48,32
+S04,LDA,cross,29,6,6,48,41
+S04,LDA,cross,30,6,0,48,0
+S04,LDA,cross,31,6,0,48,9
+S04,LDA,cross,32,6,0,48,0
+S04,LDA,cross,33,6,0,48,0
+S04,LDA,cross,34,6,6,48,37
+S04,1D CNN,same,1,1,1,8,6
+S04,1D CNN,same,2,1,1,8,8
+S04,1D CNN,same,3,1,1,8,8
+S04,1D CNN,same,4,1,1,8,8
+S04,1D CNN,same,5,1,1,8,8
+S04,1D CNN,same,6,1,1,8,6
+S04,1D CNN,same,7,1,1,8,8
+S04,1D CNN,same,8,1,1,8,7
+S04,1D CNN,same,9,1,1,8,7
+S04,1D CNN,same,10,1,1,8,8
+S04,1D CNN,same,11,1,1,8,7
+S04,1D CNN,same,12,1,1,8,8
+S04,1D CNN,same,13,1,1,8,6
+S04,1D CNN,same,14,1,1,8,6
+S04,1D CNN,same,15,1,1,8,8
+S04,1D CNN,same,16,1,1,8,7
+S04,1D CNN,same,17,1,1,8,6
+S04,1D CNN,same,18,1,1,8,7
+S04,1D CNN,same,19,1,1,8,6
+S04,1D CNN,same,20,1,1,8,8
+S04,1D CNN,same,21,1,1,8,6
+S04,1D CNN,same,22,1,1,8,8
+S04,1D CNN,same,23,1,1,8,8
+S04,1D CNN,same,24,1,1,8,7
+S04,1D CNN,same,25,1,1,8,5
+S04,1D CNN,same,26,1,1,8,6
+S04,1D CNN,same,27,1,1,8,7
+S04,1D CNN,same,28,1,1,8,6
+S04,1D CNN,same,29,1,1,8,8
+S04,1D CNN,same,30,1,1,8,8
+S04,1D CNN,same,31,1,1,8,6
+S04,1D CNN,same,32,1,1,8,8
+S04,1D CNN,same,33,1,1,8,8
+S04,1D CNN,same,34,1,1,8,7
+S04,1D CNN,cross,1,6,0,48,0
+S04,1D CNN,cross,2,6,2,48,23
+S04,1D CNN,cross,3,6,1,48,7
+S04,1D CNN,cross,4,6,0,48,0
+S04,1D CNN,cross,5,6,6,48,47
+S04,1D CNN,cross,6,6,6,48,48
+S04,1D CNN,cross,7,6,0,48,4
+S04,1D CNN,cross,8,6,0,48,6
+S04,1D CNN,cross,9,6,6,48,47
+S04,1D CNN,cross,10,6,6,48,47
+S04,1D CNN,cross,11,6,5,48,39
+S04,1D CNN,cross,12,6,6,48,48
+S04,1D CNN,cross,13,6,6,48,47
+S04,1D CNN,cross,14,6,6,48,44
+S04,1D CNN,cross,15,6,6,48,32
+S04,1D CNN,cross,16,6,0,48,0
+S04,1D CNN,cross,17,6,5,48,35
+S04,1D CNN,cross,18,6,6,48,38
+S04,1D CNN,cross,19,6,4,48,27
+S04,1D CNN,cross,20,6,0,48,0
+S04,1D CNN,cross,21,6,4,48,25
+S04,1D CNN,cross,22,6,6,48,46
+S04,1D CNN,cross,23,6,5,48,35
+S04,1D CNN,cross,24,6,6,48,40
+S04,1D CNN,cross,25,6,5,48,26
+S04,1D CNN,cross,26,6,6,48,44
+S04,1D CNN,cross,27,6,6,48,46
+S04,1D CNN,cross,28,6,4,48,25
+S04,1D CNN,cross,29,6,6,48,43
+S04,1D CNN,cross,30,6,6,48,35
+S04,1D CNN,cross,31,6,5,48,37
+S04,1D CNN,cross,32,6,0,48,0
+S04,1D CNN,cross,33,6,6,48,45
+S04,1D CNN,cross,34,6,6,48,45
+S04,TCN,same,1,1,1,8,8
+S04,TCN,same,2,1,1,8,8
+S04,TCN,same,3,1,1,8,8
+S04,TCN,same,4,1,1,8,8
+S04,TCN,same,5,1,1,8,8
+S04,TCN,same,6,1,1,8,6
+S04,TCN,same,7,1,1,8,7
+S04,TCN,same,8,1,1,8,7
+S04,TCN,same,9,1,1,8,8
+S04,TCN,same,10,1,1,8,7
+S04,TCN,same,11,1,1,8,8
+S04,TCN,same,12,1,1,8,8
+S04,TCN,same,13,1,1,8,6
+S04,TCN,same,14,1,1,8,5
+S04,TCN,same,15,1,1,8,7
+S04,TCN,same,16,1,1,8,6
+S04,TCN,same,17,1,1,8,6
+S04,TCN,same,18,1,1,8,5
+S04,TCN,same,19,1,1,8,6
+S04,TCN,same,20,1,1,8,8
+S04,TCN,same,21,1,1,8,5
+S04,TCN,same,22,1,1,8,8
+S04,TCN,same,23,1,1,8,7
+S04,TCN,same,24,1,1,8,8
+S04,TCN,same,25,1,1,8,6
+S04,TCN,same,26,1,1,8,7
+S04,TCN,same,27,1,1,8,8
+S04,TCN,same,28,1,1,8,6
+S04,TCN,same,29,1,1,8,6
+S04,TCN,same,30,1,1,8,8
+S04,TCN,same,31,1,1,8,7
+S04,TCN,same,32,1,1,8,8
+S04,TCN,same,33,1,1,8,7
+S04,TCN,same,34,1,1,8,7
+S04,TCN,cross,1,6,0,48,3
+S04,TCN,cross,2,6,4,48,23
+S04,TCN,cross,3,6,1,48,7
+S04,TCN,cross,4,6,0,48,0
+S04,TCN,cross,5,6,0,48,5
+S04,TCN,cross,6,6,5,48,40
+S04,TCN,cross,7,6,0,48,0
+S04,TCN,cross,8,6,5,48,30
+S04,TCN,cross,9,6,6,48,40
+S04,TCN,cross,10,6,6,48,48
+S04,TCN,cross,11,6,4,48,38
+S04,TCN,cross,12,6,5,48,27
+S04,TCN,cross,13,6,5,48,40
+S04,TCN,cross,14,6,1,48,17
+S04,TCN,cross,15,6,5,48,29
+S04,TCN,cross,16,6,0,48,3
+S04,TCN,cross,17,6,6,48,46
+S04,TCN,cross,18,6,6,48,46
+S04,TCN,cross,19,6,1,48,16
+S04,TCN,cross,20,6,0,48,1
+S04,TCN,cross,21,6,0,48,1
+S04,TCN,cross,22,6,6,48,45
+S04,TCN,cross,23,6,5,48,31
+S04,TCN,cross,24,6,6,48,46
+S04,TCN,cross,25,6,3,48,24
+S04,TCN,cross,26,6,6,48,37
+S04,TCN,cross,27,6,6,48,45
+S04,TCN,cross,28,6,6,48,46
+S04,TCN,cross,29,6,4,48,29
+S04,TCN,cross,30,6,6,48,35
+S04,TCN,cross,31,6,6,48,47
+S04,TCN,cross,32,6,0,48,2
+S04,TCN,cross,33,6,6,48,47
+S04,TCN,cross,34,6,6,48,47
+S04,GRU,same,1,1,1,8,4
+S04,GRU,same,2,1,1,8,8
+S04,GRU,same,3,1,1,8,6
+S04,GRU,same,4,1,1,8,8
+S04,GRU,same,5,1,1,8,8
+S04,GRU,same,6,1,1,8,6
+S04,GRU,same,7,1,1,8,7
+S04,GRU,same,8,1,1,8,7
+S04,GRU,same,9,1,1,8,8
+S04,GRU,same,10,1,1,8,6
+S04,GRU,same,11,1,1,8,6
+S04,GRU,same,12,1,1,8,8
+S04,GRU,same,13,1,1,8,5
+S04,GRU,same,14,1,1,8,7
+S04,GRU,same,15,1,1,8,5
+S04,GRU,same,16,1,1,8,6
+S04,GRU,same,17,1,1,8,4
+S04,GRU,same,18,1,1,8,3
+S04,GRU,same,19,1,1,8,4
+S04,GRU,same,20,1,1,8,8
+S04,GRU,same,21,1,1,8,5
+S04,GRU,same,22,1,1,8,8
+S04,GRU,same,23,1,1,8,8
+S04,GRU,same,24,1,1,8,5
+S04,GRU,same,25,1,1,8,7
+S04,GRU,same,26,1,1,8,6
+S04,GRU,same,27,1,1,8,8
+S04,GRU,same,28,1,1,8,4
+S04,GRU,same,29,1,0,8,0
+S04,GRU,same,30,1,1,8,6
+S04,GRU,same,31,1,1,8,6
+S04,GRU,same,32,1,1,8,5
+S04,GRU,same,33,1,1,8,7
+S04,GRU,same,34,1,1,8,7
+S04,GRU,cross,1,6,0,48,0
+S04,GRU,cross,2,6,6,48,46
+S04,GRU,cross,3,6,0,48,3
+S04,GRU,cross,4,6,6,48,43
+S04,GRU,cross,5,6,6,48,44
+S04,GRU,cross,6,6,6,48,46
+S04,GRU,cross,7,6,0,48,4
+S04,GRU,cross,8,6,6,48,39
+S04,GRU,cross,9,6,6,48,46
+S04,GRU,cross,10,6,6,48,46
+S04,GRU,cross,11,6,5,48,36
+S04,GRU,cross,12,6,4,48,21
+S04,GRU,cross,13,6,4,48,31
+S04,GRU,cross,14,6,6,48,31
+S04,GRU,cross,15,6,2,48,11
+S04,GRU,cross,16,6,1,48,9
+S04,GRU,cross,17,6,3,48,16
+S04,GRU,cross,18,6,4,48,31
+S04,GRU,cross,19,6,2,48,21
+S04,GRU,cross,20,6,0,48,2
+S04,GRU,cross,21,6,2,48,12
+S04,GRU,cross,22,6,6,48,46
+S04,GRU,cross,23,6,5,48,32
+S04,GRU,cross,24,6,6,48,42
+S04,GRU,cross,25,6,2,48,16
+S04,GRU,cross,26,6,6,48,32
+S04,GRU,cross,27,6,6,48,43
+S04,GRU,cross,28,6,6,48,28
+S04,GRU,cross,29,6,2,48,14
+S04,GRU,cross,30,6,2,48,14
+S04,GRU,cross,31,6,6,48,39
+S04,GRU,cross,32,6,1,48,13
+S04,GRU,cross,33,6,6,48,43
+S04,GRU,cross,34,6,6,48,45
+S05,LDA,same,1,1,1,8,8
+S05,LDA,same,2,1,1,8,6
+S05,LDA,same,3,1,1,8,6
+S05,LDA,same,4,1,1,8,8
+S05,LDA,same,5,1,1,8,8
+S05,LDA,same,6,1,1,8,8
+S05,LDA,same,7,1,1,8,6
+S05,LDA,same,8,1,0,8,1
+S05,LDA,same,9,1,1,8,6
+S05,LDA,same,10,1,0,8,0
+S05,LDA,same,11,1,1,8,8
+S05,LDA,same,12,1,1,8,6
+S05,LDA,same,13,1,1,8,7
+S05,LDA,same,14,1,1,8,6
+S05,LDA,same,15,1,1,8,7
+S05,LDA,same,16,1,1,8,8
+S05,LDA,same,17,1,1,8,8
+S05,LDA,same,18,1,1,8,6
+S05,LDA,same,19,1,1,8,8
+S05,LDA,same,20,1,1,8,7
+S05,LDA,same,21,1,1,8,6
+S05,LDA,same,22,1,1,8,4
+S05,LDA,same,23,1,1,8,6
+S05,LDA,same,24,1,1,8,8
+S05,LDA,same,25,1,1,8,8
+S05,LDA,same,26,1,1,8,8
+S05,LDA,same,27,1,1,8,8
+S05,LDA,same,28,1,1,8,8
+S05,LDA,same,29,1,1,8,6
+S05,LDA,same,30,1,1,8,7
+S05,LDA,same,31,1,1,8,5
+S05,LDA,same,32,1,1,8,4
+S05,LDA,same,33,1,0,8,3
+S05,LDA,cross,1,6,1,48,5
+S05,LDA,cross,2,6,0,48,0
+S05,LDA,cross,3,6,0,48,0
+S05,LDA,cross,4,6,0,48,0
+S05,LDA,cross,5,6,0,48,0
+S05,LDA,cross,6,6,0,48,0
+S05,LDA,cross,7,6,0,48,0
+S05,LDA,cross,8,6,0,48,0
+S05,LDA,cross,9,6,5,48,17
+S05,LDA,cross,10,6,0,48,1
+S05,LDA,cross,11,6,0,48,0
+S05,LDA,cross,12,6,5,48,28
+S05,LDA,cross,13,6,0,48,7
+S05,LDA,cross,14,6,0,48,1
+S05,LDA,cross,15,6,2,48,17
+S05,LDA,cross,16,6,4,48,17
+S05,LDA,cross,17,6,1,48,7
+S05,LDA,cross,18,6,0,48,1
+S05,LDA,cross,19,6,1,48,10
+S05,LDA,cross,20,6,0,48,5
+S05,LDA,cross,21,6,0,48,0
+S05,LDA,cross,22,6,0,48,0
+S05,LDA,cross,23,6,0,48,4
+S05,LDA,cross,24,6,0,48,1
+S05,LDA,cross,25,6,1,48,14
+S05,LDA,cross,26,6,0,48,0
+S05,LDA,cross,27,6,0,48,7
+S05,LDA,cross,28,6,0,48,0
+S05,LDA,cross,29,6,0,48,0
+S05,LDA,cross,30,6,6,48,26
+S05,LDA,cross,31,6,0,48,2
+S05,LDA,cross,32,6,2,48,23
+S05,LDA,cross,33,6,0,48,4
+S05,LDA,cross,34,6,0,48,0
+S05,1D CNN,same,1,1,0,8,3
+S05,1D CNN,same,2,1,1,8,8
+S05,1D CNN,same,3,1,1,8,6
+S05,1D CNN,same,4,1,1,8,8
+S05,1D CNN,same,5,1,1,8,8
+S05,1D CNN,same,6,1,1,8,8
+S05,1D CNN,same,7,1,1,8,7
+S05,1D CNN,same,8,1,1,8,4
+S05,1D CNN,same,9,1,1,8,7
+S05,1D CNN,same,10,1,1,8,8
+S05,1D CNN,same,11,1,1,8,8
+S05,1D CNN,same,12,1,1,8,8
+S05,1D CNN,same,13,1,1,8,7
+S05,1D CNN,same,14,1,1,8,8
+S05,1D CNN,same,15,1,1,8,7
+S05,1D CNN,same,16,1,1,8,8
+S05,1D CNN,same,17,1,1,8,8
+S05,1D CNN,same,18,1,1,8,8
+S05,1D CNN,same,19,1,1,8,7
+S05,1D CNN,same,20,1,1,8,8
+S05,1D CNN,same,21,1,1,8,7
+S05,1D CNN,same,22,1,1,8,5
+S05,1D CNN,same,23,1,1,8,5
+S05,1D CNN,same,24,1,1,8,7
+S05,1D CNN,same,25,1,1,8,8
+S05,1D CNN,same,26,1,1,8,8
+S05,1D CNN,same,27,1,1,8,5
+S05,1D CNN,same,28,1,1,8,8
+S05,1D CNN,same,29,1,1,8,7
+S05,1D CNN,same,30,1,1,8,7
+S05,1D CNN,same,31,1,1,8,6
+S05,1D CNN,same,32,1,0,8,2
+S05,1D CNN,same,33,1,1,8,6
+S05,1D CNN,cross,1,6,0,48,0
+S05,1D CNN,cross,2,6,0,48,0
+S05,1D CNN,cross,3,6,0,48,0
+S05,1D CNN,cross,4,6,0,48,0
+S05,1D CNN,cross,5,6,0,48,0
+S05,1D CNN,cross,6,6,0,48,0
+S05,1D CNN,cross,7,6,0,48,0
+S05,1D CNN,cross,8,6,0,48,0
+S05,1D CNN,cross,9,6,0,48,1
+S05,1D CNN,cross,10,6,4,48,15
+S05,1D CNN,cross,11,6,4,48,22
+S05,1D CNN,cross,12,6,6,48,43
+S05,1D CNN,cross,13,6,6,48,25
+S05,1D CNN,cross,14,6,3,48,22
+S05,1D CNN,cross,15,6,4,48,23
+S05,1D CNN,cross,16,6,0,48,5
+S05,1D CNN,cross,17,6,6,48,41
+S05,1D CNN,cross,18,6,5,48,23
+S05,1D CNN,cross,19,6,6,48,39
+S05,1D CNN,cross,20,6,6,48,35
+S05,1D CNN,cross,21,6,6,48,38
+S05,1D CNN,cross,22,6,0,48,0
+S05,1D CNN,cross,23,6,5,48,35
+S05,1D CNN,cross,24,6,6,48,32
+S05,1D CNN,cross,25,6,6,48,28
+S05,1D CNN,cross,26,6,2,48,10
+S05,1D CNN,cross,27,6,6,48,36
+S05,1D CNN,cross,28,6,3,48,15
+S05,1D CNN,cross,29,6,1,48,8
+S05,1D CNN,cross,30,6,4,48,31
+S05,1D CNN,cross,31,6,2,48,20
+S05,1D CNN,cross,32,6,1,48,14
+S05,1D CNN,cross,33,6,6,48,36
+S05,1D CNN,cross,34,6,0,48,0
+S05,TCN,same,1,1,1,8,8
+S05,TCN,same,2,1,1,8,5
+S05,TCN,same,3,1,1,8,8
+S05,TCN,same,4,1,1,8,8
+S05,TCN,same,5,1,1,8,8
+S05,TCN,same,6,1,1,8,8
+S05,TCN,same,7,1,1,8,8
+S05,TCN,same,8,1,1,8,8
+S05,TCN,same,9,1,1,8,8
+S05,TCN,same,10,1,1,8,4
+S05,TCN,same,11,1,1,8,8
+S05,TCN,same,12,1,1,8,6
+S05,TCN,same,13,1,1,8,8
+S05,TCN,same,14,1,1,8,8
+S05,TCN,same,15,1,1,8,7
+S05,TCN,same,16,1,1,8,8
+S05,TCN,same,17,1,1,8,8
+S05,TCN,same,18,1,1,8,6
+S05,TCN,same,19,1,1,8,8
+S05,TCN,same,20,1,1,8,8
+S05,TCN,same,21,1,1,8,7
+S05,TCN,same,22,1,1,8,5
+S05,TCN,same,23,1,1,8,6
+S05,TCN,same,24,1,1,8,5
+S05,TCN,same,25,1,1,8,8
+S05,TCN,same,26,1,1,8,8
+S05,TCN,same,27,1,1,8,6
+S05,TCN,same,28,1,1,8,8
+S05,TCN,same,29,1,1,8,5
+S05,TCN,same,30,1,1,8,7
+S05,TCN,same,31,1,1,8,6
+S05,TCN,same,32,1,0,8,3
+S05,TCN,same,33,1,1,8,6
+S05,TCN,cross,1,6,0,48,2
+S05,TCN,cross,2,6,0,48,0
+S05,TCN,cross,3,6,0,48,0
+S05,TCN,cross,4,6,0,48,1
+S05,TCN,cross,5,6,2,48,6
+S05,TCN,cross,6,6,4,48,14
+S05,TCN,cross,7,6,4,48,20
+S05,TCN,cross,8,6,0,48,0
+S05,TCN,cross,9,6,0,48,2
+S05,TCN,cross,10,6,5,48,21
+S05,TCN,cross,11,6,6,48,31
+S05,TCN,cross,12,6,6,48,43
+S05,TCN,cross,13,6,5,48,29
+S05,TCN,cross,14,6,2,48,17
+S05,TCN,cross,15,6,6,48,23
+S05,TCN,cross,16,6,1,48,9
+S05,TCN,cross,17,6,5,48,30
+S05,TCN,cross,18,6,2,48,17
+S05,TCN,cross,19,6,6,48,44
+S05,TCN,cross,20,6,6,48,35
+S05,TCN,cross,21,6,6,48,39
+S05,TCN,cross,22,6,6,48,29
+S05,TCN,cross,23,6,3,48,19
+S05,TCN,cross,24,6,6,48,26
+S05,TCN,cross,25,6,6,48,40
+S05,TCN,cross,26,6,1,48,4
+S05,TCN,cross,27,6,2,48,11
+S05,TCN,cross,28,6,6,48,47
+S05,TCN,cross,29,6,0,48,3
+S05,TCN,cross,30,6,5,48,26
+S05,TCN,cross,31,6,0,48,0
+S05,TCN,cross,32,6,0,48,2
+S05,TCN,cross,33,6,0,48,1
+S05,TCN,cross,34,6,0,48,0
+S05,GRU,same,1,1,0,8,1
+S05,GRU,same,2,1,1,8,7
+S05,GRU,same,3,1,1,8,8
+S05,GRU,same,4,1,1,8,8
+S05,GRU,same,5,1,1,8,8
+S05,GRU,same,6,1,1,8,8
+S05,GRU,same,7,1,1,8,7
+S05,GRU,same,8,1,1,8,4
+S05,GRU,same,9,1,1,8,7
+S05,GRU,same,10,1,1,8,6
+S05,GRU,same,11,1,1,8,5
+S05,GRU,same,12,1,1,8,6
+S05,GRU,same,13,1,1,8,7
+S05,GRU,same,14,1,1,8,7
+S05,GRU,same,15,1,1,8,6
+S05,GRU,same,16,1,1,8,7
+S05,GRU,same,17,1,1,8,8
+S05,GRU,same,18,1,1,8,5
+S05,GRU,same,19,1,1,8,5
+S05,GRU,same,20,1,1,8,7
+S05,GRU,same,21,1,0,8,3
+S05,GRU,same,22,1,1,8,4
+S05,GRU,same,23,1,1,8,5
+S05,GRU,same,24,1,1,8,7
+S05,GRU,same,25,1,1,8,6
+S05,GRU,same,26,1,1,8,7
+S05,GRU,same,27,1,1,8,5
+S05,GRU,same,28,1,1,8,7
+S05,GRU,same,29,1,1,8,4
+S05,GRU,same,30,1,1,8,7
+S05,GRU,same,31,1,1,8,5
+S05,GRU,same,32,1,1,8,4
+S05,GRU,same,33,1,1,8,4
+S05,GRU,cross,1,6,0,48,3
+S05,GRU,cross,2,6,0,48,0
+S05,GRU,cross,3,6,0,48,0
+S05,GRU,cross,4,6,6,48,26
+S05,GRU,cross,5,6,6,48,34
+S05,GRU,cross,6,6,6,48,29
+S05,GRU,cross,7,6,5,48,28
+S05,GRU,cross,8,6,0,48,0
+S05,GRU,cross,9,6,1,48,15
+S05,GRU,cross,10,6,6,48,29
+S05,GRU,cross,11,6,0,48,2
+S05,GRU,cross,12,6,6,48,40
+S05,GRU,cross,13,6,6,48,38
+S05,GRU,cross,14,6,4,48,19
+S05,GRU,cross,15,6,6,48,27
+S05,GRU,cross,16,6,6,48,20
+S05,GRU,cross,17,6,5,48,36
+S05,GRU,cross,18,6,3,48,12
+S05,GRU,cross,19,6,6,48,29
+S05,GRU,cross,20,6,6,48,29
+S05,GRU,cross,21,6,2,48,10
+S05,GRU,cross,22,6,5,48,22
+S05,GRU,cross,23,6,1,48,13
+S05,GRU,cross,24,6,6,48,26
+S05,GRU,cross,25,6,0,48,5
+S05,GRU,cross,26,6,3,48,16
+S05,GRU,cross,27,6,3,48,18
+S05,GRU,cross,28,6,5,48,29
+S05,GRU,cross,29,6,3,48,19
+S05,GRU,cross,30,6,6,48,30
+S05,GRU,cross,31,6,4,48,28
+S05,GRU,cross,32,6,6,48,26
+S05,GRU,cross,33,6,1,48,13
+S05,GRU,cross,34,6,0,48,0
+S06,LDA,same,1,1,1,8,6
+S06,LDA,same,2,1,1,8,7
+S06,LDA,same,3,1,1,8,8
+S06,LDA,same,4,1,1,8,6
+S06,LDA,same,5,1,1,8,7
+S06,LDA,same,6,1,1,8,6
+S06,LDA,same,7,1,1,8,7
+S06,LDA,same,8,1,1,8,7
+S06,LDA,same,9,1,1,8,8
+S06,LDA,same,10,1,1,8,8
+S06,LDA,same,11,1,1,8,8
+S06,LDA,same,12,1,1,8,8
+S06,LDA,same,13,1,1,8,8
+S06,LDA,same,14,1,1,8,6
+S06,LDA,same,15,1,1,8,6
+S06,LDA,same,16,1,1,8,6
+S06,LDA,same,17,1,1,8,7
+S06,LDA,same,18,1,1,8,5
+S06,LDA,same,19,1,1,8,8
+S06,LDA,same,20,1,1,8,8
+S06,LDA,same,21,1,1,8,8
+S06,LDA,same,22,1,1,8,7
+S06,LDA,same,23,1,1,8,7
+S06,LDA,same,24,1,1,8,7
+S06,LDA,same,25,1,1,8,6
+S06,LDA,same,26,1,1,8,8
+S06,LDA,same,27,1,1,8,7
+S06,LDA,same,28,1,1,8,7
+S06,LDA,same,29,1,1,8,7
+S06,LDA,same,30,1,1,8,4
+S06,LDA,same,31,1,1,8,7
+S06,LDA,same,32,1,1,8,6
+S06,LDA,same,33,1,1,8,7
+S06,LDA,same,34,1,1,8,6
+S06,LDA,cross,1,6,0,48,9
+S06,LDA,cross,2,6,6,48,39
+S06,LDA,cross,3,6,3,48,31
+S06,LDA,cross,4,6,0,48,3
+S06,LDA,cross,5,6,3,48,26
+S06,LDA,cross,6,6,0,48,8
+S06,LDA,cross,7,6,4,48,23
+S06,LDA,cross,8,3,0,24,3
+S06,LDA,cross,9,6,0,48,18
+S06,LDA,cross,10,6,0,48,0
+S06,LDA,cross,11,6,0,48,0
+S06,LDA,cross,12,6,0,48,0
+S06,LDA,cross,13,6,0,48,1
+S06,LDA,cross,14,6,4,48,21
+S06,LDA,cross,15,6,6,48,29
+S06,LDA,cross,16,6,6,48,32
+S06,LDA,cross,17,6,0,48,15
+S06,LDA,cross,18,6,0,48,1
+S06,LDA,cross,19,6,5,48,29
+S06,LDA,cross,20,6,6,48,35
+S06,LDA,cross,21,6,6,48,34
+S06,LDA,cross,22,6,5,48,28
+S06,LDA,cross,23,6,3,48,12
+S06,LDA,cross,24,6,1,48,13
+S06,LDA,cross,25,6,6,48,30
+S06,LDA,cross,26,6,0,48,13
+S06,LDA,cross,27,6,1,48,7
+S06,LDA,cross,28,6,2,48,9
+S06,LDA,cross,29,6,5,48,23
+S06,LDA,cross,30,6,0,48,1
+S06,LDA,cross,31,6,3,48,20
+S06,LDA,cross,32,6,0,48,2
+S06,LDA,cross,33,6,1,48,6
+S06,LDA,cross,34,6,6,48,45
+S06,1D CNN,same,1,1,1,8,6
+S06,1D CNN,same,2,1,1,8,7
+S06,1D CNN,same,3,1,1,8,8
+S06,1D CNN,same,4,1,1,8,6
+S06,1D CNN,same,5,1,1,8,7
+S06,1D CNN,same,6,1,1,8,7
+S06,1D CNN,same,7,1,1,8,6
+S06,1D CNN,same,8,1,1,8,8
+S06,1D CNN,same,9,1,1,8,8
+S06,1D CNN,same,10,1,1,8,8
+S06,1D CNN,same,11,1,1,8,8
+S06,1D CNN,same,12,1,1,8,8
+S06,1D CNN,same,13,1,1,8,7
+S06,1D CNN,same,14,1,1,8,6
+S06,1D CNN,same,15,1,1,8,7
+S06,1D CNN,same,16,1,1,8,5
+S06,1D CNN,same,17,1,1,8,8
+S06,1D CNN,same,18,1,1,8,7
+S06,1D CNN,same,19,1,1,8,7
+S06,1D CNN,same,20,1,1,8,8
+S06,1D CNN,same,21,1,1,8,8
+S06,1D CNN,same,22,1,1,8,7
+S06,1D CNN,same,23,1,1,8,7
+S06,1D CNN,same,24,1,1,8,7
+S06,1D CNN,same,25,1,1,8,6
+S06,1D CNN,same,26,1,1,8,8
+S06,1D CNN,same,27,1,1,8,7
+S06,1D CNN,same,28,1,1,8,6
+S06,1D CNN,same,29,1,1,8,7
+S06,1D CNN,same,30,1,1,8,8
+S06,1D CNN,same,31,1,1,8,8
+S06,1D CNN,same,32,1,1,8,7
+S06,1D CNN,same,33,1,1,8,6
+S06,1D CNN,same,34,1,1,8,8
+S06,1D CNN,cross,1,6,0,48,0
+S06,1D CNN,cross,2,6,6,48,40
+S06,1D CNN,cross,3,6,6,48,46
+S06,1D CNN,cross,4,6,6,48,42
+S06,1D CNN,cross,5,6,6,48,47
+S06,1D CNN,cross,6,6,6,48,46
+S06,1D CNN,cross,7,6,6,48,37
+S06,1D CNN,cross,8,3,3,24,20
+S06,1D CNN,cross,9,6,5,48,42
+S06,1D CNN,cross,10,6,6,48,44
+S06,1D CNN,cross,11,6,6,48,38
+S06,1D CNN,cross,12,6,3,48,22
+S06,1D CNN,cross,13,6,0,48,0
+S06,1D CNN,cross,14,6,0,48,3
+S06,1D CNN,cross,15,6,6,48,38
+S06,1D CNN,cross,16,6,6,48,31
+S06,1D CNN,cross,17,6,6,48,38
+S06,1D CNN,cross,18,6,4,48,21
+S06,1D CNN,cross,19,6,5,48,28
+S06,1D CNN,cross,20,6,5,48,24
+S06,1D CNN,cross,21,6,6,48,37
+S06,1D CNN,cross,22,6,6,48,34
+S06,1D CNN,cross,23,6,1,48,14
+S06,1D CNN,cross,24,6,6,48,31
+S06,1D CNN,cross,25,6,6,48,33
+S06,1D CNN,cross,26,6,1,48,20
+S06,1D CNN,cross,27,6,0,48,8
+S06,1D CNN,cross,28,6,4,48,22
+S06,1D CNN,cross,29,6,5,48,32
+S06,1D CNN,cross,30,6,2,48,16
+S06,1D CNN,cross,31,6,1,48,8
+S06,1D CNN,cross,32,6,4,48,23
+S06,1D CNN,cross,33,6,2,48,12
+S06,1D CNN,cross,34,6,6,48,38
+S06,TCN,same,1,1,1,8,4
+S06,TCN,same,2,1,1,8,7
+S06,TCN,same,3,1,1,8,8
+S06,TCN,same,4,1,1,8,6
+S06,TCN,same,5,1,1,8,7
+S06,TCN,same,6,1,1,8,6
+S06,TCN,same,7,1,1,8,8
+S06,TCN,same,8,1,1,8,7
+S06,TCN,same,9,1,1,8,8
+S06,TCN,same,10,1,1,8,8
+S06,TCN,same,11,1,1,8,8
+S06,TCN,same,12,1,1,8,8
+S06,TCN,same,13,1,1,8,7
+S06,TCN,same,14,1,1,8,4
+S06,TCN,same,15,1,1,8,5
+S06,TCN,same,16,1,1,8,7
+S06,TCN,same,17,1,1,8,6
+S06,TCN,same,18,1,1,8,5
+S06,TCN,same,19,1,1,8,7
+S06,TCN,same,20,1,1,8,8
+S06,TCN,same,21,1,1,8,8
+S06,TCN,same,22,1,1,8,7
+S06,TCN,same,23,1,1,8,8
+S06,TCN,same,24,1,1,8,7
+S06,TCN,same,25,1,1,8,6
+S06,TCN,same,26,1,1,8,8
+S06,TCN,same,27,1,1,8,7
+S06,TCN,same,28,1,1,8,6
+S06,TCN,same,29,1,1,8,8
+S06,TCN,same,30,1,0,8,4
+S06,TCN,same,31,1,1,8,7
+S06,TCN,same,32,1,1,8,8
+S06,TCN,same,33,1,1,8,8
+S06,TCN,same,34,1,1,8,8
+S06,TCN,cross,1,6,3,48,13
+S06,TCN,cross,2,6,6,48,41
+S06,TCN,cross,3,6,6,48,46
+S06,TCN,cross,4,6,5,48,22
+S06,TCN,cross,5,6,6,48,47
+S06,TCN,cross,6,6,3,48,17
+S06,TCN,cross,7,6,6,48,36
+S06,TCN,cross,8,3,3,24,17
+S06,TCN,cross,9,6,4,48,29
+S06,TCN,cross,10,6,6,48,31
+S06,TCN,cross,11,6,6,48,40
+S06,TCN,cross,12,6,6,48,40
+S06,TCN,cross,13,6,0,48,11
+S06,TCN,cross,14,6,2,48,10
+S06,TCN,cross,15,6,6,48,39
+S06,TCN,cross,16,6,6,48,37
+S06,TCN,cross,17,6,6,48,36
+S06,TCN,cross,18,6,3,48,20
+S06,TCN,cross,19,6,5,48,29
+S06,TCN,cross,20,6,6,48,33
+S06,TCN,cross,21,6,6,48,38
+S06,TCN,cross,22,6,6,48,35
+S06,TCN,cross,23,6,5,48,38
+S06,TCN,cross,24,6,6,48,36
+S06,TCN,cross,25,6,6,48,33
+S06,TCN,cross,26,6,5,48,30
+S06,TCN,cross,27,6,5,48,26
+S06,TCN,cross,28,6,0,48,3
+S06,TCN,cross,29,6,6,48,34
+S06,TCN,cross,30,6,6,48,30
+S06,TCN,cross,31,6,3,48,13
+S06,TCN,cross,32,6,1,48,6
+S06,TCN,cross,33,6,1,48,5
+S06,TCN,cross,34,6,6,48,37
+S06,GRU,same,1,1,1,8,5
+S06,GRU,same,2,1,1,8,8
+S06,GRU,same,3,1,1,8,6
+S06,GRU,same,4,1,1,8,6
+S06,GRU,same,5,1,1,8,7
+S06,GRU,same,6,1,1,8,5
+S06,GRU,same,7,1,1,8,6
+S06,GRU,same,8,1,1,8,7
+S06,GRU,same,9,1,1,8,8
+S06,GRU,same,10,1,1,8,6
+S06,GRU,same,11,1,1,8,7
+S06,GRU,same,12,1,1,8,6
+S06,GRU,same,13,1,1,8,6
+S06,GRU,same,14,1,1,8,5
+S06,GRU,same,15,1,1,8,8
+S06,GRU,same,16,1,1,8,6
+S06,GRU,same,17,1,1,8,7
+S06,GRU,same,18,1,1,8,4
+S06,GRU,same,19,1,1,8,7
+S06,GRU,same,20,1,1,8,7
+S06,GRU,same,21,1,1,8,5
+S06,GRU,same,22,1,1,8,4
+S06,GRU,same,23,1,0,8,3
+S06,GRU,same,24,1,1,8,7
+S06,GRU,same,25,1,1,8,6
+S06,GRU,same,26,1,1,8,5
+S06,GRU,same,27,1,1,8,6
+S06,GRU,same,28,1,1,8,5
+S06,GRU,same,29,1,1,8,7
+S06,GRU,same,30,1,1,8,5
+S06,GRU,same,31,1,1,8,7
+S06,GRU,same,32,1,1,8,6
+S06,GRU,same,33,1,1,8,6
+S06,GRU,same,34,1,1,8,8
+S06,GRU,cross,1,6,2,48,12
+S06,GRU,cross,2,6,6,48,42
+S06,GRU,cross,3,6,6,48,42
+S06,GRU,cross,4,6,6,48,38
+S06,GRU,cross,5,6,6,48,47
+S06,GRU,cross,6,6,5,48,28
+S06,GRU,cross,7,6,6,48,35
+S06,GRU,cross,8,3,3,24,19
+S06,GRU,cross,9,6,5,48,26
+S06,GRU,cross,10,6,6,48,33
+S06,GRU,cross,11,6,6,48,40
+S06,GRU,cross,12,6,6,48,38
+S06,GRU,cross,13,6,5,48,28
+S06,GRU,cross,14,6,6,48,40
+S06,GRU,cross,15,6,6,48,41
+S06,GRU,cross,16,6,6,48,45
+S06,GRU,cross,17,6,6,48,38
+S06,GRU,cross,18,6,4,48,25
+S06,GRU,cross,19,6,6,48,37
+S06,GRU,cross,20,6,5,48,26
+S06,GRU,cross,21,6,6,48,25
+S06,GRU,cross,22,6,4,48,31
+S06,GRU,cross,23,6,6,48,35
+S06,GRU,cross,24,6,6,48,36
+S06,GRU,cross,25,6,6,48,39
+S06,GRU,cross,26,6,5,48,30
+S06,GRU,cross,27,6,6,48,38
+S06,GRU,cross,28,6,2,48,13
+S06,GRU,cross,29,6,4,48,21
+S06,GRU,cross,30,6,5,48,24
+S06,GRU,cross,31,6,6,48,27
+S06,GRU,cross,32,6,1,48,4
+S06,GRU,cross,33,6,0,48,5
+S06,GRU,cross,34,6,6,48,43
+S07,LDA,same,1,1,1,8,7
+S07,LDA,same,2,1,1,8,8
+S07,LDA,same,3,1,1,8,6
+S07,LDA,same,4,1,1,8,6
+S07,LDA,same,5,1,1,8,8
+S07,LDA,same,6,1,1,8,8
+S07,LDA,same,7,1,1,8,8
+S07,LDA,same,8,1,1,8,7
+S07,LDA,same,9,1,1,8,6
+S07,LDA,same,10,1,1,8,8
+S07,LDA,same,11,1,1,8,7
+S07,LDA,same,12,1,1,8,7
+S07,LDA,same,13,1,1,8,8
+S07,LDA,same,14,1,1,8,7
+S07,LDA,same,15,1,0,8,3
+S07,LDA,same,16,1,1,8,5
+S07,LDA,same,17,1,1,8,5
+S07,LDA,same,18,1,1,8,7
+S07,LDA,same,19,1,1,8,7
+S07,LDA,same,20,1,1,8,8
+S07,LDA,same,21,1,1,8,4
+S07,LDA,same,22,1,1,8,5
+S07,LDA,same,23,1,1,8,7
+S07,LDA,same,24,1,1,8,8
+S07,LDA,same,25,1,1,8,8
+S07,LDA,same,26,1,1,8,8
+S07,LDA,same,27,1,1,8,8
+S07,LDA,same,28,1,1,8,7
+S07,LDA,same,29,1,1,8,7
+S07,LDA,same,30,1,1,8,7
+S07,LDA,same,31,1,1,8,5
+S07,LDA,same,32,1,1,8,8
+S07,LDA,same,33,1,1,8,8
+S07,LDA,same,34,1,1,8,8
+S07,LDA,cross,1,6,2,48,15
+S07,LDA,cross,2,6,0,48,0
+S07,LDA,cross,3,6,6,48,43
+S07,LDA,cross,4,6,6,48,38
+S07,LDA,cross,5,6,6,48,37
+S07,LDA,cross,6,6,5,48,31
+S07,LDA,cross,7,6,6,48,42
+S07,LDA,cross,8,6,3,48,13
+S07,LDA,cross,9,6,5,48,31
+S07,LDA,cross,10,6,5,48,37
+S07,LDA,cross,11,6,5,48,38
+S07,LDA,cross,12,6,1,48,13
+S07,LDA,cross,13,6,4,48,19
+S07,LDA,cross,14,6,6,48,27
+S07,LDA,cross,15,6,2,48,12
+S07,LDA,cross,16,6,5,48,28
+S07,LDA,cross,17,6,0,48,7
+S07,LDA,cross,18,6,6,48,21
+S07,LDA,cross,19,6,0,48,0
+S07,LDA,cross,20,6,4,48,24
+S07,LDA,cross,21,6,0,48,0
+S07,LDA,cross,22,6,5,48,25
+S07,LDA,cross,23,6,1,48,9
+S07,LDA,cross,24,6,2,48,12
+S07,LDA,cross,25,6,2,48,9
+S07,LDA,cross,26,6,0,48,3
+S07,LDA,cross,27,6,1,48,9
+S07,LDA,cross,28,6,2,48,9
+S07,LDA,cross,29,6,0,48,4
+S07,LDA,cross,30,6,3,48,13
+S07,LDA,cross,31,6,6,48,25
+S07,LDA,cross,32,6,0,48,0
+S07,LDA,cross,33,6,0,48,0
+S07,LDA,cross,34,6,0,48,0
+S07,1D CNN,same,1,1,1,8,7
+S07,1D CNN,same,2,1,1,8,8
+S07,1D CNN,same,3,1,1,8,7
+S07,1D CNN,same,4,1,1,8,6
+S07,1D CNN,same,5,1,1,8,7
+S07,1D CNN,same,6,1,1,8,8
+S07,1D CNN,same,7,1,1,8,8
+S07,1D CNN,same,8,1,1,8,8
+S07,1D CNN,same,9,1,1,8,5
+S07,1D CNN,same,10,1,1,8,4
+S07,1D CNN,same,11,1,1,8,5
+S07,1D CNN,same,12,1,1,8,5
+S07,1D CNN,same,13,1,1,8,8
+S07,1D CNN,same,14,1,1,8,5
+S07,1D CNN,same,15,1,1,8,4
+S07,1D CNN,same,16,1,1,8,7
+S07,1D CNN,same,17,1,1,8,5
+S07,1D CNN,same,18,1,1,8,8
+S07,1D CNN,same,19,1,1,8,6
+S07,1D CNN,same,20,1,1,8,8
+S07,1D CNN,same,21,1,1,8,6
+S07,1D CNN,same,22,1,1,8,8
+S07,1D CNN,same,23,1,1,8,6
+S07,1D CNN,same,24,1,1,8,8
+S07,1D CNN,same,25,1,1,8,7
+S07,1D CNN,same,26,1,1,8,8
+S07,1D CNN,same,27,1,1,8,8
+S07,1D CNN,same,28,1,1,8,7
+S07,1D CNN,same,29,1,1,8,8
+S07,1D CNN,same,30,1,1,8,8
+S07,1D CNN,same,31,1,1,8,5
+S07,1D CNN,same,32,1,1,8,8
+S07,1D CNN,same,33,1,1,8,8
+S07,1D CNN,same,34,1,1,8,8
+S07,1D CNN,cross,1,6,5,48,28
+S07,1D CNN,cross,2,6,6,48,41
+S07,1D CNN,cross,3,6,6,48,45
+S07,1D CNN,cross,4,6,1,48,11
+S07,1D CNN,cross,5,6,6,48,47
+S07,1D CNN,cross,6,6,5,48,33
+S07,1D CNN,cross,7,6,5,48,37
+S07,1D CNN,cross,8,6,2,48,10
+S07,1D CNN,cross,9,6,4,48,21
+S07,1D CNN,cross,10,6,0,48,2
+S07,1D CNN,cross,11,6,3,48,25
+S07,1D CNN,cross,12,6,6,48,45
+S07,1D CNN,cross,13,6,6,48,44
+S07,1D CNN,cross,14,6,1,48,14
+S07,1D CNN,cross,15,6,6,48,42
+S07,1D CNN,cross,16,6,2,48,17
+S07,1D CNN,cross,17,6,2,48,13
+S07,1D CNN,cross,18,6,0,48,7
+S07,1D CNN,cross,19,6,0,48,1
+S07,1D CNN,cross,20,6,3,48,19
+S07,1D CNN,cross,21,6,6,48,24
+S07,1D CNN,cross,22,6,3,48,17
+S07,1D CNN,cross,23,6,6,48,22
+S07,1D CNN,cross,24,6,4,48,21
+S07,1D CNN,cross,25,6,4,48,20
+S07,1D CNN,cross,26,6,5,48,18
+S07,1D CNN,cross,27,6,6,48,29
+S07,1D CNN,cross,28,6,6,48,32
+S07,1D CNN,cross,29,6,4,48,26
+S07,1D CNN,cross,30,6,6,48,43
+S07,1D CNN,cross,31,6,6,48,35
+S07,1D CNN,cross,32,6,5,48,32
+S07,1D CNN,cross,33,6,1,48,8
+S07,1D CNN,cross,34,6,6,48,41
+S07,TCN,same,1,1,1,8,7
+S07,TCN,same,2,1,1,8,8
+S07,TCN,same,3,1,1,8,6
+S07,TCN,same,4,1,1,8,8
+S07,TCN,same,5,1,1,8,7
+S07,TCN,same,6,1,1,8,7
+S07,TCN,same,7,1,1,8,7
+S07,TCN,same,8,1,1,8,8
+S07,TCN,same,9,1,1,8,5
+S07,TCN,same,10,1,1,8,4
+S07,TCN,same,11,1,0,8,1
+S07,TCN,same,12,1,0,8,3
+S07,TCN,same,13,1,1,8,8
+S07,TCN,same,14,1,1,8,7
+S07,TCN,same,15,1,1,8,4
+S07,TCN,same,16,1,1,8,6
+S07,TCN,same,17,1,1,8,8
+S07,TCN,same,18,1,1,8,7
+S07,TCN,same,19,1,1,8,6
+S07,TCN,same,20,1,1,8,8
+S07,TCN,same,21,1,1,8,7
+S07,TCN,same,22,1,1,8,8
+S07,TCN,same,23,1,1,8,5
+S07,TCN,same,24,1,1,8,8
+S07,TCN,same,25,1,1,8,8
+S07,TCN,same,26,1,1,8,7
+S07,TCN,same,27,1,1,8,8
+S07,TCN,same,28,1,1,8,7
+S07,TCN,same,29,1,1,8,8
+S07,TCN,same,30,1,1,8,8
+S07,TCN,same,31,1,1,8,4
+S07,TCN,same,32,1,1,8,8
+S07,TCN,same,33,1,0,8,4
+S07,TCN,same,34,1,1,8,8
+S07,TCN,cross,1,6,3,48,19
+S07,TCN,cross,2,6,6,48,47
+S07,TCN,cross,3,6,6,48,34
+S07,TCN,cross,4,6,6,48,40
+S07,TCN,cross,5,6,6,48,42
+S07,TCN,cross,6,6,6,48,31
+S07,TCN,cross,7,6,6,48,42
+S07,TCN,cross,8,6,3,48,18
+S07,TCN,cross,9,6,0,48,5
+S07,TCN,cross,10,6,0,48,3
+S07,TCN,cross,11,6,4,48,18
+S07,TCN,cross,12,6,6,48,36
+S07,TCN,cross,13,6,6,48,47
+S07,TCN,cross,14,6,6,48,47
+S07,TCN,cross,15,6,2,48,14
+S07,TCN,cross,16,6,6,48,31
+S07,TCN,cross,17,6,1,48,8
+S07,TCN,cross,18,6,1,48,14
+S07,TCN,cross,19,6,0,48,4
+S07,TCN,cross,20,6,6,48,35
+S07,TCN,cross,21,6,6,48,26
+S07,TCN,cross,22,6,6,48,36
+S07,TCN,cross,23,6,5,48,21
+S07,TCN,cross,24,6,6,48,32
+S07,TCN,cross,25,6,5,48,25
+S07,TCN,cross,26,6,3,48,24
+S07,TCN,cross,27,6,6,48,29
+S07,TCN,cross,28,6,5,48,25
+S07,TCN,cross,29,6,6,48,33
+S07,TCN,cross,30,6,4,48,30
+S07,TCN,cross,31,6,0,48,10
+S07,TCN,cross,32,6,6,48,29
+S07,TCN,cross,33,6,0,48,1
+S07,TCN,cross,34,6,6,48,38
+S07,GRU,same,1,1,1,8,5
+S07,GRU,same,2,1,1,8,8
+S07,GRU,same,3,1,1,8,6
+S07,GRU,same,4,1,1,8,7
+S07,GRU,same,5,1,1,8,7
+S07,GRU,same,6,1,1,8,7
+S07,GRU,same,7,1,1,8,7
+S07,GRU,same,8,1,1,8,7
+S07,GRU,same,9,1,0,8,2
+S07,GRU,same,10,1,0,8,3
+S07,GRU,same,11,1,1,8,6
+S07,GRU,same,12,1,1,8,4
+S07,GRU,same,13,1,1,8,6
+S07,GRU,same,14,1,1,8,4
+S07,GRU,same,15,1,0,8,1
+S07,GRU,same,16,1,1,8,6
+S07,GRU,same,17,1,1,8,5
+S07,GRU,same,18,1,0,8,2
+S07,GRU,same,19,1,1,8,4
+S07,GRU,same,20,1,1,8,8
+S07,GRU,same,21,1,1,8,3
+S07,GRU,same,22,1,1,8,5
+S07,GRU,same,23,1,1,8,6
+S07,GRU,same,24,1,1,8,7
+S07,GRU,same,25,1,1,8,6
+S07,GRU,same,26,1,1,8,8
+S07,GRU,same,27,1,1,8,7
+S07,GRU,same,28,1,1,8,6
+S07,GRU,same,29,1,1,8,5
+S07,GRU,same,30,1,1,8,8
+S07,GRU,same,31,1,1,8,6
+S07,GRU,same,32,1,1,8,8
+S07,GRU,same,33,1,1,8,8
+S07,GRU,same,34,1,1,8,8
+S07,GRU,cross,1,6,4,48,24
+S07,GRU,cross,2,6,6,48,43
+S07,GRU,cross,3,6,6,48,31
+S07,GRU,cross,4,6,6,48,42
+S07,GRU,cross,5,6,6,48,45
+S07,GRU,cross,6,6,6,48,38
+S07,GRU,cross,7,6,4,48,16
+S07,GRU,cross,8,6,3,48,13
+S07,GRU,cross,9,6,2,48,15
+S07,GRU,cross,10,6,3,48,21
+S07,GRU,cross,11,6,5,48,22
+S07,GRU,cross,12,6,5,48,30
+S07,GRU,cross,13,6,6,48,38
+S07,GRU,cross,14,6,6,48,35
+S07,GRU,cross,15,6,4,48,25
+S07,GRU,cross,16,6,1,48,9
+S07,GRU,cross,17,6,2,48,14
+S07,GRU,cross,18,6,3,48,14
+S07,GRU,cross,19,6,0,48,1
+S07,GRU,cross,20,6,4,48,25
+S07,GRU,cross,21,6,6,48,25
+S07,GRU,cross,22,6,6,48,37
+S07,GRU,cross,23,6,6,48,30
+S07,GRU,cross,24,6,6,48,35
+S07,GRU,cross,25,6,6,48,29
+S07,GRU,cross,26,6,6,48,33
+S07,GRU,cross,27,6,6,48,24
+S07,GRU,cross,28,6,6,48,26
+S07,GRU,cross,29,6,5,48,22
+S07,GRU,cross,30,6,6,48,37
+S07,GRU,cross,31,6,6,48,34
+S07,GRU,cross,32,6,5,48,25
+S07,GRU,cross,33,6,1,48,7
+S07,GRU,cross,34,6,6,48,39
+S08,LDA,same,1,1,1,8,6
+S08,LDA,same,2,1,1,8,8
+S08,LDA,same,3,1,1,8,8
+S08,LDA,same,4,1,1,8,8
+S08,LDA,same,5,1,1,8,8
+S08,LDA,same,6,1,1,8,8
+S08,LDA,same,7,1,1,8,8
+S08,LDA,same,8,1,1,8,8
+S08,LDA,same,9,1,1,8,7
+S08,LDA,same,10,1,1,8,6
+S08,LDA,same,11,1,1,8,8
+S08,LDA,same,12,1,1,8,8
+S08,LDA,same,13,1,1,8,8
+S08,LDA,same,14,1,1,8,5
+S08,LDA,same,15,1,1,8,8
+S08,LDA,same,16,1,1,8,8
+S08,LDA,same,17,1,1,8,8
+S08,LDA,same,18,1,1,8,8
+S08,LDA,same,19,1,1,8,8
+S08,LDA,same,20,1,1,8,8
+S08,LDA,same,21,1,1,8,7
+S08,LDA,same,22,1,1,8,8
+S08,LDA,same,23,1,1,8,6
+S08,LDA,same,24,1,1,8,8
+S08,LDA,same,25,1,1,8,8
+S08,LDA,same,26,1,1,8,8
+S08,LDA,same,27,1,1,8,8
+S08,LDA,same,28,1,1,8,8
+S08,LDA,same,29,1,1,8,8
+S08,LDA,same,30,1,1,8,8
+S08,LDA,same,31,1,1,8,8
+S08,LDA,same,32,1,1,8,5
+S08,LDA,same,33,1,1,8,8
+S08,LDA,same,34,1,1,8,8
+S08,LDA,cross,1,6,6,48,46
+S08,LDA,cross,2,6,0,48,4
+S08,LDA,cross,3,6,0,48,0
+S08,LDA,cross,4,5,0,40,0
+S08,LDA,cross,5,6,1,48,6
+S08,LDA,cross,6,6,0,48,0
+S08,LDA,cross,7,6,3,48,15
+S08,LDA,cross,8,6,0,48,2
+S08,LDA,cross,9,6,0,48,1
+S08,LDA,cross,10,6,0,48,14
+S08,LDA,cross,11,6,0,48,0
+S08,LDA,cross,12,6,0,48,0
+S08,LDA,cross,13,6,0,48,1
+S08,LDA,cross,14,6,0,48,0
+S08,LDA,cross,15,6,0,48,0
+S08,LDA,cross,16,6,0,48,0
+S08,LDA,cross,17,6,0,48,0
+S08,LDA,cross,18,6,0,48,0
+S08,LDA,cross,19,6,0,48,0
+S08,LDA,cross,20,6,0,48,0
+S08,LDA,cross,21,6,0,48,0
+S08,LDA,cross,22,6,5,48,28
+S08,LDA,cross,23,6,0,48,0
+S08,LDA,cross,24,6,0,48,0
+S08,LDA,cross,25,6,1,48,7
+S08,LDA,cross,26,6,0,48,0
+S08,LDA,cross,27,6,0,48,0
+S08,LDA,cross,28,6,0,48,0
+S08,LDA,cross,29,6,0,48,0
+S08,LDA,cross,30,6,0,48,0
+S08,LDA,cross,31,6,0,48,0
+S08,LDA,cross,32,6,1,48,14
+S08,LDA,cross,33,6,0,48,1
+S08,LDA,cross,34,6,0,48,0
+S08,1D CNN,same,1,1,1,8,4
+S08,1D CNN,same,2,1,1,8,6
+S08,1D CNN,same,3,1,1,8,6
+S08,1D CNN,same,4,1,1,8,7
+S08,1D CNN,same,5,1,1,8,5
+S08,1D CNN,same,6,1,1,8,8
+S08,1D CNN,same,7,1,1,8,5
+S08,1D CNN,same,8,1,1,8,5
+S08,1D CNN,same,9,1,1,8,8
+S08,1D CNN,same,10,1,1,8,6
+S08,1D CNN,same,11,1,1,8,6
+S08,1D CNN,same,12,1,1,8,7
+S08,1D CNN,same,13,1,1,8,6
+S08,1D CNN,same,14,1,1,8,4
+S08,1D CNN,same,15,1,1,8,5
+S08,1D CNN,same,16,1,1,8,7
+S08,1D CNN,same,17,1,1,8,6
+S08,1D CNN,same,18,1,1,8,7
+S08,1D CNN,same,19,1,1,8,4
+S08,1D CNN,same,20,1,1,8,6
+S08,1D CNN,same,21,1,1,8,5
+S08,1D CNN,same,22,1,1,8,6
+S08,1D CNN,same,23,1,1,8,5
+S08,1D CNN,same,24,1,1,8,6
+S08,1D CNN,same,25,1,1,8,6
+S08,1D CNN,same,26,1,1,8,7
+S08,1D CNN,same,27,1,1,8,7
+S08,1D CNN,same,28,1,1,8,5
+S08,1D CNN,same,29,1,1,8,7
+S08,1D CNN,same,30,1,1,8,4
+S08,1D CNN,same,31,1,1,8,7
+S08,1D CNN,same,32,1,0,8,2
+S08,1D CNN,same,33,1,1,8,5
+S08,1D CNN,same,34,1,0,8,2
+S08,1D CNN,cross,1,6,2,48,17
+S08,1D CNN,cross,2,6,6,48,31
+S08,1D CNN,cross,3,6,1,48,12
+S08,1D CNN,cross,4,5,4,40,20
+S08,1D CNN,cross,5,6,3,48,16
+S08,1D CNN,cross,6,6,0,48,0
+S08,1D CNN,cross,7,6,0,48,0
+S08,1D CNN,cross,8,6,0,48,0
+S08,1D CNN,cross,9,6,4,48,22
+S08,1D CNN,cross,10,6,1,48,17
+S08,1D CNN,cross,11,6,0,48,8
+S08,1D CNN,cross,12,6,0,48,0
+S08,1D CNN,cross,13,6,0,48,4
+S08,1D CNN,cross,14,6,2,48,18
+S08,1D CNN,cross,15,6,5,48,24
+S08,1D CNN,cross,16,6,1,48,9
+S08,1D CNN,cross,17,6,1,48,13
+S08,1D CNN,cross,18,6,0,48,4
+S08,1D CNN,cross,19,6,1,48,12
+S08,1D CNN,cross,20,6,6,48,24
+S08,1D CNN,cross,21,6,6,48,29
+S08,1D CNN,cross,22,6,5,48,25
+S08,1D CNN,cross,23,6,6,48,27
+S08,1D CNN,cross,24,6,6,48,26
+S08,1D CNN,cross,25,6,4,48,19
+S08,1D CNN,cross,26,6,0,48,1
+S08,1D CNN,cross,27,6,6,48,27
+S08,1D CNN,cross,28,6,2,48,13
+S08,1D CNN,cross,29,6,0,48,6
+S08,1D CNN,cross,30,6,5,48,21
+S08,1D CNN,cross,31,6,0,48,0
+S08,1D CNN,cross,32,6,4,48,21
+S08,1D CNN,cross,33,6,5,48,26
+S08,1D CNN,cross,34,6,3,48,16
+S08,TCN,same,1,1,1,8,4
+S08,TCN,same,2,1,1,8,8
+S08,TCN,same,3,1,1,8,6
+S08,TCN,same,4,1,1,8,6
+S08,TCN,same,5,1,1,8,5
+S08,TCN,same,6,1,1,8,5
+S08,TCN,same,7,1,1,8,5
+S08,TCN,same,8,1,1,8,4
+S08,TCN,same,9,1,1,8,6
+S08,TCN,same,10,1,1,8,3
+S08,TCN,same,11,1,1,8,4
+S08,TCN,same,12,1,1,8,6
+S08,TCN,same,13,1,1,8,6
+S08,TCN,same,14,1,1,8,4
+S08,TCN,same,15,1,1,8,5
+S08,TCN,same,16,1,1,8,8
+S08,TCN,same,17,1,1,8,5
+S08,TCN,same,18,1,1,8,8
+S08,TCN,same,19,1,1,8,5
+S08,TCN,same,20,1,1,8,7
+S08,TCN,same,21,1,1,8,4
+S08,TCN,same,22,1,1,8,6
+S08,TCN,same,23,1,1,8,6
+S08,TCN,same,24,1,1,8,7
+S08,TCN,same,25,1,1,8,7
+S08,TCN,same,26,1,1,8,5
+S08,TCN,same,27,1,1,8,7
+S08,TCN,same,28,1,1,8,7
+S08,TCN,same,29,1,1,8,7
+S08,TCN,same,30,1,1,8,5
+S08,TCN,same,31,1,1,8,7
+S08,TCN,same,32,1,0,8,1
+S08,TCN,same,33,1,1,8,8
+S08,TCN,same,34,1,1,8,3
+S08,TCN,cross,1,6,1,48,9
+S08,TCN,cross,2,6,5,48,28
+S08,TCN,cross,3,6,5,48,27
+S08,TCN,cross,4,5,2,40,11
+S08,TCN,cross,5,6,4,48,22
+S08,TCN,cross,6,6,0,48,0
+S08,TCN,cross,7,6,0,48,0
+S08,TCN,cross,8,6,0,48,0
+S08,TCN,cross,9,6,3,48,15
+S08,TCN,cross,10,6,4,48,14
+S08,TCN,cross,11,6,0,48,6
+S08,TCN,cross,12,6,6,48,28
+S08,TCN,cross,13,6,5,48,19
+S08,TCN,cross,14,6,0,48,0
+S08,TCN,cross,15,6,5,48,22
+S08,TCN,cross,16,6,6,48,30
+S08,TCN,cross,17,6,2,48,15
+S08,TCN,cross,18,6,3,48,14
+S08,TCN,cross,19,6,1,48,12
+S08,TCN,cross,20,6,4,48,15
+S08,TCN,cross,21,6,6,48,27
+S08,TCN,cross,22,6,5,48,20
+S08,TCN,cross,23,6,6,48,33
+S08,TCN,cross,24,6,4,48,24
+S08,TCN,cross,25,6,0,48,2
+S08,TCN,cross,26,6,0,48,2
+S08,TCN,cross,27,6,6,48,31
+S08,TCN,cross,28,6,6,48,42
+S08,TCN,cross,29,6,4,48,26
+S08,TCN,cross,30,6,6,48,30
+S08,TCN,cross,31,6,1,48,8
+S08,TCN,cross,32,6,3,48,18
+S08,TCN,cross,33,6,1,48,10
+S08,TCN,cross,34,6,1,48,20
+S08,GRU,same,1,1,1,8,7
+S08,GRU,same,2,1,1,8,6
+S08,GRU,same,3,1,1,8,5
+S08,GRU,same,4,1,1,8,5
+S08,GRU,same,5,1,1,8,5
+S08,GRU,same,6,1,1,8,6
+S08,GRU,same,7,1,0,8,1
+S08,GRU,same,8,1,1,8,6
+S08,GRU,same,9,1,1,8,6
+S08,GRU,same,10,1,0,8,1
+S08,GRU,same,11,1,0,8,0
+S08,GRU,same,12,1,1,8,5
+S08,GRU,same,13,1,1,8,5
+S08,GRU,same,14,1,1,8,5
+S08,GRU,same,15,1,1,8,6
+S08,GRU,same,16,1,1,8,7
+S08,GRU,same,17,1,1,8,6
+S08,GRU,same,18,1,1,8,4
+S08,GRU,same,19,1,1,8,3
+S08,GRU,same,20,1,1,8,4
+S08,GRU,same,21,1,1,8,4
+S08,GRU,same,22,1,1,8,6
+S08,GRU,same,23,1,1,8,4
+S08,GRU,same,24,1,1,8,3
+S08,GRU,same,25,1,1,8,5
+S08,GRU,same,26,1,1,8,6
+S08,GRU,same,27,1,1,8,6
+S08,GRU,same,28,1,1,8,3
+S08,GRU,same,29,1,1,8,5
+S08,GRU,same,30,1,1,8,5
+S08,GRU,same,31,1,1,8,5
+S08,GRU,same,32,1,0,8,1
+S08,GRU,same,33,1,1,8,5
+S08,GRU,same,34,1,1,8,4
+S08,GRU,cross,1,6,4,48,18
+S08,GRU,cross,2,6,4,48,22
+S08,GRU,cross,3,6,6,48,40
+S08,GRU,cross,4,5,2,40,11
+S08,GRU,cross,5,6,6,48,38
+S08,GRU,cross,6,6,2,48,11
+S08,GRU,cross,7,6,0,48,9
+S08,GRU,cross,8,6,5,48,26
+S08,GRU,cross,9,6,4,48,19
+S08,GRU,cross,10,6,0,48,4
+S08,GRU,cross,11,6,0,48,5
+S08,GRU,cross,12,6,0,48,6
+S08,GRU,cross,13,6,5,48,23
+S08,GRU,cross,14,6,2,48,10
+S08,GRU,cross,15,6,5,48,26
+S08,GRU,cross,16,6,0,48,1
+S08,GRU,cross,17,6,6,48,28
+S08,GRU,cross,18,6,6,48,29
+S08,GRU,cross,19,6,0,48,2
+S08,GRU,cross,20,6,2,48,15
+S08,GRU,cross,21,6,4,48,15
+S08,GRU,cross,22,6,4,48,22
+S08,GRU,cross,23,6,4,48,17
+S08,GRU,cross,24,6,2,48,12
+S08,GRU,cross,25,6,0,48,1
+S08,GRU,cross,26,6,1,48,9
+S08,GRU,cross,27,6,6,48,26
+S08,GRU,cross,28,6,0,48,0
+S08,GRU,cross,29,6,3,48,18
+S08,GRU,cross,30,6,6,48,24
+S08,GRU,cross,31,6,0,48,4
+S08,GRU,cross,32,6,0,48,4
+S08,GRU,cross,33,6,6,48,31
+S08,GRU,cross,34,6,5,48,27
+S09,LDA,same,1,1,1,8,7
+S09,LDA,same,2,1,1,8,8
+S09,LDA,same,3,1,1,8,6
+S09,LDA,same,4,1,1,8,5
+S09,LDA,same,5,1,1,8,7
+S09,LDA,same,6,1,1,8,8
+S09,LDA,same,7,1,1,8,8
+S09,LDA,same,8,1,1,8,7
+S09,LDA,same,9,1,1,8,5
+S09,LDA,same,10,1,1,8,6
+S09,LDA,same,11,1,1,8,8
+S09,LDA,same,12,1,1,8,6
+S09,LDA,same,13,1,1,8,8
+S09,LDA,same,14,1,1,8,6
+S09,LDA,same,15,1,1,8,5
+S09,LDA,same,16,1,1,8,8
+S09,LDA,same,17,1,1,8,4
+S09,LDA,same,18,1,1,8,8
+S09,LDA,same,19,1,1,8,8
+S09,LDA,same,20,1,1,8,7
+S09,LDA,same,21,1,1,8,6
+S09,LDA,same,22,1,1,8,8
+S09,LDA,same,23,1,1,8,7
+S09,LDA,same,24,1,1,8,8
+S09,LDA,same,25,1,1,8,6
+S09,LDA,same,26,1,1,8,7
+S09,LDA,same,27,1,1,8,5
+S09,LDA,same,28,1,1,8,6
+S09,LDA,same,29,1,1,8,7
+S09,LDA,same,30,1,1,8,6
+S09,LDA,same,31,1,1,8,8
+S09,LDA,same,32,1,1,8,5
+S09,LDA,same,33,1,1,8,8
+S09,LDA,same,34,1,1,8,6
+S09,LDA,cross,1,6,0,48,7
+S09,LDA,cross,2,6,0,48,0
+S09,LDA,cross,3,6,1,48,10
+S09,LDA,cross,4,6,6,48,33
+S09,LDA,cross,5,6,3,48,14
+S09,LDA,cross,6,6,6,48,29
+S09,LDA,cross,7,6,6,48,21
+S09,LDA,cross,8,6,6,48,39
+S09,LDA,cross,9,6,6,48,32
+S09,LDA,cross,10,6,1,48,7
+S09,LDA,cross,11,6,1,48,13
+S09,LDA,cross,12,6,6,48,37
+S09,LDA,cross,13,6,3,48,13
+S09,LDA,cross,14,6,5,48,28
+S09,LDA,cross,15,6,6,48,36
+S09,LDA,cross,16,6,0,48,8
+S09,LDA,cross,17,6,2,48,18
+S09,LDA,cross,18,6,1,48,6
+S09,LDA,cross,19,6,2,48,15
+S09,LDA,cross,20,6,0,48,2
+S09,LDA,cross,21,6,6,48,30
+S09,LDA,cross,22,6,0,48,7
+S09,LDA,cross,23,6,3,48,12
+S09,LDA,cross,24,6,1,48,8
+S09,LDA,cross,25,6,5,48,28
+S09,LDA,cross,26,6,6,48,35
+S09,LDA,cross,27,6,6,48,48
+S09,LDA,cross,28,6,2,48,17
+S09,LDA,cross,29,6,6,48,40
+S09,LDA,cross,30,6,6,48,30
+S09,LDA,cross,31,6,3,48,24
+S09,LDA,cross,32,6,6,48,29
+S09,LDA,cross,33,6,5,48,28
+S09,LDA,cross,34,6,6,48,35
+S09,1D CNN,same,1,1,1,8,7
+S09,1D CNN,same,2,1,1,8,8
+S09,1D CNN,same,3,1,1,8,6
+S09,1D CNN,same,4,1,1,8,7
+S09,1D CNN,same,5,1,1,8,8
+S09,1D CNN,same,6,1,1,8,7
+S09,1D CNN,same,7,1,1,8,8
+S09,1D CNN,same,8,1,1,8,6
+S09,1D CNN,same,9,1,1,8,6
+S09,1D CNN,same,10,1,1,8,8
+S09,1D CNN,same,11,1,1,8,7
+S09,1D CNN,same,12,1,1,8,6
+S09,1D CNN,same,13,1,1,8,8
+S09,1D CNN,same,14,1,1,8,6
+S09,1D CNN,same,15,1,0,8,3
+S09,1D CNN,same,16,1,1,8,6
+S09,1D CNN,same,17,1,1,8,8
+S09,1D CNN,same,18,1,1,8,8
+S09,1D CNN,same,19,1,1,8,7
+S09,1D CNN,same,20,1,1,8,7
+S09,1D CNN,same,21,1,1,8,6
+S09,1D CNN,same,22,1,1,8,8
+S09,1D CNN,same,23,1,1,8,7
+S09,1D CNN,same,24,1,1,8,7
+S09,1D CNN,same,25,1,1,8,8
+S09,1D CNN,same,26,1,1,8,8
+S09,1D CNN,same,27,1,1,8,8
+S09,1D CNN,same,28,1,1,8,8
+S09,1D CNN,same,29,1,1,8,8
+S09,1D CNN,same,30,1,1,8,8
+S09,1D CNN,same,31,1,1,8,8
+S09,1D CNN,same,32,1,1,8,8
+S09,1D CNN,same,33,1,1,8,8
+S09,1D CNN,same,34,1,1,8,8
+S09,1D CNN,cross,1,6,2,48,10
+S09,1D CNN,cross,2,6,0,48,2
+S09,1D CNN,cross,3,6,0,48,3
+S09,1D CNN,cross,4,6,0,48,0
+S09,1D CNN,cross,5,6,0,48,0
+S09,1D CNN,cross,6,6,5,48,28
+S09,1D CNN,cross,7,6,5,48,25
+S09,1D CNN,cross,8,6,6,48,35
+S09,1D CNN,cross,9,6,6,48,29
+S09,1D CNN,cross,10,6,6,48,38
+S09,1D CNN,cross,11,6,2,48,11
+S09,1D CNN,cross,12,6,6,48,44
+S09,1D CNN,cross,13,6,6,48,40
+S09,1D CNN,cross,14,6,3,48,17
+S09,1D CNN,cross,15,6,6,48,34
+S09,1D CNN,cross,16,6,4,48,28
+S09,1D CNN,cross,17,6,6,48,36
+S09,1D CNN,cross,18,6,4,48,30
+S09,1D CNN,cross,19,6,3,48,25
+S09,1D CNN,cross,20,6,4,48,34
+S09,1D CNN,cross,21,6,6,48,35
+S09,1D CNN,cross,22,6,5,48,39
+S09,1D CNN,cross,23,6,6,48,30
+S09,1D CNN,cross,24,6,5,48,34
+S09,1D CNN,cross,25,6,6,48,43
+S09,1D CNN,cross,26,6,6,48,39
+S09,1D CNN,cross,27,6,6,48,42
+S09,1D CNN,cross,28,6,6,48,30
+S09,1D CNN,cross,29,6,6,48,37
+S09,1D CNN,cross,30,6,6,48,40
+S09,1D CNN,cross,31,6,6,48,44
+S09,1D CNN,cross,32,6,6,48,46
+S09,1D CNN,cross,33,6,6,48,42
+S09,1D CNN,cross,34,6,6,48,43
+S09,TCN,same,1,1,1,8,7
+S09,TCN,same,2,1,1,8,8
+S09,TCN,same,3,1,1,8,6
+S09,TCN,same,4,1,1,8,6
+S09,TCN,same,5,1,1,8,7
+S09,TCN,same,6,1,1,8,7
+S09,TCN,same,7,1,1,8,6
+S09,TCN,same,8,1,1,8,7
+S09,TCN,same,9,1,1,8,6
+S09,TCN,same,10,1,1,8,6
+S09,TCN,same,11,1,1,8,8
+S09,TCN,same,12,1,1,8,6
+S09,TCN,same,13,1,1,8,6
+S09,TCN,same,14,1,1,8,5
+S09,TCN,same,15,1,1,8,6
+S09,TCN,same,16,1,1,8,8
+S09,TCN,same,17,1,1,8,7
+S09,TCN,same,18,1,1,8,8
+S09,TCN,same,19,1,1,8,7
+S09,TCN,same,20,1,1,8,6
+S09,TCN,same,21,1,1,8,4
+S09,TCN,same,22,1,1,8,8
+S09,TCN,same,23,1,1,8,6
+S09,TCN,same,24,1,1,8,5
+S09,TCN,same,25,1,1,8,8
+S09,TCN,same,26,1,1,8,8
+S09,TCN,same,27,1,1,8,7
+S09,TCN,same,28,1,1,8,7
+S09,TCN,same,29,1,1,8,8
+S09,TCN,same,30,1,1,8,5
+S09,TCN,same,31,1,1,8,8
+S09,TCN,same,32,1,1,8,8
+S09,TCN,same,33,1,1,8,8
+S09,TCN,same,34,1,1,8,8
+S09,TCN,cross,1,6,4,48,25
+S09,TCN,cross,2,6,3,48,14
+S09,TCN,cross,3,6,6,48,32
+S09,TCN,cross,4,6,6,48,39
+S09,TCN,cross,5,6,5,48,24
+S09,TCN,cross,6,6,6,48,37
+S09,TCN,cross,7,6,1,48,6
+S09,TCN,cross,8,6,4,48,18
+S09,TCN,cross,9,6,6,48,21
+S09,TCN,cross,10,6,5,48,24
+S09,TCN,cross,11,6,3,48,19
+S09,TCN,cross,12,6,6,48,37
+S09,TCN,cross,13,6,1,48,13
+S09,TCN,cross,14,6,4,48,26
+S09,TCN,cross,15,6,6,48,37
+S09,TCN,cross,16,6,2,48,13
+S09,TCN,cross,17,6,6,48,36
+S09,TCN,cross,18,6,3,48,18
+S09,TCN,cross,19,6,4,48,19
+S09,TCN,cross,20,6,1,48,5
+S09,TCN,cross,21,6,3,48,18
+S09,TCN,cross,22,6,6,48,39
+S09,TCN,cross,23,6,1,48,10
+S09,TCN,cross,24,6,1,48,5
+S09,TCN,cross,25,6,6,48,45
+S09,TCN,cross,26,6,5,48,24
+S09,TCN,cross,27,6,0,48,7
+S09,TCN,cross,28,6,4,48,15
+S09,TCN,cross,29,6,6,48,35
+S09,TCN,cross,30,6,5,48,29
+S09,TCN,cross,31,6,6,48,41
+S09,TCN,cross,32,6,6,48,48
+S09,TCN,cross,33,6,6,48,46
+S09,TCN,cross,34,6,6,48,42
+S09,GRU,same,1,1,1,8,3
+S09,GRU,same,2,1,1,8,8
+S09,GRU,same,3,1,1,8,6
+S09,GRU,same,4,1,1,8,7
+S09,GRU,same,5,1,1,8,7
+S09,GRU,same,6,1,1,8,7
+S09,GRU,same,7,1,1,8,6
+S09,GRU,same,8,1,1,8,4
+S09,GRU,same,9,1,1,8,6
+S09,GRU,same,10,1,1,8,5
+S09,GRU,same,11,1,1,8,6
+S09,GRU,same,12,1,1,8,7
+S09,GRU,same,13,1,1,8,6
+S09,GRU,same,14,1,1,8,4
+S09,GRU,same,15,1,1,8,4
+S09,GRU,same,16,1,1,8,5
+S09,GRU,same,17,1,1,8,4
+S09,GRU,same,18,1,1,8,5
+S09,GRU,same,19,1,1,8,7
+S09,GRU,same,20,1,1,8,7
+S09,GRU,same,21,1,1,8,5
+S09,GRU,same,22,1,1,8,8
+S09,GRU,same,23,1,1,8,7
+S09,GRU,same,24,1,1,8,6
+S09,GRU,same,25,1,1,8,7
+S09,GRU,same,26,1,1,8,7
+S09,GRU,same,27,1,0,8,2
+S09,GRU,same,28,1,0,8,2
+S09,GRU,same,29,1,0,8,3
+S09,GRU,same,30,1,1,8,8
+S09,GRU,same,31,1,1,8,6
+S09,GRU,same,32,1,1,8,7
+S09,GRU,same,33,1,1,8,8
+S09,GRU,same,34,1,1,8,6
+S09,GRU,cross,1,6,6,48,26
+S09,GRU,cross,2,6,6,48,34
+S09,GRU,cross,3,6,6,48,37
+S09,GRU,cross,4,6,6,48,41
+S09,GRU,cross,5,6,6,48,38
+S09,GRU,cross,6,6,6,48,41
+S09,GRU,cross,7,6,6,48,33
+S09,GRU,cross,8,6,3,48,15
+S09,GRU,cross,9,6,6,48,33
+S09,GRU,cross,10,6,2,48,15
+S09,GRU,cross,11,6,5,48,27
+S09,GRU,cross,12,6,6,48,38
+S09,GRU,cross,13,6,6,48,34
+S09,GRU,cross,14,6,4,48,25
+S09,GRU,cross,15,6,5,48,36
+S09,GRU,cross,16,6,5,48,21
+S09,GRU,cross,17,6,6,48,35
+S09,GRU,cross,18,6,5,48,25
+S09,GRU,cross,19,6,6,48,28
+S09,GRU,cross,20,6,6,48,36
+S09,GRU,cross,21,6,6,48,22
+S09,GRU,cross,22,6,4,48,30
+S09,GRU,cross,23,6,4,48,23
+S09,GRU,cross,24,6,3,48,22
+S09,GRU,cross,25,6,6,48,36
+S09,GRU,cross,26,6,5,48,26
+S09,GRU,cross,27,6,6,48,29
+S09,GRU,cross,28,6,4,48,23
+S09,GRU,cross,29,6,2,48,16
+S09,GRU,cross,30,6,6,48,39
+S09,GRU,cross,31,6,5,48,25
+S09,GRU,cross,32,6,6,48,34
+S09,GRU,cross,33,6,5,48,32
+S09,GRU,cross,34,6,6,48,37
+S10,LDA,same,1,1,1,8,7
+S10,LDA,same,2,1,1,8,7
+S10,LDA,same,3,1,1,8,8
+S10,LDA,same,4,1,1,8,8
+S10,LDA,same,5,1,1,8,6
+S10,LDA,same,6,1,1,8,6
+S10,LDA,same,7,1,1,8,6
+S10,LDA,same,8,1,1,8,7
+S10,LDA,same,9,1,1,8,6
+S10,LDA,same,10,1,1,8,7
+S10,LDA,same,11,1,1,8,5
+S10,LDA,same,12,1,1,8,8
+S10,LDA,same,13,1,1,8,8
+S10,LDA,same,14,1,1,8,6
+S10,LDA,same,15,1,1,8,7
+S10,LDA,same,16,1,1,8,7
+S10,LDA,same,17,1,1,8,5
+S10,LDA,same,18,1,1,8,6
+S10,LDA,same,19,1,1,8,6
+S10,LDA,same,20,1,1,8,6
+S10,LDA,same,21,1,1,8,6
+S10,LDA,same,22,1,1,8,6
+S10,LDA,same,23,1,1,8,7
+S10,LDA,same,24,1,1,8,8
+S10,LDA,same,25,1,1,8,8
+S10,LDA,same,26,1,1,8,8
+S10,LDA,same,27,1,1,8,8
+S10,LDA,same,28,1,1,8,7
+S10,LDA,same,29,1,1,8,7
+S10,LDA,same,30,1,1,8,7
+S10,LDA,same,31,1,1,8,6
+S10,LDA,same,32,1,1,8,8
+S10,LDA,same,33,1,1,8,8
+S10,LDA,same,34,1,1,8,8
+S10,LDA,cross,1,5,5,40,26
+S10,LDA,cross,2,6,0,48,0
+S10,LDA,cross,3,6,1,48,6
+S10,LDA,cross,4,6,0,48,0
+S10,LDA,cross,5,6,0,48,1
+S10,LDA,cross,6,6,0,48,0
+S10,LDA,cross,7,6,0,48,0
+S10,LDA,cross,8,5,0,40,0
+S10,LDA,cross,9,6,0,48,0
+S10,LDA,cross,10,4,1,32,7
+S10,LDA,cross,11,6,0,48,0
+S10,LDA,cross,12,6,4,48,21
+S10,LDA,cross,13,6,6,48,33
+S10,LDA,cross,14,6,0,48,0
+S10,LDA,cross,15,6,0,48,0
+S10,LDA,cross,16,6,0,48,2
+S10,LDA,cross,17,6,5,48,26
+S10,LDA,cross,18,6,1,48,12
+S10,LDA,cross,19,6,0,48,1
+S10,LDA,cross,20,6,3,48,16
+S10,LDA,cross,21,6,5,48,28
+S10,LDA,cross,22,6,6,48,31
+S10,LDA,cross,23,6,0,48,2
+S10,LDA,cross,24,6,2,48,14
+S10,LDA,cross,25,6,6,48,31
+S10,LDA,cross,26,6,0,48,2
+S10,LDA,cross,27,6,0,48,1
+S10,LDA,cross,28,6,1,48,4
+S10,LDA,cross,29,6,1,48,9
+S10,LDA,cross,30,6,0,48,0
+S10,LDA,cross,31,6,0,48,0
+S10,LDA,cross,32,6,0,48,5
+S10,LDA,cross,33,6,0,48,0
+S10,LDA,cross,34,6,0,48,0
+S10,1D CNN,same,1,1,1,8,7
+S10,1D CNN,same,2,1,1,8,5
+S10,1D CNN,same,3,1,1,8,8
+S10,1D CNN,same,4,1,1,8,8
+S10,1D CNN,same,5,1,1,8,8
+S10,1D CNN,same,6,1,1,8,5
+S10,1D CNN,same,7,1,1,8,8
+S10,1D CNN,same,8,1,1,8,8
+S10,1D CNN,same,9,1,1,8,8
+S10,1D CNN,same,10,1,1,8,8
+S10,1D CNN,same,11,1,0,8,3
+S10,1D CNN,same,12,1,1,8,8
+S10,1D CNN,same,13,1,1,8,8
+S10,1D CNN,same,14,1,1,8,7
+S10,1D CNN,same,15,1,1,8,8
+S10,1D CNN,same,16,1,1,8,8
+S10,1D CNN,same,17,1,1,8,6
+S10,1D CNN,same,18,1,1,8,6
+S10,1D CNN,same,19,1,1,8,7
+S10,1D CNN,same,20,1,1,8,8
+S10,1D CNN,same,21,1,1,8,8
+S10,1D CNN,same,22,1,1,8,6
+S10,1D CNN,same,23,1,1,8,6
+S10,1D CNN,same,24,1,1,8,8
+S10,1D CNN,same,25,1,1,8,8
+S10,1D CNN,same,26,1,1,8,8
+S10,1D CNN,same,27,1,1,8,8
+S10,1D CNN,same,28,1,1,8,6
+S10,1D CNN,same,29,1,1,8,8
+S10,1D CNN,same,30,1,1,8,8
+S10,1D CNN,same,31,1,1,8,7
+S10,1D CNN,same,32,1,1,8,8
+S10,1D CNN,same,33,1,1,8,7
+S10,1D CNN,same,34,1,1,8,8
+S10,1D CNN,cross,1,5,5,40,25
+S10,1D CNN,cross,2,6,0,48,0
+S10,1D CNN,cross,3,6,6,48,46
+S10,1D CNN,cross,4,6,5,48,35
+S10,1D CNN,cross,5,6,2,48,14
+S10,1D CNN,cross,6,6,0,48,0
+S10,1D CNN,cross,7,6,0,48,0
+S10,1D CNN,cross,8,5,0,40,0
+S10,1D CNN,cross,9,6,0,48,2
+S10,1D CNN,cross,10,4,4,32,30
+S10,1D CNN,cross,11,6,0,48,0
+S10,1D CNN,cross,12,6,4,48,30
+S10,1D CNN,cross,13,6,0,48,6
+S10,1D CNN,cross,14,6,2,48,9
+S10,1D CNN,cross,15,6,0,48,0
+S10,1D CNN,cross,16,6,2,48,16
+S10,1D CNN,cross,17,6,0,48,0
+S10,1D CNN,cross,18,6,0,48,3
+S10,1D CNN,cross,19,6,0,48,0
+S10,1D CNN,cross,20,6,6,48,34
+S10,1D CNN,cross,21,6,0,48,6
+S10,1D CNN,cross,22,6,0,48,3
+S10,1D CNN,cross,23,6,6,48,39
+S10,1D CNN,cross,24,6,6,48,27
+S10,1D CNN,cross,25,6,6,48,28
+S10,1D CNN,cross,26,6,0,48,1
+S10,1D CNN,cross,27,6,2,48,13
+S10,1D CNN,cross,28,6,0,48,0
+S10,1D CNN,cross,29,6,0,48,0
+S10,1D CNN,cross,30,6,6,48,42
+S10,1D CNN,cross,31,6,6,48,46
+S10,1D CNN,cross,32,6,6,48,36
+S10,1D CNN,cross,33,6,0,48,6
+S10,1D CNN,cross,34,6,6,48,42
+S10,TCN,same,1,1,1,8,5
+S10,TCN,same,2,1,1,8,8
+S10,TCN,same,3,1,1,8,8
+S10,TCN,same,4,1,1,8,6
+S10,TCN,same,5,1,1,8,8
+S10,TCN,same,6,1,1,8,6
+S10,TCN,same,7,1,1,8,7
+S10,TCN,same,8,1,1,8,7
+S10,TCN,same,9,1,1,8,6
+S10,TCN,same,10,1,1,8,7
+S10,TCN,same,11,1,1,8,3
+S10,TCN,same,12,1,1,8,8
+S10,TCN,same,13,1,1,8,8
+S10,TCN,same,14,1,1,8,7
+S10,TCN,same,15,1,1,8,7
+S10,TCN,same,16,1,1,8,5
+S10,TCN,same,17,1,1,8,7
+S10,TCN,same,18,1,1,8,6
+S10,TCN,same,19,1,1,8,8
+S10,TCN,same,20,1,1,8,7
+S10,TCN,same,21,1,1,8,5
+S10,TCN,same,22,1,1,8,7
+S10,TCN,same,23,1,1,8,6
+S10,TCN,same,24,1,1,8,8
+S10,TCN,same,25,1,1,8,8
+S10,TCN,same,26,1,1,8,7
+S10,TCN,same,27,1,1,8,8
+S10,TCN,same,28,1,1,8,7
+S10,TCN,same,29,1,1,8,8
+S10,TCN,same,30,1,1,8,5
+S10,TCN,same,31,1,1,8,7
+S10,TCN,same,32,1,1,8,7
+S10,TCN,same,33,1,1,8,8
+S10,TCN,same,34,1,1,8,8
+S10,TCN,cross,1,5,4,40,18
+S10,TCN,cross,2,6,0,48,0
+S10,TCN,cross,3,6,6,48,39
+S10,TCN,cross,4,6,0,48,0
+S10,TCN,cross,5,6,0,48,8
+S10,TCN,cross,6,6,0,48,0
+S10,TCN,cross,7,6,0,48,0
+S10,TCN,cross,8,5,0,40,0
+S10,TCN,cross,9,6,0,48,0
+S10,TCN,cross,10,4,4,32,23
+S10,TCN,cross,11,6,0,48,5
+S10,TCN,cross,12,6,6,48,37
+S10,TCN,cross,13,6,3,48,14
+S10,TCN,cross,14,6,5,48,22
+S10,TCN,cross,15,6,0,48,0
+S10,TCN,cross,16,6,0,48,2
+S10,TCN,cross,17,6,0,48,9
+S10,TCN,cross,18,6,4,48,14
+S10,TCN,cross,19,6,0,48,9
+S10,TCN,cross,20,6,3,48,22
+S10,TCN,cross,21,6,0,48,0
+S10,TCN,cross,22,6,5,48,21
+S10,TCN,cross,23,6,6,48,36
+S10,TCN,cross,24,6,6,48,21
+S10,TCN,cross,25,6,6,48,34
+S10,TCN,cross,26,6,0,48,2
+S10,TCN,cross,27,6,0,48,4
+S10,TCN,cross,28,6,6,48,32
+S10,TCN,cross,29,6,0,48,0
+S10,TCN,cross,30,6,6,48,34
+S10,TCN,cross,31,6,6,48,44
+S10,TCN,cross,32,6,6,48,33
+S10,TCN,cross,33,6,0,48,2
+S10,TCN,cross,34,6,6,48,39
+S10,GRU,same,1,1,1,8,5
+S10,GRU,same,2,1,1,8,8
+S10,GRU,same,3,1,1,8,6
+S10,GRU,same,4,1,1,8,7
+S10,GRU,same,5,1,1,8,6
+S10,GRU,same,6,1,1,8,7
+S10,GRU,same,7,1,1,8,5
+S10,GRU,same,8,1,1,8,6
+S10,GRU,same,9,1,1,8,6
+S10,GRU,same,10,1,0,8,2
+S10,GRU,same,11,1,0,8,2
+S10,GRU,same,12,1,1,8,6
+S10,GRU,same,13,1,1,8,6
+S10,GRU,same,14,1,1,8,6
+S10,GRU,same,15,1,1,8,6
+S10,GRU,same,16,1,1,8,6
+S10,GRU,same,17,1,1,8,6
+S10,GRU,same,18,1,1,8,5
+S10,GRU,same,19,1,1,8,6
+S10,GRU,same,20,1,1,8,6
+S10,GRU,same,21,1,1,8,6
+S10,GRU,same,22,1,1,8,8
+S10,GRU,same,23,1,1,8,7
+S10,GRU,same,24,1,1,8,7
+S10,GRU,same,25,1,1,8,5
+S10,GRU,same,26,1,1,8,6
+S10,GRU,same,27,1,1,8,4
+S10,GRU,same,28,1,1,8,4
+S10,GRU,same,29,1,1,8,5
+S10,GRU,same,30,1,1,8,6
+S10,GRU,same,31,1,1,8,4
+S10,GRU,same,32,1,1,8,7
+S10,GRU,same,33,1,1,8,5
+S10,GRU,same,34,1,1,8,4
+S10,GRU,cross,1,5,5,40,22
+S10,GRU,cross,2,6,0,48,1
+S10,GRU,cross,3,6,6,48,23
+S10,GRU,cross,4,6,4,48,31
+S10,GRU,cross,5,6,6,48,29
+S10,GRU,cross,6,6,6,48,28
+S10,GRU,cross,7,6,6,48,25
+S10,GRU,cross,8,5,0,40,6
+S10,GRU,cross,9,6,2,48,8
+S10,GRU,cross,10,4,4,32,26
+S10,GRU,cross,11,6,2,48,9
+S10,GRU,cross,12,6,3,48,15
+S10,GRU,cross,13,6,4,48,20
+S10,GRU,cross,14,6,0,48,4
+S10,GRU,cross,15,6,3,48,14
+S10,GRU,cross,16,6,0,48,4
+S10,GRU,cross,17,6,0,48,12
+S10,GRU,cross,18,6,1,48,4
+S10,GRU,cross,19,6,0,48,0
+S10,GRU,cross,20,6,3,48,14
+S10,GRU,cross,21,6,3,48,11
+S10,GRU,cross,22,6,6,48,27
+S10,GRU,cross,23,6,6,48,33
+S10,GRU,cross,24,6,1,48,14
+S10,GRU,cross,25,6,6,48,23
+S10,GRU,cross,26,6,0,48,7
+S10,GRU,cross,27,6,6,48,34
+S10,GRU,cross,28,6,6,48,29
+S10,GRU,cross,29,6,1,48,11
+S10,GRU,cross,30,6,6,48,38
+S10,GRU,cross,31,6,6,48,33
+S10,GRU,cross,32,6,5,48,31
+S10,GRU,cross,33,6,0,48,5
+S10,GRU,cross,34,6,6,48,37
+S11,LDA,same,1,1,1,8,4
+S11,LDA,same,2,1,1,8,8
+S11,LDA,same,3,1,1,8,8
+S11,LDA,same,4,1,1,8,8
+S11,LDA,same,5,1,1,8,7
+S11,LDA,same,6,1,1,8,8
+S11,LDA,same,7,1,1,8,7
+S11,LDA,same,9,1,1,8,5
+S11,LDA,same,10,1,1,8,6
+S11,LDA,same,11,1,1,8,5
+S11,LDA,same,12,1,1,8,8
+S11,LDA,same,13,1,1,8,8
+S11,LDA,same,14,1,1,8,8
+S11,LDA,same,15,1,1,8,8
+S11,LDA,same,16,1,1,8,8
+S11,LDA,same,17,1,1,8,8
+S11,LDA,same,18,1,1,8,8
+S11,LDA,same,19,1,1,8,8
+S11,LDA,same,20,1,1,8,8
+S11,LDA,same,21,1,1,8,8
+S11,LDA,same,22,1,1,8,6
+S11,LDA,same,23,1,1,8,8
+S11,LDA,same,24,1,1,8,8
+S11,LDA,same,25,1,1,8,7
+S11,LDA,same,26,1,1,8,5
+S11,LDA,same,27,1,1,8,6
+S11,LDA,same,28,1,1,8,7
+S11,LDA,same,29,1,1,8,6
+S11,LDA,same,30,1,1,8,6
+S11,LDA,same,31,1,1,8,6
+S11,LDA,same,32,1,1,8,7
+S11,LDA,same,33,1,1,8,4
+S11,LDA,same,34,1,1,8,5
+S11,LDA,cross,1,6,0,48,0
+S11,LDA,cross,2,6,0,48,1
+S11,LDA,cross,3,6,0,48,7
+S11,LDA,cross,4,6,0,48,0
+S11,LDA,cross,5,6,0,48,0
+S11,LDA,cross,6,6,0,48,0
+S11,LDA,cross,7,6,6,48,45
+S11,LDA,cross,8,6,0,48,0
+S11,LDA,cross,9,6,0,48,0
+S11,LDA,cross,10,6,0,48,0
+S11,LDA,cross,11,6,1,48,4
+S11,LDA,cross,12,6,1,48,8
+S11,LDA,cross,13,6,0,48,0
+S11,LDA,cross,14,6,0,48,0
+S11,LDA,cross,15,6,1,48,7
+S11,LDA,cross,16,6,0,48,6
+S11,LDA,cross,17,6,0,48,0
+S11,LDA,cross,18,6,0,48,1
+S11,LDA,cross,19,6,0,48,0
+S11,LDA,cross,20,6,0,48,0
+S11,LDA,cross,21,6,2,48,16
+S11,LDA,cross,22,6,0,48,0
+S11,LDA,cross,23,6,0,48,0
+S11,LDA,cross,24,6,1,48,5
+S11,LDA,cross,25,6,0,48,0
+S11,LDA,cross,26,5,0,40,1
+S11,LDA,cross,27,6,0,48,0
+S11,LDA,cross,28,6,0,48,0
+S11,LDA,cross,29,6,1,48,10
+S11,LDA,cross,30,6,0,48,0
+S11,LDA,cross,31,6,1,48,10
+S11,LDA,cross,32,6,3,48,22
+S11,LDA,cross,33,6,0,48,7
+S11,LDA,cross,34,6,0,48,4
+S11,1D CNN,same,1,1,1,8,7
+S11,1D CNN,same,2,1,1,8,8
+S11,1D CNN,same,3,1,1,8,8
+S11,1D CNN,same,4,1,1,8,8
+S11,1D CNN,same,5,1,1,8,7
+S11,1D CNN,same,6,1,1,8,7
+S11,1D CNN,same,7,1,1,8,7
+S11,1D CNN,same,9,1,1,8,5
+S11,1D CNN,same,10,1,1,8,6
+S11,1D CNN,same,11,1,1,8,6
+S11,1D CNN,same,12,1,1,8,8
+S11,1D CNN,same,13,1,1,8,8
+S11,1D CNN,same,14,1,1,8,8
+S11,1D CNN,same,15,1,1,8,6
+S11,1D CNN,same,16,1,1,8,4
+S11,1D CNN,same,17,1,1,8,8
+S11,1D CNN,same,18,1,1,8,6
+S11,1D CNN,same,19,1,1,8,8
+S11,1D CNN,same,20,1,1,8,7
+S11,1D CNN,same,21,1,1,8,8
+S11,1D CNN,same,22,1,1,8,8
+S11,1D CNN,same,23,1,1,8,7
+S11,1D CNN,same,24,1,0,8,3
+S11,1D CNN,same,25,1,0,8,3
+S11,1D CNN,same,26,1,1,8,5
+S11,1D CNN,same,27,1,1,8,7
+S11,1D CNN,same,28,1,1,8,7
+S11,1D CNN,same,29,1,1,8,4
+S11,1D CNN,same,30,1,1,8,7
+S11,1D CNN,same,31,1,1,8,7
+S11,1D CNN,same,32,1,1,8,8
+S11,1D CNN,same,33,1,1,8,5
+S11,1D CNN,same,34,1,0,8,3
+S11,1D CNN,cross,1,6,0,48,1
+S11,1D CNN,cross,2,6,6,48,36
+S11,1D CNN,cross,3,6,4,48,28
+S11,1D CNN,cross,4,6,6,48,43
+S11,1D CNN,cross,5,6,0,48,0
+S11,1D CNN,cross,6,6,5,48,38
+S11,1D CNN,cross,7,6,0,48,1
+S11,1D CNN,cross,8,6,0,48,0
+S11,1D CNN,cross,9,6,0,48,0
+S11,1D CNN,cross,10,6,0,48,6
+S11,1D CNN,cross,11,6,5,48,28
+S11,1D CNN,cross,12,6,1,48,9
+S11,1D CNN,cross,13,6,5,48,38
+S11,1D CNN,cross,14,6,0,48,5
+S11,1D CNN,cross,15,6,3,48,19
+S11,1D CNN,cross,16,6,3,48,14
+S11,1D CNN,cross,17,6,0,48,1
+S11,1D CNN,cross,18,6,0,48,6
+S11,1D CNN,cross,19,6,3,48,19
+S11,1D CNN,cross,20,6,1,48,8
+S11,1D CNN,cross,21,6,1,48,10
+S11,1D CNN,cross,22,6,1,48,4
+S11,1D CNN,cross,23,6,0,48,2
+S11,1D CNN,cross,24,6,6,48,35
+S11,1D CNN,cross,25,6,0,48,0
+S11,1D CNN,cross,26,5,0,40,0
+S11,1D CNN,cross,27,6,0,48,5
+S11,1D CNN,cross,28,6,0,48,7
+S11,1D CNN,cross,29,6,1,48,4
+S11,1D CNN,cross,30,6,5,48,28
+S11,1D CNN,cross,31,6,0,48,0
+S11,1D CNN,cross,32,6,1,48,8
+S11,1D CNN,cross,33,6,0,48,10
+S11,1D CNN,cross,34,6,0,48,0
+S11,TCN,same,1,1,1,8,5
+S11,TCN,same,2,1,1,8,8
+S11,TCN,same,3,1,1,8,7
+S11,TCN,same,4,1,1,8,8
+S11,TCN,same,5,1,1,8,7
+S11,TCN,same,6,1,1,8,8
+S11,TCN,same,7,1,1,8,5
+S11,TCN,same,9,1,1,8,6
+S11,TCN,same,10,1,1,8,7
+S11,TCN,same,11,1,1,8,5
+S11,TCN,same,12,1,1,8,8
+S11,TCN,same,13,1,1,8,8
+S11,TCN,same,14,1,1,8,8
+S11,TCN,same,15,1,1,8,7
+S11,TCN,same,16,1,1,8,8
+S11,TCN,same,17,1,1,8,7
+S11,TCN,same,18,1,1,8,8
+S11,TCN,same,19,1,1,8,8
+S11,TCN,same,20,1,1,8,6
+S11,TCN,same,21,1,1,8,8
+S11,TCN,same,22,1,1,8,8
+S11,TCN,same,23,1,1,8,6
+S11,TCN,same,24,1,0,8,3
+S11,TCN,same,25,1,1,8,4
+S11,TCN,same,26,1,1,8,8
+S11,TCN,same,27,1,1,8,8
+S11,TCN,same,28,1,1,8,7
+S11,TCN,same,29,1,1,8,6
+S11,TCN,same,30,1,1,8,6
+S11,TCN,same,31,1,1,8,6
+S11,TCN,same,32,1,1,8,5
+S11,TCN,same,33,1,1,8,6
+S11,TCN,same,34,1,1,8,3
+S11,TCN,cross,1,6,2,48,13
+S11,TCN,cross,2,6,2,48,17
+S11,TCN,cross,3,6,0,48,4
+S11,TCN,cross,4,6,0,48,1
+S11,TCN,cross,5,6,0,48,0
+S11,TCN,cross,6,6,1,48,9
+S11,TCN,cross,7,6,0,48,1
+S11,TCN,cross,8,6,0,48,0
+S11,TCN,cross,9,6,0,48,0
+S11,TCN,cross,10,6,1,48,7
+S11,TCN,cross,11,6,1,48,8
+S11,TCN,cross,12,6,2,48,11
+S11,TCN,cross,13,6,6,48,40
+S11,TCN,cross,14,6,0,48,2
+S11,TCN,cross,15,6,6,48,38
+S11,TCN,cross,16,6,2,48,14
+S11,TCN,cross,17,6,0,48,0
+S11,TCN,cross,18,6,0,48,9
+S11,TCN,cross,19,6,3,48,17
+S11,TCN,cross,20,6,1,48,5
+S11,TCN,cross,21,6,6,48,19
+S11,TCN,cross,22,6,0,48,3
+S11,TCN,cross,23,6,3,48,18
+S11,TCN,cross,24,6,0,48,2
+S11,TCN,cross,25,6,0,48,0
+S11,TCN,cross,26,5,0,40,2
+S11,TCN,cross,27,6,0,48,9
+S11,TCN,cross,28,6,0,48,0
+S11,TCN,cross,29,6,4,48,25
+S11,TCN,cross,30,6,5,48,31
+S11,TCN,cross,31,6,0,48,0
+S11,TCN,cross,32,6,0,48,0
+S11,TCN,cross,33,6,0,48,5
+S11,TCN,cross,34,6,0,48,2
+S11,GRU,same,1,1,1,8,5
+S11,GRU,same,2,1,1,8,6
+S11,GRU,same,3,1,1,8,7
+S11,GRU,same,4,1,1,8,8
+S11,GRU,same,5,1,1,8,7
+S11,GRU,same,6,1,1,8,4
+S11,GRU,same,7,1,1,8,6
+S11,GRU,same,9,1,1,8,5
+S11,GRU,same,10,1,1,8,6
+S11,GRU,same,11,1,1,8,5
+S11,GRU,same,12,1,1,8,6
+S11,GRU,same,13,1,1,8,7
+S11,GRU,same,14,1,1,8,8
+S11,GRU,same,15,1,1,8,4
+S11,GRU,same,16,1,1,8,6
+S11,GRU,same,17,1,1,8,6
+S11,GRU,same,18,1,1,8,7
+S11,GRU,same,19,1,1,8,5
+S11,GRU,same,20,1,1,8,3
+S11,GRU,same,21,1,1,8,7
+S11,GRU,same,22,1,1,8,7
+S11,GRU,same,23,1,1,8,7
+S11,GRU,same,24,1,1,8,5
+S11,GRU,same,25,1,0,8,2
+S11,GRU,same,26,1,1,8,4
+S11,GRU,same,27,1,1,8,5
+S11,GRU,same,28,1,1,8,4
+S11,GRU,same,29,1,1,8,3
+S11,GRU,same,30,1,1,8,5
+S11,GRU,same,31,1,1,8,4
+S11,GRU,same,32,1,1,8,5
+S11,GRU,same,33,1,1,8,5
+S11,GRU,same,34,1,0,8,0
+S11,GRU,cross,1,6,6,48,39
+S11,GRU,cross,2,6,3,48,17
+S11,GRU,cross,3,6,6,48,27
+S11,GRU,cross,4,6,5,48,26
+S11,GRU,cross,5,6,4,48,30
+S11,GRU,cross,6,6,1,48,10
+S11,GRU,cross,7,6,0,48,4
+S11,GRU,cross,8,6,0,48,0
+S11,GRU,cross,9,6,0,48,1
+S11,GRU,cross,10,6,2,48,12
+S11,GRU,cross,11,6,2,48,12
+S11,GRU,cross,12,6,6,48,38
+S11,GRU,cross,13,6,6,48,38
+S11,GRU,cross,14,6,3,48,16
+S11,GRU,cross,15,6,6,48,25
+S11,GRU,cross,16,6,6,48,27
+S11,GRU,cross,17,6,2,48,8
+S11,GRU,cross,18,6,1,48,5
+S11,GRU,cross,19,6,4,48,22
+S11,GRU,cross,20,6,2,48,7
+S11,GRU,cross,21,6,5,48,25
+S11,GRU,cross,22,6,1,48,10
+S11,GRU,cross,23,6,2,48,9
+S11,GRU,cross,24,6,4,48,17
+S11,GRU,cross,25,6,0,48,2
+S11,GRU,cross,26,5,0,40,3
+S11,GRU,cross,27,6,2,48,14
+S11,GRU,cross,28,6,1,48,8
+S11,GRU,cross,29,6,2,48,9
+S11,GRU,cross,30,6,5,48,30
+S11,GRU,cross,31,6,0,48,9
+S11,GRU,cross,32,6,0,48,8
+S11,GRU,cross,33,6,3,48,15
+S11,GRU,cross,34,6,0,48,0
+S12,LDA,same,1,1,1,8,8
+S12,LDA,same,2,1,1,8,7
+S12,LDA,same,3,1,1,8,6
+S12,LDA,same,4,1,1,8,7
+S12,LDA,same,5,1,1,8,6
+S12,LDA,same,6,1,1,8,6
+S12,LDA,same,7,1,1,8,8
+S12,LDA,same,8,1,1,8,8
+S12,LDA,same,9,1,1,8,5
+S12,LDA,same,10,1,1,8,4
+S12,LDA,same,11,1,1,8,7
+S12,LDA,same,12,1,1,8,7
+S12,LDA,same,13,1,1,8,6
+S12,LDA,same,14,1,1,8,6
+S12,LDA,same,15,1,1,8,8
+S12,LDA,same,16,1,1,8,8
+S12,LDA,same,17,1,1,8,6
+S12,LDA,same,18,1,1,8,5
+S12,LDA,same,19,1,1,8,8
+S12,LDA,same,20,1,1,8,7
+S12,LDA,same,21,1,1,8,5
+S12,LDA,same,22,1,1,8,8
+S12,LDA,same,23,1,1,8,4
+S12,LDA,same,24,1,1,8,5
+S12,LDA,same,25,1,1,8,5
+S12,LDA,same,26,1,1,8,7
+S12,LDA,same,27,1,1,8,6
+S12,LDA,same,28,1,1,8,6
+S12,LDA,same,29,1,1,8,7
+S12,LDA,same,30,1,1,8,6
+S12,LDA,same,31,1,1,8,5
+S12,LDA,same,32,1,1,8,7
+S12,LDA,same,33,1,1,8,5
+S12,LDA,same,34,1,1,8,6
+S12,LDA,cross,1,6,0,48,0
+S12,LDA,cross,2,6,1,48,7
+S12,LDA,cross,3,6,0,48,0
+S12,LDA,cross,4,6,0,48,3
+S12,LDA,cross,5,6,0,48,0
+S12,LDA,cross,6,6,0,48,0
+S12,LDA,cross,7,6,0,48,0
+S12,LDA,cross,8,6,0,48,0
+S12,LDA,cross,9,6,3,48,18
+S12,LDA,cross,10,6,0,48,1
+S12,LDA,cross,11,6,0,48,0
+S12,LDA,cross,12,6,2,48,14
+S12,LDA,cross,13,6,2,48,11
+S12,LDA,cross,14,6,5,48,25
+S12,LDA,cross,15,6,0,48,1
+S12,LDA,cross,16,6,0,48,0
+S12,LDA,cross,17,6,0,48,0
+S12,LDA,cross,18,6,1,48,2
+S12,LDA,cross,19,6,0,48,0
+S12,LDA,cross,20,6,0,48,0
+S12,LDA,cross,21,6,0,48,0
+S12,LDA,cross,22,6,0,48,0
+S12,LDA,cross,23,6,0,48,0
+S12,LDA,cross,24,6,0,48,0
+S12,LDA,cross,25,6,0,48,4
+S12,LDA,cross,26,5,0,40,0
+S12,LDA,cross,27,6,0,48,0
+S12,LDA,cross,28,6,2,48,12
+S12,LDA,cross,29,6,4,48,18
+S12,LDA,cross,30,6,0,48,4
+S12,LDA,cross,31,6,3,48,21
+S12,LDA,cross,32,6,0,48,3
+S12,LDA,cross,33,6,6,48,35
+S12,LDA,cross,34,6,5,48,30
+S12,1D CNN,same,1,1,1,8,6
+S12,1D CNN,same,2,1,1,8,8
+S12,1D CNN,same,3,1,1,8,8
+S12,1D CNN,same,4,1,1,8,7
+S12,1D CNN,same,5,1,1,8,8
+S12,1D CNN,same,6,1,1,8,7
+S12,1D CNN,same,7,1,1,8,8
+S12,1D CNN,same,8,1,1,8,6
+S12,1D CNN,same,9,1,1,8,8
+S12,1D CNN,same,10,1,1,8,5
+S12,1D CNN,same,11,1,1,8,7
+S12,1D CNN,same,12,1,1,8,8
+S12,1D CNN,same,13,1,1,8,8
+S12,1D CNN,same,14,1,1,8,3
+S12,1D CNN,same,15,1,1,8,7
+S12,1D CNN,same,16,1,1,8,8
+S12,1D CNN,same,17,1,1,8,6
+S12,1D CNN,same,18,1,1,8,8
+S12,1D CNN,same,19,1,1,8,7
+S12,1D CNN,same,20,1,1,8,8
+S12,1D CNN,same,21,1,1,8,6
+S12,1D CNN,same,22,1,1,8,8
+S12,1D CNN,same,23,1,0,8,2
+S12,1D CNN,same,24,1,1,8,6
+S12,1D CNN,same,25,1,1,8,7
+S12,1D CNN,same,26,1,1,8,8
+S12,1D CNN,same,27,1,1,8,5
+S12,1D CNN,same,28,1,1,8,6
+S12,1D CNN,same,29,1,1,8,8
+S12,1D CNN,same,30,1,1,8,6
+S12,1D CNN,same,31,1,1,8,5
+S12,1D CNN,same,32,1,1,8,8
+S12,1D CNN,same,33,1,0,8,3
+S12,1D CNN,same,34,1,1,8,6
+S12,1D CNN,cross,1,6,4,48,23
+S12,1D CNN,cross,2,6,6,48,31
+S12,1D CNN,cross,3,6,0,48,1
+S12,1D CNN,cross,4,6,2,48,13
+S12,1D CNN,cross,5,6,5,48,19
+S12,1D CNN,cross,6,6,1,48,9
+S12,1D CNN,cross,7,6,5,48,21
+S12,1D CNN,cross,8,6,4,48,22
+S12,1D CNN,cross,9,6,3,48,12
+S12,1D CNN,cross,10,6,4,48,20
+S12,1D CNN,cross,11,6,1,48,2
+S12,1D CNN,cross,12,6,6,48,30
+S12,1D CNN,cross,13,6,5,48,29
+S12,1D CNN,cross,14,6,2,48,14
+S12,1D CNN,cross,15,6,0,48,2
+S12,1D CNN,cross,16,6,0,48,0
+S12,1D CNN,cross,17,6,6,48,30
+S12,1D CNN,cross,18,6,4,48,25
+S12,1D CNN,cross,19,6,5,48,21
+S12,1D CNN,cross,20,6,0,48,2
+S12,1D CNN,cross,21,6,0,48,0
+S12,1D CNN,cross,22,6,0,48,5
+S12,1D CNN,cross,23,6,3,48,15
+S12,1D CNN,cross,24,6,6,48,32
+S12,1D CNN,cross,25,6,4,48,18
+S12,1D CNN,cross,26,5,5,40,26
+S12,1D CNN,cross,27,6,6,48,26
+S12,1D CNN,cross,28,6,5,48,21
+S12,1D CNN,cross,29,6,6,48,32
+S12,1D CNN,cross,30,6,4,48,28
+S12,1D CNN,cross,31,6,6,48,32
+S12,1D CNN,cross,32,6,2,48,19
+S12,1D CNN,cross,33,6,6,48,34
+S12,1D CNN,cross,34,6,4,48,24
+S12,TCN,same,1,1,1,8,4
+S12,TCN,same,2,1,1,8,8
+S12,TCN,same,3,1,1,8,8
+S12,TCN,same,4,1,1,8,8
+S12,TCN,same,5,1,1,8,8
+S12,TCN,same,6,1,1,8,8
+S12,TCN,same,7,1,1,8,7
+S12,TCN,same,8,1,1,8,6
+S12,TCN,same,9,1,1,8,7
+S12,TCN,same,10,1,1,8,5
+S12,TCN,same,11,1,1,8,7
+S12,TCN,same,12,1,1,8,8
+S12,TCN,same,13,1,1,8,8
+S12,TCN,same,14,1,1,8,7
+S12,TCN,same,15,1,1,8,8
+S12,TCN,same,16,1,1,8,6
+S12,TCN,same,17,1,1,8,5
+S12,TCN,same,18,1,1,8,8
+S12,TCN,same,19,1,1,8,6
+S12,TCN,same,20,1,1,8,8
+S12,TCN,same,21,1,1,8,5
+S12,TCN,same,22,1,1,8,6
+S12,TCN,same,23,1,0,8,4
+S12,TCN,same,24,1,1,8,5
+S12,TCN,same,25,1,1,8,8
+S12,TCN,same,26,1,1,8,5
+S12,TCN,same,27,1,1,8,6
+S12,TCN,same,28,1,1,8,6
+S12,TCN,same,29,1,1,8,8
+S12,TCN,same,30,1,1,8,7
+S12,TCN,same,31,1,1,8,5
+S12,TCN,same,32,1,1,8,8
+S12,TCN,same,33,1,0,8,2
+S12,TCN,same,34,1,1,8,5
+S12,TCN,cross,1,6,5,48,20
+S12,TCN,cross,2,6,6,48,31
+S12,TCN,cross,3,6,0,48,1
+S12,TCN,cross,4,6,4,48,17
+S12,TCN,cross,5,6,6,48,23
+S12,TCN,cross,6,6,0,48,5
+S12,TCN,cross,7,6,0,48,0
+S12,TCN,cross,8,6,5,48,20
+S12,TCN,cross,9,6,5,48,26
+S12,TCN,cross,10,6,1,48,9
+S12,TCN,cross,11,6,0,48,1
+S12,TCN,cross,12,6,4,48,21
+S12,TCN,cross,13,6,4,48,22
+S12,TCN,cross,14,6,5,48,26
+S12,TCN,cross,15,6,0,48,0
+S12,TCN,cross,16,6,0,48,0
+S12,TCN,cross,17,6,4,48,21
+S12,TCN,cross,18,6,1,48,8
+S12,TCN,cross,19,6,2,48,17
+S12,TCN,cross,20,6,0,48,3
+S12,TCN,cross,21,6,0,48,0
+S12,TCN,cross,22,6,2,48,10
+S12,TCN,cross,23,6,4,48,24
+S12,TCN,cross,24,6,0,48,1
+S12,TCN,cross,25,6,6,48,31
+S12,TCN,cross,26,5,1,40,4
+S12,TCN,cross,27,6,0,48,0
+S12,TCN,cross,28,6,0,48,2
+S12,TCN,cross,29,6,4,48,24
+S12,TCN,cross,30,6,5,48,33
+S12,TCN,cross,31,6,5,48,30
+S12,TCN,cross,32,6,3,48,19
+S12,TCN,cross,33,6,1,48,14
+S12,TCN,cross,34,6,5,48,34
+S12,GRU,same,1,1,1,8,6
+S12,GRU,same,2,1,1,8,5
+S12,GRU,same,3,1,1,8,6
+S12,GRU,same,4,1,1,8,7
+S12,GRU,same,5,1,1,8,7
+S12,GRU,same,6,1,1,8,5
+S12,GRU,same,7,1,1,8,8
+S12,GRU,same,8,1,1,8,6
+S12,GRU,same,9,1,1,8,6
+S12,GRU,same,10,1,1,8,5
+S12,GRU,same,11,1,1,8,6
+S12,GRU,same,12,1,1,8,7
+S12,GRU,same,13,1,1,8,5
+S12,GRU,same,14,1,1,8,5
+S12,GRU,same,15,1,1,8,7
+S12,GRU,same,16,1,1,8,5
+S12,GRU,same,17,1,1,8,6
+S12,GRU,same,18,1,1,8,7
+S12,GRU,same,19,1,1,8,6
+S12,GRU,same,20,1,1,8,6
+S12,GRU,same,21,1,1,8,5
+S12,GRU,same,22,1,1,8,7
+S12,GRU,same,23,1,1,8,4
+S12,GRU,same,24,1,1,8,6
+S12,GRU,same,25,1,1,8,6
+S12,GRU,same,26,1,1,8,8
+S12,GRU,same,27,1,1,8,4
+S12,GRU,same,28,1,1,8,5
+S12,GRU,same,29,1,1,8,8
+S12,GRU,same,30,1,1,8,3
+S12,GRU,same,31,1,1,8,3
+S12,GRU,same,32,1,1,8,6
+S12,GRU,same,33,1,1,8,3
+S12,GRU,same,34,1,1,8,5
+S12,GRU,cross,1,6,0,48,12
+S12,GRU,cross,2,6,6,48,37
+S12,GRU,cross,3,6,0,48,4
+S12,GRU,cross,4,6,1,48,12
+S12,GRU,cross,5,6,3,48,16
+S12,GRU,cross,6,6,4,48,18
+S12,GRU,cross,7,6,5,48,19
+S12,GRU,cross,8,6,6,48,22
+S12,GRU,cross,9,6,5,48,29
+S12,GRU,cross,10,6,3,48,19
+S12,GRU,cross,11,6,0,48,4
+S12,GRU,cross,12,6,6,48,30
+S12,GRU,cross,13,6,6,48,33
+S12,GRU,cross,14,6,6,48,38
+S12,GRU,cross,15,6,5,48,25
+S12,GRU,cross,16,6,0,48,8
+S12,GRU,cross,17,6,4,48,21
+S12,GRU,cross,18,6,5,48,24
+S12,GRU,cross,19,6,4,48,20
+S12,GRU,cross,20,6,1,48,5
+S12,GRU,cross,21,6,0,48,0
+S12,GRU,cross,22,6,2,48,11
+S12,GRU,cross,23,6,2,48,5
+S12,GRU,cross,24,6,4,48,13
+S12,GRU,cross,25,6,3,48,16
+S12,GRU,cross,26,5,4,40,17
+S12,GRU,cross,27,6,2,48,9
+S12,GRU,cross,28,6,4,48,24
+S12,GRU,cross,29,6,4,48,21
+S12,GRU,cross,30,6,1,48,13
+S12,GRU,cross,31,6,5,48,24
+S12,GRU,cross,32,6,5,48,22
+S12,GRU,cross,33,6,5,48,20
+S12,GRU,cross,34,6,5,48,29
+S13,LDA,same,1,1,1,8,8
+S13,LDA,same,2,1,1,8,8
+S13,LDA,same,3,1,1,8,8
+S13,LDA,same,4,1,1,8,6
+S13,LDA,same,5,1,1,8,6
+S13,LDA,same,6,1,1,8,8
+S13,LDA,same,7,1,1,8,5
+S13,LDA,same,8,1,1,8,5
+S13,LDA,same,9,1,1,8,8
+S13,LDA,same,10,1,1,8,6
+S13,LDA,same,11,1,1,8,7
+S13,LDA,same,12,1,1,8,7
+S13,LDA,same,13,1,1,8,8
+S13,LDA,same,14,1,1,8,6
+S13,LDA,same,15,1,1,8,4
+S13,LDA,same,16,1,1,8,8
+S13,LDA,same,17,1,1,8,6
+S13,LDA,same,18,1,0,8,3
+S13,LDA,same,19,1,1,8,8
+S13,LDA,same,20,1,1,8,8
+S13,LDA,same,21,1,1,8,6
+S13,LDA,same,22,1,1,8,6
+S13,LDA,same,23,1,0,8,4
+S13,LDA,same,24,1,1,8,7
+S13,LDA,same,25,1,1,8,4
+S13,LDA,same,26,1,1,8,6
+S13,LDA,same,27,1,1,8,8
+S13,LDA,same,28,1,1,8,7
+S13,LDA,same,29,1,1,8,7
+S13,LDA,same,30,1,1,8,7
+S13,LDA,same,31,1,1,8,6
+S13,LDA,same,32,1,1,8,8
+S13,LDA,same,33,1,1,8,8
+S13,LDA,same,34,1,1,8,7
+S13,LDA,cross,1,6,5,48,25
+S13,LDA,cross,2,6,6,48,42
+S13,LDA,cross,3,6,5,48,29
+S13,LDA,cross,4,6,2,48,16
+S13,LDA,cross,5,6,3,48,25
+S13,LDA,cross,6,6,0,48,0
+S13,LDA,cross,7,6,1,48,8
+S13,LDA,cross,8,6,5,48,31
+S13,LDA,cross,9,6,0,48,4
+S13,LDA,cross,10,6,2,48,24
+S13,LDA,cross,11,6,0,48,2
+S13,LDA,cross,12,6,0,48,11
+S13,LDA,cross,13,6,5,48,22
+S13,LDA,cross,14,6,4,48,24
+S13,LDA,cross,15,6,0,48,6
+S13,LDA,cross,16,6,0,48,0
+S13,LDA,cross,17,6,0,48,0
+S13,LDA,cross,18,6,0,48,0
+S13,LDA,cross,19,6,0,48,0
+S13,LDA,cross,20,6,0,48,0
+S13,LDA,cross,21,6,0,48,0
+S13,LDA,cross,22,6,0,48,0
+S13,LDA,cross,23,6,0,48,6
+S13,LDA,cross,24,6,0,48,6
+S13,LDA,cross,25,6,0,48,2
+S13,LDA,cross,26,6,1,48,13
+S13,LDA,cross,27,6,1,48,12
+S13,LDA,cross,28,6,0,48,0
+S13,LDA,cross,29,6,0,48,4
+S13,LDA,cross,30,6,2,48,10
+S13,LDA,cross,31,6,0,48,0
+S13,LDA,cross,32,6,0,48,0
+S13,LDA,cross,33,6,0,48,0
+S13,LDA,cross,34,6,3,48,24
+S13,1D CNN,same,1,1,1,8,4
+S13,1D CNN,same,2,1,1,8,5
+S13,1D CNN,same,3,1,1,8,8
+S13,1D CNN,same,4,1,1,8,7
+S13,1D CNN,same,5,1,1,8,6
+S13,1D CNN,same,6,1,1,8,8
+S13,1D CNN,same,7,1,1,8,6
+S13,1D CNN,same,8,1,1,8,4
+S13,1D CNN,same,9,1,1,8,8
+S13,1D CNN,same,10,1,1,8,6
+S13,1D CNN,same,11,1,1,8,7
+S13,1D CNN,same,12,1,1,8,5
+S13,1D CNN,same,13,1,1,8,7
+S13,1D CNN,same,14,1,1,8,6
+S13,1D CNN,same,15,1,1,8,5
+S13,1D CNN,same,16,1,1,8,6
+S13,1D CNN,same,17,1,1,8,8
+S13,1D CNN,same,18,1,1,8,6
+S13,1D CNN,same,19,1,1,8,6
+S13,1D CNN,same,20,1,1,8,8
+S13,1D CNN,same,21,1,0,8,2
+S13,1D CNN,same,22,1,1,8,7
+S13,1D CNN,same,23,1,1,8,5
+S13,1D CNN,same,24,1,1,8,8
+S13,1D CNN,same,25,1,1,8,6
+S13,1D CNN,same,26,1,1,8,8
+S13,1D CNN,same,27,1,1,8,8
+S13,1D CNN,same,28,1,1,8,8
+S13,1D CNN,same,29,1,1,8,6
+S13,1D CNN,same,30,1,1,8,7
+S13,1D CNN,same,31,1,1,8,6
+S13,1D CNN,same,32,1,1,8,8
+S13,1D CNN,same,33,1,1,8,8
+S13,1D CNN,same,34,1,1,8,7
+S13,1D CNN,cross,1,6,2,48,16
+S13,1D CNN,cross,2,6,1,48,13
+S13,1D CNN,cross,3,6,6,48,40
+S13,1D CNN,cross,4,6,6,48,43
+S13,1D CNN,cross,5,6,6,48,41
+S13,1D CNN,cross,6,6,6,48,34
+S13,1D CNN,cross,7,6,5,48,23
+S13,1D CNN,cross,8,6,5,48,23
+S13,1D CNN,cross,9,6,6,48,30
+S13,1D CNN,cross,10,6,4,48,25
+S13,1D CNN,cross,11,6,2,48,13
+S13,1D CNN,cross,12,6,4,48,18
+S13,1D CNN,cross,13,6,5,48,28
+S13,1D CNN,cross,14,6,5,48,27
+S13,1D CNN,cross,15,6,6,48,30
+S13,1D CNN,cross,16,6,4,48,18
+S13,1D CNN,cross,17,6,3,48,25
+S13,1D CNN,cross,18,6,5,48,29
+S13,1D CNN,cross,19,6,0,48,3
+S13,1D CNN,cross,20,6,3,48,16
+S13,1D CNN,cross,21,6,0,48,5
+S13,1D CNN,cross,22,6,0,48,2
+S13,1D CNN,cross,23,6,3,48,20
+S13,1D CNN,cross,24,6,5,48,25
+S13,1D CNN,cross,25,6,6,48,27
+S13,1D CNN,cross,26,6,6,48,31
+S13,1D CNN,cross,27,6,0,48,1
+S13,1D CNN,cross,28,6,0,48,0
+S13,1D CNN,cross,29,6,0,48,4
+S13,1D CNN,cross,30,6,1,48,7
+S13,1D CNN,cross,31,6,4,48,20
+S13,1D CNN,cross,32,6,0,48,3
+S13,1D CNN,cross,33,6,2,48,10
+S13,1D CNN,cross,34,6,6,48,32
+S13,TCN,same,1,1,1,8,5
+S13,TCN,same,2,1,1,8,5
+S13,TCN,same,3,1,1,8,8
+S13,TCN,same,4,1,1,8,7
+S13,TCN,same,5,1,1,8,7
+S13,TCN,same,6,1,1,8,8
+S13,TCN,same,7,1,1,8,6
+S13,TCN,same,8,1,0,8,3
+S13,TCN,same,9,1,1,8,7
+S13,TCN,same,10,1,1,8,5
+S13,TCN,same,11,1,1,8,7
+S13,TCN,same,12,1,1,8,8
+S13,TCN,same,13,1,1,8,8
+S13,TCN,same,14,1,1,8,5
+S13,TCN,same,15,1,1,8,5
+S13,TCN,same,16,1,1,8,6
+S13,TCN,same,17,1,1,8,5
+S13,TCN,same,18,1,1,8,6
+S13,TCN,same,19,1,1,8,4
+S13,TCN,same,20,1,1,8,6
+S13,TCN,same,21,1,1,8,4
+S13,TCN,same,22,1,1,8,5
+S13,TCN,same,23,1,1,8,4
+S13,TCN,same,24,1,1,8,8
+S13,TCN,same,25,1,0,8,0
+S13,TCN,same,26,1,1,8,6
+S13,TCN,same,27,1,1,8,8
+S13,TCN,same,28,1,1,8,7
+S13,TCN,same,29,1,1,8,7
+S13,TCN,same,30,1,1,8,6
+S13,TCN,same,31,1,1,8,5
+S13,TCN,same,32,1,1,8,7
+S13,TCN,same,33,1,1,8,8
+S13,TCN,same,34,1,1,8,7
+S13,TCN,cross,1,6,6,48,41
+S13,TCN,cross,2,6,3,48,14
+S13,TCN,cross,3,6,3,48,22
+S13,TCN,cross,4,6,6,48,42
+S13,TCN,cross,5,6,6,48,36
+S13,TCN,cross,6,6,6,48,32
+S13,TCN,cross,7,6,6,48,28
+S13,TCN,cross,8,6,6,48,34
+S13,TCN,cross,9,6,5,48,20
+S13,TCN,cross,10,6,6,48,35
+S13,TCN,cross,11,6,1,48,10
+S13,TCN,cross,12,6,0,48,4
+S13,TCN,cross,13,6,4,48,20
+S13,TCN,cross,14,6,5,48,23
+S13,TCN,cross,15,6,6,48,29
+S13,TCN,cross,16,6,3,48,19
+S13,TCN,cross,17,6,6,48,32
+S13,TCN,cross,18,6,6,48,32
+S13,TCN,cross,19,6,0,48,5
+S13,TCN,cross,20,6,6,48,32
+S13,TCN,cross,21,6,0,48,3
+S13,TCN,cross,22,6,0,48,4
+S13,TCN,cross,23,6,5,48,29
+S13,TCN,cross,24,6,2,48,19
+S13,TCN,cross,25,6,3,48,16
+S13,TCN,cross,26,6,4,48,20
+S13,TCN,cross,27,6,0,48,1
+S13,TCN,cross,28,6,0,48,0
+S13,TCN,cross,29,6,3,48,12
+S13,TCN,cross,30,6,4,48,22
+S13,TCN,cross,31,6,4,48,24
+S13,TCN,cross,32,6,0,48,6
+S13,TCN,cross,33,6,2,48,9
+S13,TCN,cross,34,6,6,48,29
+S13,GRU,same,1,1,1,8,3
+S13,GRU,same,2,1,1,8,5
+S13,GRU,same,3,1,1,8,8
+S13,GRU,same,4,1,0,8,1
+S13,GRU,same,5,1,1,8,6
+S13,GRU,same,6,1,1,8,7
+S13,GRU,same,7,1,1,8,6
+S13,GRU,same,8,1,1,8,5
+S13,GRU,same,9,1,1,8,8
+S13,GRU,same,10,1,1,8,4
+S13,GRU,same,11,1,1,8,5
+S13,GRU,same,12,1,1,8,8
+S13,GRU,same,13,1,1,8,3
+S13,GRU,same,14,1,1,8,5
+S13,GRU,same,15,1,1,8,4
+S13,GRU,same,16,1,1,8,6
+S13,GRU,same,17,1,1,8,3
+S13,GRU,same,18,1,1,8,2
+S13,GRU,same,19,1,0,8,3
+S13,GRU,same,20,1,1,8,4
+S13,GRU,same,21,1,0,8,2
+S13,GRU,same,22,1,1,8,3
+S13,GRU,same,23,1,1,8,2
+S13,GRU,same,24,1,1,8,5
+S13,GRU,same,25,1,1,8,5
+S13,GRU,same,26,1,1,8,6
+S13,GRU,same,27,1,1,8,7
+S13,GRU,same,28,1,1,8,8
+S13,GRU,same,29,1,1,8,5
+S13,GRU,same,30,1,1,8,4
+S13,GRU,same,31,1,1,8,5
+S13,GRU,same,32,1,1,8,6
+S13,GRU,same,33,1,1,8,7
+S13,GRU,same,34,1,1,8,7
+S13,GRU,cross,1,6,5,48,25
+S13,GRU,cross,2,6,6,48,30
+S13,GRU,cross,3,6,4,48,20
+S13,GRU,cross,4,6,2,48,9
+S13,GRU,cross,5,6,4,48,30
+S13,GRU,cross,6,6,6,48,31
+S13,GRU,cross,7,6,6,48,34
+S13,GRU,cross,8,6,5,48,28
+S13,GRU,cross,9,6,6,48,32
+S13,GRU,cross,10,6,0,48,4
+S13,GRU,cross,11,6,3,48,13
+S13,GRU,cross,12,6,4,48,16
+S13,GRU,cross,13,6,4,48,18
+S13,GRU,cross,14,6,6,48,28
+S13,GRU,cross,15,6,6,48,28
+S13,GRU,cross,16,6,5,48,20
+S13,GRU,cross,17,6,5,48,28
+S13,GRU,cross,18,6,2,48,14
+S13,GRU,cross,19,6,3,48,18
+S13,GRU,cross,20,6,1,48,7
+S13,GRU,cross,21,6,4,48,21
+S13,GRU,cross,22,6,0,48,4
+S13,GRU,cross,23,6,2,48,8
+S13,GRU,cross,24,6,5,48,16
+S13,GRU,cross,25,6,4,48,17
+S13,GRU,cross,26,6,5,48,19
+S13,GRU,cross,27,6,5,48,32
+S13,GRU,cross,28,6,5,48,31
+S13,GRU,cross,29,6,0,48,12
+S13,GRU,cross,30,6,0,48,6
+S13,GRU,cross,31,6,1,48,12
+S13,GRU,cross,32,6,0,48,3
+S13,GRU,cross,33,6,1,48,8
+S13,GRU,cross,34,6,4,48,21
+S14,LDA,same,1,1,1,8,6
+S14,LDA,same,2,1,1,8,7
+S14,LDA,same,3,1,1,8,8
+S14,LDA,same,4,1,1,8,8
+S14,LDA,same,5,1,0,8,0
+S14,LDA,same,6,1,1,8,8
+S14,LDA,same,7,1,1,8,8
+S14,LDA,same,8,1,1,8,7
+S14,LDA,same,9,1,1,8,8
+S14,LDA,same,10,1,1,8,8
+S14,LDA,same,11,1,1,8,8
+S14,LDA,same,12,1,1,8,8
+S14,LDA,same,13,1,1,8,7
+S14,LDA,same,14,1,1,8,5
+S14,LDA,same,15,1,1,8,4
+S14,LDA,same,16,1,1,8,6
+S14,LDA,same,17,1,0,8,4
+S14,LDA,same,18,1,1,8,5
+S14,LDA,same,19,1,1,8,7
+S14,LDA,same,20,1,1,8,4
+S14,LDA,same,21,1,1,8,3
+S14,LDA,same,22,1,0,8,1
+S14,LDA,same,23,1,1,8,8
+S14,LDA,same,24,1,1,8,7
+S14,LDA,same,25,1,1,8,4
+S14,LDA,same,26,1,1,8,8
+S14,LDA,same,27,1,1,8,8
+S14,LDA,same,28,1,1,8,4
+S14,LDA,same,29,1,1,8,8
+S14,LDA,same,30,1,1,8,5
+S14,LDA,same,31,1,1,8,4
+S14,LDA,same,32,1,1,8,8
+S14,LDA,same,33,1,1,8,6
+S14,LDA,same,34,1,1,8,7
+S14,LDA,cross,1,6,0,48,1
+S14,LDA,cross,2,6,4,48,16
+S14,LDA,cross,3,6,6,48,26
+S14,LDA,cross,4,5,4,40,14
+S14,LDA,cross,5,6,6,48,30
+S14,LDA,cross,6,6,0,48,0
+S14,LDA,cross,7,6,5,48,26
+S14,LDA,cross,8,6,0,48,0
+S14,LDA,cross,9,6,0,48,0
+S14,LDA,cross,10,6,1,48,3
+S14,LDA,cross,11,6,0,48,0
+S14,LDA,cross,12,6,5,48,22
+S14,LDA,cross,13,6,2,48,12
+S14,LDA,cross,14,6,0,48,5
+S14,LDA,cross,15,6,2,48,13
+S14,LDA,cross,16,6,1,48,7
+S14,LDA,cross,17,6,0,48,3
+S14,LDA,cross,18,5,5,40,19
+S14,LDA,cross,19,6,3,48,12
+S14,LDA,cross,20,6,0,48,1
+S14,LDA,cross,21,6,0,48,0
+S14,LDA,cross,22,6,0,48,0
+S14,LDA,cross,23,6,0,48,0
+S14,LDA,cross,24,5,0,40,0
+S14,LDA,cross,25,6,1,48,7
+S14,LDA,cross,26,6,0,48,7
+S14,LDA,cross,27,6,2,48,9
+S14,LDA,cross,28,6,0,48,3
+S14,LDA,cross,29,6,1,48,6
+S14,LDA,cross,30,6,1,48,5
+S14,LDA,cross,31,6,2,48,18
+S14,LDA,cross,32,6,2,48,11
+S14,LDA,cross,33,6,1,48,9
+S14,LDA,cross,34,6,0,48,6
+S14,1D CNN,same,1,1,1,8,7
+S14,1D CNN,same,2,1,1,8,6
+S14,1D CNN,same,3,1,1,8,8
+S14,1D CNN,same,4,1,1,8,7
+S14,1D CNN,same,5,1,0,8,0
+S14,1D CNN,same,6,1,1,8,6
+S14,1D CNN,same,7,1,1,8,7
+S14,1D CNN,same,8,1,1,8,7
+S14,1D CNN,same,9,1,1,8,4
+S14,1D CNN,same,10,1,1,8,8
+S14,1D CNN,same,11,1,1,8,8
+S14,1D CNN,same,12,1,1,8,5
+S14,1D CNN,same,13,1,1,8,7
+S14,1D CNN,same,14,1,0,8,0
+S14,1D CNN,same,15,1,1,8,7
+S14,1D CNN,same,16,1,1,8,8
+S14,1D CNN,same,17,1,1,8,4
+S14,1D CNN,same,18,1,1,8,6
+S14,1D CNN,same,19,1,1,8,3
+S14,1D CNN,same,20,1,1,8,6
+S14,1D CNN,same,21,1,1,8,7
+S14,1D CNN,same,22,1,1,8,3
+S14,1D CNN,same,23,1,1,8,7
+S14,1D CNN,same,24,1,1,8,7
+S14,1D CNN,same,25,1,1,8,7
+S14,1D CNN,same,26,1,1,8,7
+S14,1D CNN,same,27,1,1,8,8
+S14,1D CNN,same,28,1,1,8,4
+S14,1D CNN,same,29,1,1,8,8
+S14,1D CNN,same,30,1,1,8,7
+S14,1D CNN,same,31,1,1,8,3
+S14,1D CNN,same,32,1,1,8,7
+S14,1D CNN,same,33,1,1,8,8
+S14,1D CNN,same,34,1,1,8,6
+S14,1D CNN,cross,1,6,4,48,16
+S14,1D CNN,cross,2,6,0,48,1
+S14,1D CNN,cross,3,6,6,48,31
+S14,1D CNN,cross,4,5,2,40,10
+S14,1D CNN,cross,5,6,0,48,1
+S14,1D CNN,cross,6,6,0,48,0
+S14,1D CNN,cross,7,6,4,48,16
+S14,1D CNN,cross,8,6,0,48,0
+S14,1D CNN,cross,9,6,0,48,0
+S14,1D CNN,cross,10,6,0,48,0
+S14,1D CNN,cross,11,6,0,48,1
+S14,1D CNN,cross,12,6,0,48,0
+S14,1D CNN,cross,13,6,3,48,7
+S14,1D CNN,cross,14,6,0,48,0
+S14,1D CNN,cross,15,6,3,48,16
+S14,1D CNN,cross,16,6,0,48,0
+S14,1D CNN,cross,17,6,5,48,28
+S14,1D CNN,cross,18,5,5,40,28
+S14,1D CNN,cross,19,6,4,48,23
+S14,1D CNN,cross,20,6,2,48,18
+S14,1D CNN,cross,21,6,4,48,15
+S14,1D CNN,cross,22,6,0,48,0
+S14,1D CNN,cross,23,6,2,48,11
+S14,1D CNN,cross,24,5,3,40,17
+S14,1D CNN,cross,25,6,5,48,27
+S14,1D CNN,cross,26,6,5,48,35
+S14,1D CNN,cross,27,6,5,48,27
+S14,1D CNN,cross,28,6,6,48,23
+S14,1D CNN,cross,29,6,2,48,13
+S14,1D CNN,cross,30,6,6,48,40
+S14,1D CNN,cross,31,6,0,48,0
+S14,1D CNN,cross,32,6,2,48,15
+S14,1D CNN,cross,33,6,2,48,15
+S14,1D CNN,cross,34,6,4,48,26
+S14,TCN,same,1,1,1,8,6
+S14,TCN,same,2,1,1,8,8
+S14,TCN,same,3,1,1,8,6
+S14,TCN,same,4,1,1,8,5
+S14,TCN,same,5,1,0,8,0
+S14,TCN,same,6,1,1,8,6
+S14,TCN,same,7,1,1,8,6
+S14,TCN,same,8,1,1,8,7
+S14,TCN,same,9,1,1,8,5
+S14,TCN,same,10,1,1,8,8
+S14,TCN,same,11,1,1,8,8
+S14,TCN,same,12,1,1,8,6
+S14,TCN,same,13,1,1,8,8
+S14,TCN,same,14,1,0,8,1
+S14,TCN,same,15,1,1,8,6
+S14,TCN,same,16,1,1,8,5
+S14,TCN,same,17,1,0,8,3
+S14,TCN,same,18,1,1,8,7
+S14,TCN,same,19,1,1,8,6
+S14,TCN,same,20,1,1,8,3
+S14,TCN,same,21,1,0,8,0
+S14,TCN,same,22,1,0,8,3
+S14,TCN,same,23,1,1,8,7
+S14,TCN,same,24,1,1,8,8
+S14,TCN,same,25,1,1,8,7
+S14,TCN,same,26,1,1,8,8
+S14,TCN,same,27,1,1,8,7
+S14,TCN,same,28,1,1,8,6
+S14,TCN,same,29,1,1,8,8
+S14,TCN,same,30,1,1,8,6
+S14,TCN,same,31,1,1,8,5
+S14,TCN,same,32,1,1,8,8
+S14,TCN,same,33,1,1,8,6
+S14,TCN,same,34,1,1,8,6
+S14,TCN,cross,1,6,2,48,7
+S14,TCN,cross,2,6,1,48,3
+S14,TCN,cross,3,6,5,48,21
+S14,TCN,cross,4,5,2,40,7
+S14,TCN,cross,5,6,2,48,10
+S14,TCN,cross,6,6,0,48,0
+S14,TCN,cross,7,6,0,48,0
+S14,TCN,cross,8,6,0,48,0
+S14,TCN,cross,9,6,0,48,0
+S14,TCN,cross,10,6,0,48,0
+S14,TCN,cross,11,6,0,48,0
+S14,TCN,cross,12,6,0,48,0
+S14,TCN,cross,13,6,2,48,12
+S14,TCN,cross,14,6,1,48,5
+S14,TCN,cross,15,6,3,48,13
+S14,TCN,cross,16,6,5,48,21
+S14,TCN,cross,17,6,3,48,14
+S14,TCN,cross,18,5,5,40,21
+S14,TCN,cross,19,6,4,48,21
+S14,TCN,cross,20,6,3,48,15
+S14,TCN,cross,21,6,3,48,13
+S14,TCN,cross,22,6,0,48,7
+S14,TCN,cross,23,6,6,48,25
+S14,TCN,cross,24,5,0,40,10
+S14,TCN,cross,25,6,3,48,19
+S14,TCN,cross,26,6,6,48,35
+S14,TCN,cross,27,6,3,48,20
+S14,TCN,cross,28,6,0,48,5
+S14,TCN,cross,29,6,4,48,20
+S14,TCN,cross,30,6,6,48,27
+S14,TCN,cross,31,6,2,48,14
+S14,TCN,cross,32,6,2,48,13
+S14,TCN,cross,33,6,3,48,22
+S14,TCN,cross,34,6,5,48,27
+S14,GRU,same,1,1,1,8,5
+S14,GRU,same,2,1,1,8,4
+S14,GRU,same,3,1,1,8,7
+S14,GRU,same,4,1,1,8,7
+S14,GRU,same,5,1,0,8,0
+S14,GRU,same,6,1,1,8,3
+S14,GRU,same,7,1,1,8,5
+S14,GRU,same,8,1,1,8,7
+S14,GRU,same,9,1,0,8,3
+S14,GRU,same,10,1,1,8,8
+S14,GRU,same,11,1,1,8,8
+S14,GRU,same,12,1,1,8,2
+S14,GRU,same,13,1,1,8,7
+S14,GRU,same,14,1,1,8,5
+S14,GRU,same,15,1,1,8,5
+S14,GRU,same,16,1,0,8,2
+S14,GRU,same,17,1,0,8,1
+S14,GRU,same,18,1,1,8,6
+S14,GRU,same,19,1,0,8,0
+S14,GRU,same,20,1,1,8,3
+S14,GRU,same,21,1,0,8,1
+S14,GRU,same,22,1,0,8,1
+S14,GRU,same,23,1,1,8,6
+S14,GRU,same,24,1,1,8,6
+S14,GRU,same,25,1,1,8,4
+S14,GRU,same,26,1,1,8,7
+S14,GRU,same,27,1,1,8,8
+S14,GRU,same,28,1,1,8,5
+S14,GRU,same,29,1,1,8,6
+S14,GRU,same,30,1,0,8,2
+S14,GRU,same,31,1,1,8,3
+S14,GRU,same,32,1,1,8,6
+S14,GRU,same,33,1,1,8,5
+S14,GRU,same,34,1,1,8,7
+S14,GRU,cross,1,6,2,48,10
+S14,GRU,cross,2,6,0,48,5
+S14,GRU,cross,3,6,5,48,26
+S14,GRU,cross,4,5,5,40,24
+S14,GRU,cross,5,6,1,48,15
+S14,GRU,cross,6,6,2,48,11
+S14,GRU,cross,7,6,4,48,12
+S14,GRU,cross,8,6,0,48,1
+S14,GRU,cross,9,6,0,48,0
+S14,GRU,cross,10,6,3,48,12
+S14,GRU,cross,11,6,0,48,4
+S14,GRU,cross,12,6,0,48,0
+S14,GRU,cross,13,6,3,48,10
+S14,GRU,cross,14,6,4,48,20
+S14,GRU,cross,15,6,4,48,17
+S14,GRU,cross,16,6,4,48,19
+S14,GRU,cross,17,6,3,48,14
+S14,GRU,cross,18,5,2,40,14
+S14,GRU,cross,19,6,3,48,13
+S14,GRU,cross,20,6,4,48,19
+S14,GRU,cross,21,6,0,48,0
+S14,GRU,cross,22,6,4,48,19
+S14,GRU,cross,23,6,1,48,7
+S14,GRU,cross,24,5,2,40,5
+S14,GRU,cross,25,6,1,48,7
+S14,GRU,cross,26,6,6,48,28
+S14,GRU,cross,27,6,2,48,11
+S14,GRU,cross,28,6,5,48,25
+S14,GRU,cross,29,6,6,48,35
+S14,GRU,cross,30,6,4,48,19
+S14,GRU,cross,31,6,1,48,10
+S14,GRU,cross,32,6,1,48,5
+S14,GRU,cross,33,6,1,48,8
+S14,GRU,cross,34,6,4,48,26
+S15,LDA,same,1,1,1,8,8
+S15,LDA,same,2,1,1,8,8
+S15,LDA,same,3,1,1,8,8
+S15,LDA,same,4,1,1,8,8
+S15,LDA,same,5,1,1,8,8
+S15,LDA,same,6,1,1,8,8
+S15,LDA,same,7,1,1,8,7
+S15,LDA,same,8,1,1,8,8
+S15,LDA,same,9,1,1,8,8
+S15,LDA,same,10,1,1,8,8
+S15,LDA,same,11,1,1,8,8
+S15,LDA,same,12,1,1,8,8
+S15,LDA,same,13,1,1,8,8
+S15,LDA,same,14,1,1,8,7
+S15,LDA,same,15,1,1,8,7
+S15,LDA,same,16,1,1,8,7
+S15,LDA,same,17,1,1,8,6
+S15,LDA,same,18,1,1,8,8
+S15,LDA,same,19,1,1,8,8
+S15,LDA,same,20,1,1,8,7
+S15,LDA,same,21,1,1,8,6
+S15,LDA,same,22,1,1,8,7
+S15,LDA,same,23,1,1,8,6
+S15,LDA,same,24,1,1,8,8
+S15,LDA,same,25,1,1,8,8
+S15,LDA,same,26,1,1,8,8
+S15,LDA,same,27,1,1,8,5
+S15,LDA,same,28,1,1,8,7
+S15,LDA,same,29,1,1,8,8
+S15,LDA,same,30,1,1,8,7
+S15,LDA,same,31,1,1,8,6
+S15,LDA,same,32,1,1,8,8
+S15,LDA,same,33,1,1,8,8
+S15,LDA,same,34,1,1,8,8
+S15,LDA,cross,1,6,0,48,2
+S15,LDA,cross,2,6,1,48,10
+S15,LDA,cross,3,6,5,48,27
+S15,LDA,cross,4,3,3,24,19
+S15,LDA,cross,5,6,5,48,23
+S15,LDA,cross,6,6,0,48,0
+S15,LDA,cross,7,6,5,48,17
+S15,LDA,cross,8,6,0,48,4
+S15,LDA,cross,9,6,1,48,6
+S15,LDA,cross,10,6,0,48,0
+S15,LDA,cross,11,6,0,48,0
+S15,LDA,cross,12,6,0,48,0
+S15,LDA,cross,13,6,0,48,0
+S15,LDA,cross,14,6,0,48,0
+S15,LDA,cross,15,6,0,48,0
+S15,LDA,cross,16,6,0,48,0
+S15,LDA,cross,17,6,1,48,12
+S15,LDA,cross,18,6,0,48,2
+S15,LDA,cross,19,6,5,48,35
+S15,LDA,cross,20,6,1,48,11
+S15,LDA,cross,21,6,0,48,2
+S15,LDA,cross,22,6,0,48,0
+S15,LDA,cross,23,6,0,48,1
+S15,LDA,cross,24,6,1,48,10
+S15,LDA,cross,25,6,0,48,1
+S15,LDA,cross,26,6,6,48,35
+S15,LDA,cross,27,6,6,48,28
+S15,LDA,cross,28,6,0,48,1
+S15,LDA,cross,29,6,5,48,24
+S15,LDA,cross,30,6,0,48,4
+S15,LDA,cross,31,6,0,48,4
+S15,LDA,cross,32,6,4,48,22
+S15,LDA,cross,33,6,3,48,19
+S15,LDA,cross,34,6,5,48,31
+S15,1D CNN,same,1,1,1,8,7
+S15,1D CNN,same,2,1,1,8,8
+S15,1D CNN,same,3,1,1,8,8
+S15,1D CNN,same,4,1,1,8,8
+S15,1D CNN,same,5,1,1,8,8
+S15,1D CNN,same,6,1,1,8,8
+S15,1D CNN,same,7,1,1,8,8
+S15,1D CNN,same,8,1,1,8,7
+S15,1D CNN,same,9,1,1,8,8
+S15,1D CNN,same,10,1,1,8,5
+S15,1D CNN,same,11,1,1,8,8
+S15,1D CNN,same,12,1,1,8,8
+S15,1D CNN,same,13,1,1,8,6
+S15,1D CNN,same,14,1,1,8,6
+S15,1D CNN,same,15,1,1,8,6
+S15,1D CNN,same,16,1,1,8,8
+S15,1D CNN,same,17,1,1,8,6
+S15,1D CNN,same,18,1,1,8,5
+S15,1D CNN,same,19,1,1,8,4
+S15,1D CNN,same,20,1,1,8,6
+S15,1D CNN,same,21,1,1,8,6
+S15,1D CNN,same,22,1,1,8,6
+S15,1D CNN,same,23,1,1,8,6
+S15,1D CNN,same,24,1,1,8,6
+S15,1D CNN,same,25,1,1,8,4
+S15,1D CNN,same,26,1,1,8,8
+S15,1D CNN,same,27,1,1,8,6
+S15,1D CNN,same,28,1,1,8,8
+S15,1D CNN,same,29,1,1,8,6
+S15,1D CNN,same,30,1,1,8,7
+S15,1D CNN,same,31,1,1,8,6
+S15,1D CNN,same,32,1,1,8,8
+S15,1D CNN,same,33,1,1,8,8
+S15,1D CNN,same,34,1,1,8,7
+S15,1D CNN,cross,1,6,6,48,37
+S15,1D CNN,cross,2,6,6,48,44
+S15,1D CNN,cross,3,6,6,48,44
+S15,1D CNN,cross,4,3,3,24,23
+S15,1D CNN,cross,5,6,6,48,33
+S15,1D CNN,cross,6,6,0,48,4
+S15,1D CNN,cross,7,6,5,48,31
+S15,1D CNN,cross,8,6,0,48,6
+S15,1D CNN,cross,9,6,6,48,34
+S15,1D CNN,cross,10,6,1,48,13
+S15,1D CNN,cross,11,6,0,48,0
+S15,1D CNN,cross,12,6,0,48,0
+S15,1D CNN,cross,13,6,4,48,23
+S15,1D CNN,cross,14,6,6,48,33
+S15,1D CNN,cross,15,6,0,48,0
+S15,1D CNN,cross,16,6,0,48,3
+S15,1D CNN,cross,17,6,3,48,27
+S15,1D CNN,cross,18,6,6,48,26
+S15,1D CNN,cross,19,6,3,48,17
+S15,1D CNN,cross,20,6,4,48,23
+S15,1D CNN,cross,21,6,4,48,24
+S15,1D CNN,cross,22,6,6,48,37
+S15,1D CNN,cross,23,6,6,48,24
+S15,1D CNN,cross,24,6,6,48,34
+S15,1D CNN,cross,25,6,6,48,26
+S15,1D CNN,cross,26,6,6,48,47
+S15,1D CNN,cross,27,6,4,48,31
+S15,1D CNN,cross,28,6,1,48,10
+S15,1D CNN,cross,29,6,4,48,21
+S15,1D CNN,cross,30,6,3,48,22
+S15,1D CNN,cross,31,6,5,48,30
+S15,1D CNN,cross,32,6,5,48,30
+S15,1D CNN,cross,33,6,6,48,37
+S15,1D CNN,cross,34,6,6,48,48
+S15,TCN,same,1,1,1,8,7
+S15,TCN,same,2,1,1,8,6
+S15,TCN,same,3,1,1,8,8
+S15,TCN,same,4,1,1,8,7
+S15,TCN,same,5,1,1,8,8
+S15,TCN,same,6,1,1,8,8
+S15,TCN,same,7,1,1,8,6
+S15,TCN,same,8,1,1,8,6
+S15,TCN,same,9,1,1,8,8
+S15,TCN,same,10,1,1,8,7
+S15,TCN,same,11,1,1,8,8
+S15,TCN,same,12,1,1,8,8
+S15,TCN,same,13,1,1,8,7
+S15,TCN,same,14,1,0,8,4
+S15,TCN,same,15,1,1,8,6
+S15,TCN,same,16,1,1,8,5
+S15,TCN,same,17,1,1,8,5
+S15,TCN,same,18,1,1,8,3
+S15,TCN,same,19,1,1,8,4
+S15,TCN,same,20,1,1,8,7
+S15,TCN,same,21,1,1,8,6
+S15,TCN,same,22,1,1,8,6
+S15,TCN,same,23,1,1,8,8
+S15,TCN,same,24,1,1,8,8
+S15,TCN,same,25,1,1,8,6
+S15,TCN,same,26,1,1,8,8
+S15,TCN,same,27,1,1,8,4
+S15,TCN,same,28,1,1,8,7
+S15,TCN,same,29,1,1,8,6
+S15,TCN,same,30,1,1,8,7
+S15,TCN,same,31,1,1,8,6
+S15,TCN,same,32,1,1,8,7
+S15,TCN,same,33,1,1,8,8
+S15,TCN,same,34,1,1,8,5
+S15,TCN,cross,1,6,6,48,39
+S15,TCN,cross,2,6,6,48,31
+S15,TCN,cross,3,6,6,48,47
+S15,TCN,cross,4,3,3,24,19
+S15,TCN,cross,5,6,6,48,40
+S15,TCN,cross,6,6,0,48,1
+S15,TCN,cross,7,6,4,48,17
+S15,TCN,cross,8,6,0,48,2
+S15,TCN,cross,9,6,5,48,31
+S15,TCN,cross,10,6,4,48,21
+S15,TCN,cross,11,6,2,48,14
+S15,TCN,cross,12,6,4,48,23
+S15,TCN,cross,13,6,4,48,27
+S15,TCN,cross,14,6,6,48,27
+S15,TCN,cross,15,6,0,48,1
+S15,TCN,cross,16,6,1,48,11
+S15,TCN,cross,17,6,6,48,29
+S15,TCN,cross,18,6,6,48,26
+S15,TCN,cross,19,6,0,48,4
+S15,TCN,cross,20,6,6,48,39
+S15,TCN,cross,21,6,6,48,38
+S15,TCN,cross,22,6,6,48,40
+S15,TCN,cross,23,6,4,48,20
+S15,TCN,cross,24,6,4,48,27
+S15,TCN,cross,25,6,3,48,23
+S15,TCN,cross,26,6,6,48,35
+S15,TCN,cross,27,6,6,48,45
+S15,TCN,cross,28,6,0,48,4
+S15,TCN,cross,29,6,6,48,36
+S15,TCN,cross,30,6,6,48,34
+S15,TCN,cross,31,6,4,48,31
+S15,TCN,cross,32,6,4,48,27
+S15,TCN,cross,33,6,2,48,15
+S15,TCN,cross,34,6,6,48,42
+S15,GRU,same,1,1,1,8,6
+S15,GRU,same,2,1,1,8,6
+S15,GRU,same,3,1,1,8,7
+S15,GRU,same,4,1,1,8,7
+S15,GRU,same,5,1,1,8,7
+S15,GRU,same,6,1,1,8,7
+S15,GRU,same,7,1,1,8,7
+S15,GRU,same,8,1,1,8,7
+S15,GRU,same,9,1,1,8,7
+S15,GRU,same,10,1,1,8,4
+S15,GRU,same,11,1,1,8,5
+S15,GRU,same,12,1,1,8,6
+S15,GRU,same,13,1,1,8,7
+S15,GRU,same,14,1,1,8,4
+S15,GRU,same,15,1,1,8,3
+S15,GRU,same,16,1,1,8,7
+S15,GRU,same,17,1,1,8,5
+S15,GRU,same,18,1,0,8,2
+S15,GRU,same,19,1,1,8,5
+S15,GRU,same,20,1,0,8,2
+S15,GRU,same,21,1,1,8,5
+S15,GRU,same,22,1,1,8,5
+S15,GRU,same,23,1,0,8,3
+S15,GRU,same,24,1,1,8,6
+S15,GRU,same,25,1,1,8,7
+S15,GRU,same,26,1,1,8,7
+S15,GRU,same,27,1,1,8,5
+S15,GRU,same,28,1,1,8,6
+S15,GRU,same,29,1,1,8,5
+S15,GRU,same,30,1,1,8,5
+S15,GRU,same,31,1,1,8,6
+S15,GRU,same,32,1,1,8,7
+S15,GRU,same,33,1,1,8,7
+S15,GRU,same,34,1,1,8,6
+S15,GRU,cross,1,6,4,48,24
+S15,GRU,cross,2,6,6,48,39
+S15,GRU,cross,3,6,5,48,35
+S15,GRU,cross,4,3,3,24,19
+S15,GRU,cross,5,6,6,48,34
+S15,GRU,cross,6,6,0,48,0
+S15,GRU,cross,7,6,3,48,15
+S15,GRU,cross,8,6,1,48,8
+S15,GRU,cross,9,6,6,48,31
+S15,GRU,cross,10,6,6,48,38
+S15,GRU,cross,11,6,1,48,7
+S15,GRU,cross,12,6,1,48,13
+S15,GRU,cross,13,6,6,48,33
+S15,GRU,cross,14,6,6,48,32
+S15,GRU,cross,15,6,0,48,4
+S15,GRU,cross,16,6,1,48,5
+S15,GRU,cross,17,6,6,48,27
+S15,GRU,cross,18,6,5,48,25
+S15,GRU,cross,19,6,0,48,4
+S15,GRU,cross,20,6,4,48,17
+S15,GRU,cross,21,6,6,48,33
+S15,GRU,cross,22,6,4,48,20
+S15,GRU,cross,23,6,3,48,16
+S15,GRU,cross,24,6,6,48,34
+S15,GRU,cross,25,6,5,48,24
+S15,GRU,cross,26,6,6,48,40
+S15,GRU,cross,27,6,5,48,29
+S15,GRU,cross,28,6,0,48,0
+S15,GRU,cross,29,6,6,48,37
+S15,GRU,cross,30,6,4,48,24
+S15,GRU,cross,31,6,2,48,16
+S15,GRU,cross,32,6,6,48,35
+S15,GRU,cross,33,6,6,48,38
+S15,GRU,cross,34,6,6,48,46
+S16,LDA,same,1,1,1,8,6
+S16,LDA,same,2,1,1,8,8
+S16,LDA,same,3,1,1,8,8
+S16,LDA,same,4,1,1,8,3
+S16,LDA,same,5,1,1,8,5
+S16,LDA,same,6,1,0,8,1
+S16,LDA,same,7,1,1,8,7
+S16,LDA,same,8,1,1,8,5
+S16,LDA,same,9,1,1,8,5
+S16,LDA,same,10,1,0,8,3
+S16,LDA,same,11,1,1,8,7
+S16,LDA,same,12,1,1,8,8
+S16,LDA,same,13,1,1,8,8
+S16,LDA,same,14,1,1,8,8
+S16,LDA,same,15,1,1,8,8
+S16,LDA,same,16,1,1,8,8
+S16,LDA,same,17,1,0,8,1
+S16,LDA,same,18,1,1,8,8
+S16,LDA,same,19,1,1,8,8
+S16,LDA,same,20,1,1,8,8
+S16,LDA,same,21,1,1,8,7
+S16,LDA,same,22,1,1,8,8
+S16,LDA,same,23,1,1,8,5
+S16,LDA,same,24,1,0,8,0
+S16,LDA,same,25,1,1,8,7
+S16,LDA,same,26,1,0,8,2
+S16,LDA,same,27,1,1,8,7
+S16,LDA,same,28,1,1,8,5
+S16,LDA,same,29,1,1,8,7
+S16,LDA,same,30,1,0,8,3
+S16,LDA,same,31,1,1,8,8
+S16,LDA,same,32,1,1,8,6
+S16,LDA,same,33,1,1,8,8
+S16,LDA,same,34,1,1,8,8
+S16,LDA,cross,1,6,0,48,0
+S16,LDA,cross,2,6,1,48,2
+S16,LDA,cross,3,6,0,48,11
+S16,LDA,cross,4,6,0,48,0
+S16,LDA,cross,5,6,0,48,0
+S16,LDA,cross,6,6,0,48,0
+S16,LDA,cross,7,6,2,48,10
+S16,LDA,cross,8,6,5,48,27
+S16,LDA,cross,9,6,0,48,0
+S16,LDA,cross,10,6,0,48,0
+S16,LDA,cross,11,6,0,48,0
+S16,LDA,cross,12,6,0,48,0
+S16,LDA,cross,13,6,0,48,4
+S16,LDA,cross,14,6,0,48,0
+S16,LDA,cross,15,6,0,48,0
+S16,LDA,cross,16,6,4,48,17
+S16,LDA,cross,17,6,4,48,15
+S16,LDA,cross,18,6,0,48,0
+S16,LDA,cross,19,6,0,48,0
+S16,LDA,cross,20,6,0,48,10
+S16,LDA,cross,21,6,0,48,0
+S16,LDA,cross,22,6,0,48,0
+S16,LDA,cross,23,6,0,48,3
+S16,LDA,cross,24,6,5,48,20
+S16,LDA,cross,25,6,0,48,0
+S16,LDA,cross,26,6,0,48,5
+S16,LDA,cross,27,6,0,48,0
+S16,LDA,cross,28,6,0,48,0
+S16,LDA,cross,29,6,0,48,0
+S16,LDA,cross,30,6,0,48,1
+S16,LDA,cross,31,6,0,48,0
+S16,LDA,cross,32,6,0,48,4
+S16,LDA,cross,33,6,0,48,0
+S16,LDA,cross,34,6,0,48,1
+S16,1D CNN,same,1,1,1,8,5
+S16,1D CNN,same,2,1,1,8,5
+S16,1D CNN,same,3,1,1,8,4
+S16,1D CNN,same,4,1,1,8,5
+S16,1D CNN,same,5,1,1,8,5
+S16,1D CNN,same,6,1,1,8,8
+S16,1D CNN,same,7,1,1,8,5
+S16,1D CNN,same,8,1,0,8,3
+S16,1D CNN,same,9,1,0,8,3
+S16,1D CNN,same,10,1,1,8,6
+S16,1D CNN,same,11,1,1,8,8
+S16,1D CNN,same,12,1,1,8,6
+S16,1D CNN,same,13,1,1,8,5
+S16,1D CNN,same,14,1,1,8,8
+S16,1D CNN,same,15,1,1,8,5
+S16,1D CNN,same,16,1,1,8,6
+S16,1D CNN,same,17,1,0,8,3
+S16,1D CNN,same,18,1,1,8,8
+S16,1D CNN,same,19,1,1,8,7
+S16,1D CNN,same,20,1,1,8,5
+S16,1D CNN,same,21,1,1,8,5
+S16,1D CNN,same,22,1,1,8,6
+S16,1D CNN,same,23,1,1,8,7
+S16,1D CNN,same,24,1,1,8,5
+S16,1D CNN,same,25,1,0,8,2
+S16,1D CNN,same,26,1,1,8,7
+S16,1D CNN,same,27,1,1,8,8
+S16,1D CNN,same,28,1,1,8,4
+S16,1D CNN,same,29,1,1,8,6
+S16,1D CNN,same,30,1,1,8,5
+S16,1D CNN,same,31,1,1,8,8
+S16,1D CNN,same,32,1,1,8,5
+S16,1D CNN,same,33,1,1,8,8
+S16,1D CNN,same,34,1,1,8,5
+S16,1D CNN,cross,1,6,0,48,0
+S16,1D CNN,cross,2,6,0,48,0
+S16,1D CNN,cross,3,6,0,48,0
+S16,1D CNN,cross,4,6,0,48,2
+S16,1D CNN,cross,5,6,2,48,10
+S16,1D CNN,cross,6,6,1,48,6
+S16,1D CNN,cross,7,6,6,48,23
+S16,1D CNN,cross,8,6,0,48,0
+S16,1D CNN,cross,9,6,2,48,11
+S16,1D CNN,cross,10,6,0,48,0
+S16,1D CNN,cross,11,6,2,48,9
+S16,1D CNN,cross,12,6,4,48,18
+S16,1D CNN,cross,13,6,1,48,7
+S16,1D CNN,cross,14,6,4,48,15
+S16,1D CNN,cross,15,6,1,48,9
+S16,1D CNN,cross,16,6,0,48,0
+S16,1D CNN,cross,17,6,0,48,4
+S16,1D CNN,cross,18,6,3,48,16
+S16,1D CNN,cross,19,6,0,48,3
+S16,1D CNN,cross,20,6,2,48,13
+S16,1D CNN,cross,21,6,5,48,22
+S16,1D CNN,cross,22,6,1,48,5
+S16,1D CNN,cross,23,6,5,48,27
+S16,1D CNN,cross,24,6,6,48,24
+S16,1D CNN,cross,25,6,0,48,4
+S16,1D CNN,cross,26,6,6,48,33
+S16,1D CNN,cross,27,6,1,48,9
+S16,1D CNN,cross,28,6,3,48,17
+S16,1D CNN,cross,29,6,0,48,2
+S16,1D CNN,cross,30,6,5,48,25
+S16,1D CNN,cross,31,6,0,48,0
+S16,1D CNN,cross,32,6,0,48,5
+S16,1D CNN,cross,33,6,0,48,0
+S16,1D CNN,cross,34,6,0,48,1
+S16,TCN,same,1,1,1,8,7
+S16,TCN,same,2,1,1,8,5
+S16,TCN,same,3,1,1,8,4
+S16,TCN,same,4,1,1,8,5
+S16,TCN,same,5,1,1,8,4
+S16,TCN,same,6,1,1,8,8
+S16,TCN,same,7,1,1,8,8
+S16,TCN,same,8,1,0,8,2
+S16,TCN,same,9,1,1,8,6
+S16,TCN,same,10,1,1,8,5
+S16,TCN,same,11,1,1,8,8
+S16,TCN,same,12,1,1,8,4
+S16,TCN,same,13,1,1,8,6
+S16,TCN,same,14,1,1,8,6
+S16,TCN,same,15,1,1,8,6
+S16,TCN,same,16,1,1,8,7
+S16,TCN,same,17,1,0,8,0
+S16,TCN,same,18,1,1,8,8
+S16,TCN,same,19,1,1,8,4
+S16,TCN,same,20,1,1,8,4
+S16,TCN,same,21,1,1,8,4
+S16,TCN,same,22,1,1,8,5
+S16,TCN,same,23,1,1,8,6
+S16,TCN,same,24,1,1,8,4
+S16,TCN,same,25,1,1,8,5
+S16,TCN,same,26,1,0,8,2
+S16,TCN,same,27,1,1,8,5
+S16,TCN,same,28,1,0,8,2
+S16,TCN,same,29,1,1,8,7
+S16,TCN,same,30,1,1,8,8
+S16,TCN,same,31,1,1,8,8
+S16,TCN,same,32,1,1,8,4
+S16,TCN,same,33,1,1,8,6
+S16,TCN,same,34,1,1,8,5
+S16,TCN,cross,1,6,0,48,0
+S16,TCN,cross,2,6,2,48,11
+S16,TCN,cross,3,6,0,48,2
+S16,TCN,cross,4,6,5,48,23
+S16,TCN,cross,5,6,6,48,29
+S16,TCN,cross,6,6,0,48,0
+S16,TCN,cross,7,6,1,48,5
+S16,TCN,cross,8,6,0,48,0
+S16,TCN,cross,9,6,5,48,12
+S16,TCN,cross,10,6,3,48,14
+S16,TCN,cross,11,6,5,48,17
+S16,TCN,cross,12,6,4,48,22
+S16,TCN,cross,13,6,2,48,12
+S16,TCN,cross,14,6,6,48,29
+S16,TCN,cross,15,6,1,48,2
+S16,TCN,cross,16,6,0,48,0
+S16,TCN,cross,17,6,3,48,16
+S16,TCN,cross,18,6,5,48,21
+S16,TCN,cross,19,6,0,48,1
+S16,TCN,cross,20,6,2,48,13
+S16,TCN,cross,21,6,4,48,18
+S16,TCN,cross,22,6,6,48,30
+S16,TCN,cross,23,6,6,48,31
+S16,TCN,cross,24,6,6,48,27
+S16,TCN,cross,25,6,0,48,4
+S16,TCN,cross,26,6,6,48,41
+S16,TCN,cross,27,6,0,48,2
+S16,TCN,cross,28,6,3,48,25
+S16,TCN,cross,29,6,1,48,9
+S16,TCN,cross,30,6,0,48,12
+S16,TCN,cross,31,6,0,48,0
+S16,TCN,cross,32,6,0,48,0
+S16,TCN,cross,33,6,0,48,0
+S16,TCN,cross,34,6,0,48,6
+S16,GRU,same,1,1,0,8,0
+S16,GRU,same,2,1,1,8,3
+S16,GRU,same,3,1,1,8,4
+S16,GRU,same,4,1,1,8,3
+S16,GRU,same,5,1,1,8,4
+S16,GRU,same,6,1,0,8,2
+S16,GRU,same,7,1,1,8,6
+S16,GRU,same,8,1,0,8,3
+S16,GRU,same,9,1,1,8,5
+S16,GRU,same,10,1,1,8,5
+S16,GRU,same,11,1,1,8,7
+S16,GRU,same,12,1,1,8,3
+S16,GRU,same,13,1,1,8,3
+S16,GRU,same,14,1,1,8,4
+S16,GRU,same,15,1,1,8,4
+S16,GRU,same,16,1,1,8,2
+S16,GRU,same,17,1,0,8,0
+S16,GRU,same,18,1,1,8,8
+S16,GRU,same,19,1,1,8,3
+S16,GRU,same,20,1,1,8,5
+S16,GRU,same,21,1,1,8,5
+S16,GRU,same,22,1,1,8,3
+S16,GRU,same,23,1,1,8,2
+S16,GRU,same,24,1,1,8,3
+S16,GRU,same,25,1,1,8,2
+S16,GRU,same,26,1,1,8,3
+S16,GRU,same,27,1,0,8,3
+S16,GRU,same,28,1,1,8,3
+S16,GRU,same,29,1,0,8,2
+S16,GRU,same,30,1,0,8,2
+S16,GRU,same,31,1,0,8,2
+S16,GRU,same,32,1,1,8,3
+S16,GRU,same,33,1,0,8,1
+S16,GRU,same,34,1,1,8,3
+S16,GRU,cross,1,6,0,48,0
+S16,GRU,cross,2,6,6,48,16
+S16,GRU,cross,3,6,2,48,15
+S16,GRU,cross,4,6,1,48,2
+S16,GRU,cross,5,6,6,48,43
+S16,GRU,cross,6,6,1,48,5
+S16,GRU,cross,7,6,6,48,38
+S16,GRU,cross,8,6,0,48,3
+S16,GRU,cross,9,6,1,48,11
+S16,GRU,cross,10,6,4,48,23
+S16,GRU,cross,11,6,6,48,24
+S16,GRU,cross,12,6,4,48,19
+S16,GRU,cross,13,6,5,48,27
+S16,GRU,cross,14,6,0,48,3
+S16,GRU,cross,15,6,0,48,2
+S16,GRU,cross,16,6,0,48,2
+S16,GRU,cross,17,6,3,48,12
+S16,GRU,cross,18,6,5,48,21
+S16,GRU,cross,19,6,0,48,1
+S16,GRU,cross,20,6,0,48,0
+S16,GRU,cross,21,6,5,48,18
+S16,GRU,cross,22,6,0,48,5
+S16,GRU,cross,23,6,5,48,22
+S16,GRU,cross,24,6,1,48,12
+S16,GRU,cross,25,6,0,48,5
+S16,GRU,cross,26,6,5,48,27
+S16,GRU,cross,27,6,0,48,1
+S16,GRU,cross,28,6,0,48,6
+S16,GRU,cross,29,6,1,48,6
+S16,GRU,cross,30,6,2,48,11
+S16,GRU,cross,31,6,0,48,2
+S16,GRU,cross,32,6,4,48,20
+S16,GRU,cross,33,6,0,48,3
+S16,GRU,cross,34,6,0,48,2
+S17,LDA,same,1,1,1,8,7
+S17,LDA,same,2,1,1,8,8
+S17,LDA,same,3,1,1,8,8
+S17,LDA,same,4,1,1,8,5
+S17,LDA,same,5,1,1,8,8
+S17,LDA,same,6,1,1,8,8
+S17,LDA,same,7,1,1,8,8
+S17,LDA,same,8,1,1,8,8
+S17,LDA,same,9,1,1,8,8
+S17,LDA,same,10,1,1,8,8
+S17,LDA,same,11,1,1,8,7
+S17,LDA,same,12,1,1,8,8
+S17,LDA,same,13,1,1,8,8
+S17,LDA,same,14,1,1,8,8
+S17,LDA,same,15,1,1,8,7
+S17,LDA,same,16,1,1,8,8
+S17,LDA,same,17,1,1,8,7
+S17,LDA,same,18,1,1,8,7
+S17,LDA,same,19,1,1,8,7
+S17,LDA,same,20,1,1,8,8
+S17,LDA,same,21,1,1,8,8
+S17,LDA,same,22,1,1,8,8
+S17,LDA,same,23,1,1,8,6
+S17,LDA,same,24,1,1,8,6
+S17,LDA,same,25,1,1,8,8
+S17,LDA,same,26,1,1,8,8
+S17,LDA,same,27,1,1,8,8
+S17,LDA,same,28,1,1,8,8
+S17,LDA,same,29,1,1,8,7
+S17,LDA,same,30,1,1,8,7
+S17,LDA,same,31,1,1,8,7
+S17,LDA,same,32,1,1,8,4
+S17,LDA,same,33,1,1,8,6
+S17,LDA,same,34,1,1,8,8
+S17,LDA,cross,1,6,0,48,4
+S17,LDA,cross,2,6,0,48,2
+S17,LDA,cross,3,6,0,48,2
+S17,LDA,cross,4,6,0,48,3
+S17,LDA,cross,5,6,0,48,0
+S17,LDA,cross,6,6,0,48,0
+S17,LDA,cross,7,6,0,48,5
+S17,LDA,cross,8,4,0,32,1
+S17,LDA,cross,9,6,0,48,3
+S17,LDA,cross,10,6,1,48,10
+S17,LDA,cross,11,6,0,48,0
+S17,LDA,cross,12,6,0,48,2
+S17,LDA,cross,13,6,0,48,3
+S17,LDA,cross,14,6,0,48,2
+S17,LDA,cross,15,6,5,48,26
+S17,LDA,cross,16,6,2,48,12
+S17,LDA,cross,17,6,0,48,2
+S17,LDA,cross,18,6,5,48,28
+S17,LDA,cross,19,6,2,48,16
+S17,LDA,cross,20,6,1,48,15
+S17,LDA,cross,21,6,1,48,5
+S17,LDA,cross,22,6,0,48,0
+S17,LDA,cross,23,6,0,48,0
+S17,LDA,cross,24,6,0,48,6
+S17,LDA,cross,25,6,0,48,7
+S17,LDA,cross,26,6,0,48,1
+S17,LDA,cross,27,6,0,48,0
+S17,LDA,cross,28,6,0,48,0
+S17,LDA,cross,29,6,3,48,26
+S17,LDA,cross,30,6,0,48,0
+S17,LDA,cross,31,6,4,48,24
+S17,LDA,cross,32,6,4,48,21
+S17,LDA,cross,33,6,4,48,29
+S17,LDA,cross,34,6,6,48,31
+S17,1D CNN,same,1,1,1,8,6
+S17,1D CNN,same,2,1,1,8,7
+S17,1D CNN,same,3,1,1,8,8
+S17,1D CNN,same,4,1,1,8,5
+S17,1D CNN,same,5,1,1,8,8
+S17,1D CNN,same,6,1,1,8,8
+S17,1D CNN,same,7,1,1,8,7
+S17,1D CNN,same,8,1,1,8,8
+S17,1D CNN,same,9,1,1,8,7
+S17,1D CNN,same,10,1,1,8,8
+S17,1D CNN,same,11,1,1,8,5
+S17,1D CNN,same,12,1,1,8,8
+S17,1D CNN,same,13,1,1,8,8
+S17,1D CNN,same,14,1,1,8,7
+S17,1D CNN,same,15,1,1,8,7
+S17,1D CNN,same,16,1,1,8,8
+S17,1D CNN,same,17,1,1,8,8
+S17,1D CNN,same,18,1,1,8,8
+S17,1D CNN,same,19,1,0,8,3
+S17,1D CNN,same,20,1,1,8,3
+S17,1D CNN,same,21,1,1,8,8
+S17,1D CNN,same,22,1,1,8,8
+S17,1D CNN,same,23,1,1,8,6
+S17,1D CNN,same,24,1,1,8,7
+S17,1D CNN,same,25,1,1,8,8
+S17,1D CNN,same,26,1,1,8,8
+S17,1D CNN,same,27,1,0,8,0
+S17,1D CNN,same,28,1,1,8,8
+S17,1D CNN,same,29,1,1,8,7
+S17,1D CNN,same,30,1,1,8,8
+S17,1D CNN,same,31,1,1,8,7
+S17,1D CNN,same,32,1,1,8,8
+S17,1D CNN,same,33,1,1,8,6
+S17,1D CNN,same,34,1,1,8,7
+S17,1D CNN,cross,1,6,0,48,1
+S17,1D CNN,cross,2,6,6,48,44
+S17,1D CNN,cross,3,6,6,48,36
+S17,1D CNN,cross,4,6,6,48,32
+S17,1D CNN,cross,5,6,6,48,32
+S17,1D CNN,cross,6,6,0,48,0
+S17,1D CNN,cross,7,6,6,48,41
+S17,1D CNN,cross,8,4,3,32,16
+S17,1D CNN,cross,9,6,5,48,29
+S17,1D CNN,cross,10,6,0,48,2
+S17,1D CNN,cross,11,6,5,48,32
+S17,1D CNN,cross,12,6,4,48,32
+S17,1D CNN,cross,13,6,0,48,1
+S17,1D CNN,cross,14,6,2,48,11
+S17,1D CNN,cross,15,6,5,48,26
+S17,1D CNN,cross,16,6,6,48,42
+S17,1D CNN,cross,17,6,6,48,31
+S17,1D CNN,cross,18,6,6,48,43
+S17,1D CNN,cross,19,6,0,48,2
+S17,1D CNN,cross,20,6,0,48,0
+S17,1D CNN,cross,21,6,6,48,32
+S17,1D CNN,cross,22,6,0,48,0
+S17,1D CNN,cross,23,6,3,48,19
+S17,1D CNN,cross,24,6,0,48,1
+S17,1D CNN,cross,25,6,6,48,35
+S17,1D CNN,cross,26,6,1,48,9
+S17,1D CNN,cross,27,6,0,48,0
+S17,1D CNN,cross,28,6,0,48,0
+S17,1D CNN,cross,29,6,0,48,0
+S17,1D CNN,cross,30,6,0,48,8
+S17,1D CNN,cross,31,6,6,48,38
+S17,1D CNN,cross,32,6,6,48,32
+S17,1D CNN,cross,33,6,4,48,21
+S17,1D CNN,cross,34,6,6,48,36
+S17,TCN,same,1,1,1,8,5
+S17,TCN,same,2,1,1,8,6
+S17,TCN,same,3,1,1,8,7
+S17,TCN,same,4,1,1,8,2
+S17,TCN,same,5,1,1,8,8
+S17,TCN,same,6,1,1,8,8
+S17,TCN,same,7,1,1,8,7
+S17,TCN,same,8,1,1,8,7
+S17,TCN,same,9,1,1,8,7
+S17,TCN,same,10,1,1,8,8
+S17,TCN,same,11,1,1,8,5
+S17,TCN,same,12,1,1,8,8
+S17,TCN,same,13,1,1,8,8
+S17,TCN,same,14,1,1,8,8
+S17,TCN,same,15,1,1,8,7
+S17,TCN,same,16,1,1,8,7
+S17,TCN,same,17,1,1,8,7
+S17,TCN,same,18,1,1,8,8
+S17,TCN,same,19,1,0,8,3
+S17,TCN,same,20,1,1,8,5
+S17,TCN,same,21,1,1,8,8
+S17,TCN,same,22,1,1,8,8
+S17,TCN,same,23,1,1,8,5
+S17,TCN,same,24,1,1,8,7
+S17,TCN,same,25,1,1,8,8
+S17,TCN,same,26,1,1,8,8
+S17,TCN,same,27,1,0,8,3
+S17,TCN,same,28,1,1,8,8
+S17,TCN,same,29,1,1,8,6
+S17,TCN,same,30,1,1,8,8
+S17,TCN,same,31,1,1,8,7
+S17,TCN,same,32,1,1,8,4
+S17,TCN,same,33,1,1,8,8
+S17,TCN,same,34,1,1,8,5
+S17,TCN,cross,1,6,5,48,27
+S17,TCN,cross,2,6,6,48,43
+S17,TCN,cross,3,6,6,48,30
+S17,TCN,cross,4,6,0,48,4
+S17,TCN,cross,5,6,0,48,1
+S17,TCN,cross,6,6,0,48,0
+S17,TCN,cross,7,6,6,48,33
+S17,TCN,cross,8,4,3,32,16
+S17,TCN,cross,9,6,0,48,0
+S17,TCN,cross,10,6,4,48,22
+S17,TCN,cross,11,6,5,48,29
+S17,TCN,cross,12,6,1,48,5
+S17,TCN,cross,13,6,6,48,32
+S17,TCN,cross,14,6,2,48,15
+S17,TCN,cross,15,6,6,48,31
+S17,TCN,cross,16,6,4,48,19
+S17,TCN,cross,17,6,6,48,36
+S17,TCN,cross,18,6,5,48,35
+S17,TCN,cross,19,6,0,48,0
+S17,TCN,cross,20,6,5,48,21
+S17,TCN,cross,21,6,0,48,2
+S17,TCN,cross,22,6,0,48,0
+S17,TCN,cross,23,6,0,48,2
+S17,TCN,cross,24,6,1,48,7
+S17,TCN,cross,25,6,0,48,2
+S17,TCN,cross,26,6,4,48,24
+S17,TCN,cross,27,6,0,48,0
+S17,TCN,cross,28,6,0,48,0
+S17,TCN,cross,29,6,0,48,2
+S17,TCN,cross,30,6,0,48,4
+S17,TCN,cross,31,6,6,48,37
+S17,TCN,cross,32,6,3,48,21
+S17,TCN,cross,33,6,0,48,0
+S17,TCN,cross,34,6,6,48,40
+S17,GRU,same,1,1,1,8,4
+S17,GRU,same,2,1,1,8,7
+S17,GRU,same,3,1,1,8,8
+S17,GRU,same,4,1,0,8,0
+S17,GRU,same,5,1,1,8,8
+S17,GRU,same,6,1,1,8,6
+S17,GRU,same,7,1,1,8,8
+S17,GRU,same,8,1,1,8,8
+S17,GRU,same,9,1,1,8,5
+S17,GRU,same,10,1,1,8,6
+S17,GRU,same,11,1,1,8,6
+S17,GRU,same,12,1,1,8,8
+S17,GRU,same,13,1,1,8,7
+S17,GRU,same,14,1,1,8,6
+S17,GRU,same,15,1,1,8,7
+S17,GRU,same,16,1,1,8,8
+S17,GRU,same,17,1,1,8,7
+S17,GRU,same,18,1,1,8,7
+S17,GRU,same,19,1,1,8,4
+S17,GRU,same,20,1,0,8,2
+S17,GRU,same,21,1,1,8,7
+S17,GRU,same,22,1,1,8,8
+S17,GRU,same,23,1,1,8,6
+S17,GRU,same,24,1,1,8,7
+S17,GRU,same,25,1,1,8,8
+S17,GRU,same,26,1,1,8,8
+S17,GRU,same,27,1,1,8,5
+S17,GRU,same,28,1,1,8,8
+S17,GRU,same,29,1,1,8,7
+S17,GRU,same,30,1,1,8,7
+S17,GRU,same,31,1,1,8,7
+S17,GRU,same,32,1,1,8,4
+S17,GRU,same,33,1,1,8,5
+S17,GRU,same,34,1,1,8,7
+S17,GRU,cross,1,6,1,48,10
+S17,GRU,cross,2,6,6,48,44
+S17,GRU,cross,3,6,2,48,18
+S17,GRU,cross,4,6,6,48,22
+S17,GRU,cross,5,6,5,48,30
+S17,GRU,cross,6,6,0,48,0
+S17,GRU,cross,7,6,5,48,31
+S17,GRU,cross,8,4,3,32,15
+S17,GRU,cross,9,6,1,48,7
+S17,GRU,cross,10,6,5,48,32
+S17,GRU,cross,11,6,5,48,30
+S17,GRU,cross,12,6,5,48,32
+S17,GRU,cross,13,6,0,48,0
+S17,GRU,cross,14,6,2,48,12
+S17,GRU,cross,15,6,5,48,31
+S17,GRU,cross,16,6,6,48,40
+S17,GRU,cross,17,6,6,48,36
+S17,GRU,cross,18,6,5,48,34
+S17,GRU,cross,19,6,2,48,14
+S17,GRU,cross,20,6,0,48,6
+S17,GRU,cross,21,6,0,48,0
+S17,GRU,cross,22,6,5,48,34
+S17,GRU,cross,23,6,2,48,15
+S17,GRU,cross,24,6,0,48,3
+S17,GRU,cross,25,6,6,48,37
+S17,GRU,cross,26,6,5,48,40
+S17,GRU,cross,27,6,0,48,0
+S17,GRU,cross,28,6,0,48,0
+S17,GRU,cross,29,6,0,48,0
+S17,GRU,cross,30,6,0,48,9
+S17,GRU,cross,31,6,0,48,5
+S17,GRU,cross,32,6,6,48,35
+S17,GRU,cross,33,6,2,48,14
+S17,GRU,cross,34,6,6,48,34
+S18,LDA,same,1,1,1,8,4
+S18,LDA,same,2,1,1,8,6
+S18,LDA,same,3,1,1,8,8
+S18,LDA,same,4,1,1,8,8
+S18,LDA,same,5,1,1,8,6
+S18,LDA,same,6,1,1,8,5
+S18,LDA,same,7,1,1,8,5
+S18,LDA,same,8,1,1,8,3
+S18,LDA,same,9,1,1,8,3
+S18,LDA,same,10,1,0,8,4
+S18,LDA,same,11,1,1,8,6
+S18,LDA,same,12,1,1,8,7
+S18,LDA,same,13,1,1,8,8
+S18,LDA,same,14,1,1,8,4
+S18,LDA,same,15,1,1,8,6
+S18,LDA,same,16,1,1,8,5
+S18,LDA,same,17,1,1,8,5
+S18,LDA,same,18,1,1,8,5
+S18,LDA,same,19,1,1,8,5
+S18,LDA,same,20,1,1,8,6
+S18,LDA,same,21,1,1,8,4
+S18,LDA,same,22,1,1,8,3
+S18,LDA,same,23,1,0,8,0
+S18,LDA,same,24,1,1,8,5
+S18,LDA,same,25,1,1,8,4
+S18,LDA,same,26,1,1,8,6
+S18,LDA,same,27,1,1,8,5
+S18,LDA,same,28,1,1,8,8
+S18,LDA,same,29,1,1,8,4
+S18,LDA,same,30,1,1,8,5
+S18,LDA,same,31,1,1,8,7
+S18,LDA,same,32,1,1,8,7
+S18,LDA,same,33,1,1,8,6
+S18,LDA,same,34,1,1,8,6
+S18,LDA,cross,1,6,4,48,15
+S18,LDA,cross,2,6,5,48,29
+S18,LDA,cross,3,6,1,48,8
+S18,LDA,cross,4,6,6,48,36
+S18,LDA,cross,5,6,6,48,37
+S18,LDA,cross,6,6,1,48,7
+S18,LDA,cross,7,5,1,40,6
+S18,LDA,cross,8,6,0,48,1
+S18,LDA,cross,9,6,1,48,8
+S18,LDA,cross,10,6,5,48,21
+S18,LDA,cross,11,6,6,48,24
+S18,LDA,cross,12,6,6,48,28
+S18,LDA,cross,13,6,6,48,35
+S18,LDA,cross,14,6,6,48,23
+S18,LDA,cross,15,6,6,48,30
+S18,LDA,cross,16,6,0,48,1
+S18,LDA,cross,17,6,1,48,5
+S18,LDA,cross,18,6,2,48,14
+S18,LDA,cross,19,6,0,48,0
+S18,LDA,cross,20,6,0,48,1
+S18,LDA,cross,21,6,0,48,1
+S18,LDA,cross,22,6,0,48,0
+S18,LDA,cross,23,6,0,48,1
+S18,LDA,cross,24,6,0,48,0
+S18,LDA,cross,25,6,0,48,6
+S18,LDA,cross,26,6,0,48,2
+S18,LDA,cross,27,6,0,48,2
+S18,LDA,cross,28,6,0,48,9
+S18,LDA,cross,29,6,0,48,0
+S18,LDA,cross,30,6,0,48,1
+S18,LDA,cross,31,6,0,48,0
+S18,LDA,cross,32,6,4,48,17
+S18,LDA,cross,33,6,0,48,4
+S18,LDA,cross,34,6,6,48,31
+S18,1D CNN,same,1,1,0,8,1
+S18,1D CNN,same,2,1,1,8,7
+S18,1D CNN,same,3,1,1,8,8
+S18,1D CNN,same,4,1,1,8,8
+S18,1D CNN,same,5,1,1,8,6
+S18,1D CNN,same,6,1,1,8,5
+S18,1D CNN,same,7,1,1,8,6
+S18,1D CNN,same,8,1,1,8,8
+S18,1D CNN,same,9,1,1,8,5
+S18,1D CNN,same,10,1,1,8,4
+S18,1D CNN,same,11,1,1,8,7
+S18,1D CNN,same,12,1,1,8,6
+S18,1D CNN,same,13,1,1,8,8
+S18,1D CNN,same,14,1,1,8,5
+S18,1D CNN,same,15,1,1,8,6
+S18,1D CNN,same,16,1,1,8,5
+S18,1D CNN,same,17,1,1,8,7
+S18,1D CNN,same,18,1,0,8,4
+S18,1D CNN,same,19,1,1,8,8
+S18,1D CNN,same,20,1,1,8,6
+S18,1D CNN,same,21,1,1,8,4
+S18,1D CNN,same,22,1,1,8,4
+S18,1D CNN,same,23,1,0,8,0
+S18,1D CNN,same,24,1,0,8,4
+S18,1D CNN,same,25,1,1,8,4
+S18,1D CNN,same,26,1,1,8,8
+S18,1D CNN,same,27,1,1,8,8
+S18,1D CNN,same,28,1,1,8,8
+S18,1D CNN,same,29,1,1,8,4
+S18,1D CNN,same,30,1,1,8,8
+S18,1D CNN,same,31,1,1,8,8
+S18,1D CNN,same,32,1,1,8,8
+S18,1D CNN,same,33,1,1,8,5
+S18,1D CNN,same,34,1,0,8,1
+S18,1D CNN,cross,1,6,6,48,33
+S18,1D CNN,cross,2,6,6,48,38
+S18,1D CNN,cross,3,6,6,48,39
+S18,1D CNN,cross,4,6,6,48,45
+S18,1D CNN,cross,5,6,6,48,40
+S18,1D CNN,cross,6,6,2,48,12
+S18,1D CNN,cross,7,5,5,40,31
+S18,1D CNN,cross,8,6,6,48,30
+S18,1D CNN,cross,9,6,6,48,36
+S18,1D CNN,cross,10,6,6,48,39
+S18,1D CNN,cross,11,6,6,48,36
+S18,1D CNN,cross,12,6,6,48,32
+S18,1D CNN,cross,13,6,6,48,44
+S18,1D CNN,cross,14,6,6,48,33
+S18,1D CNN,cross,15,6,3,48,14
+S18,1D CNN,cross,16,6,1,48,14
+S18,1D CNN,cross,17,6,4,48,23
+S18,1D CNN,cross,18,6,3,48,17
+S18,1D CNN,cross,19,6,4,48,24
+S18,1D CNN,cross,20,6,3,48,18
+S18,1D CNN,cross,21,6,4,48,19
+S18,1D CNN,cross,22,6,2,48,10
+S18,1D CNN,cross,23,6,0,48,2
+S18,1D CNN,cross,24,6,5,48,23
+S18,1D CNN,cross,25,6,5,48,26
+S18,1D CNN,cross,26,6,2,48,13
+S18,1D CNN,cross,27,6,6,48,46
+S18,1D CNN,cross,28,6,6,48,32
+S18,1D CNN,cross,29,6,0,48,9
+S18,1D CNN,cross,30,6,6,48,44
+S18,1D CNN,cross,31,6,6,48,28
+S18,1D CNN,cross,32,6,6,48,38
+S18,1D CNN,cross,33,6,3,48,24
+S18,1D CNN,cross,34,6,2,48,13
+S18,TCN,same,1,1,0,8,1
+S18,TCN,same,2,1,1,8,6
+S18,TCN,same,3,1,1,8,8
+S18,TCN,same,4,1,1,8,8
+S18,TCN,same,5,1,1,8,8
+S18,TCN,same,6,1,1,8,4
+S18,TCN,same,7,1,1,8,5
+S18,TCN,same,8,1,1,8,3
+S18,TCN,same,9,1,0,8,2
+S18,TCN,same,10,1,1,8,4
+S18,TCN,same,11,1,1,8,7
+S18,TCN,same,12,1,1,8,6
+S18,TCN,same,13,1,1,8,6
+S18,TCN,same,14,1,1,8,5
+S18,TCN,same,15,1,1,8,5
+S18,TCN,same,16,1,1,8,7
+S18,TCN,same,17,1,0,8,2
+S18,TCN,same,18,1,1,8,6
+S18,TCN,same,19,1,1,8,5
+S18,TCN,same,20,1,1,8,4
+S18,TCN,same,21,1,1,8,3
+S18,TCN,same,22,1,1,8,4
+S18,TCN,same,23,1,0,8,0
+S18,TCN,same,24,1,1,8,4
+S18,TCN,same,25,1,1,8,6
+S18,TCN,same,26,1,1,8,8
+S18,TCN,same,27,1,1,8,6
+S18,TCN,same,28,1,1,8,4
+S18,TCN,same,29,1,0,8,3
+S18,TCN,same,30,1,1,8,7
+S18,TCN,same,31,1,1,8,8
+S18,TCN,same,32,1,1,8,8
+S18,TCN,same,33,1,1,8,5
+S18,TCN,same,34,1,1,8,4
+S18,TCN,cross,1,6,6,48,45
+S18,TCN,cross,2,6,4,48,20
+S18,TCN,cross,3,6,6,48,35
+S18,TCN,cross,4,6,6,48,39
+S18,TCN,cross,5,6,6,48,41
+S18,TCN,cross,6,6,1,48,11
+S18,TCN,cross,7,5,2,40,13
+S18,TCN,cross,8,6,5,48,22
+S18,TCN,cross,9,6,1,48,5
+S18,TCN,cross,10,6,6,48,33
+S18,TCN,cross,11,6,6,48,34
+S18,TCN,cross,12,6,6,48,33
+S18,TCN,cross,13,6,6,48,33
+S18,TCN,cross,14,6,6,48,29
+S18,TCN,cross,15,6,2,48,11
+S18,TCN,cross,16,6,0,48,2
+S18,TCN,cross,17,6,3,48,16
+S18,TCN,cross,18,6,3,48,15
+S18,TCN,cross,19,6,0,48,2
+S18,TCN,cross,20,6,6,48,20
+S18,TCN,cross,21,6,6,48,22
+S18,TCN,cross,22,6,0,48,6
+S18,TCN,cross,23,6,0,48,5
+S18,TCN,cross,24,6,0,48,13
+S18,TCN,cross,25,6,6,48,39
+S18,TCN,cross,26,6,1,48,10
+S18,TCN,cross,27,6,6,48,44
+S18,TCN,cross,28,6,6,48,34
+S18,TCN,cross,29,6,0,48,4
+S18,TCN,cross,30,6,6,48,30
+S18,TCN,cross,31,6,0,48,5
+S18,TCN,cross,32,6,6,48,39
+S18,TCN,cross,33,6,6,48,28
+S18,TCN,cross,34,6,4,48,24
+S18,GRU,same,1,1,0,8,1
+S18,GRU,same,2,1,1,8,7
+S18,GRU,same,3,1,1,8,7
+S18,GRU,same,4,1,1,8,6
+S18,GRU,same,5,1,1,8,6
+S18,GRU,same,6,1,1,8,3
+S18,GRU,same,7,1,1,8,7
+S18,GRU,same,8,1,1,8,5
+S18,GRU,same,9,1,1,8,4
+S18,GRU,same,10,1,1,8,5
+S18,GRU,same,11,1,1,8,5
+S18,GRU,same,12,1,1,8,6
+S18,GRU,same,13,1,1,8,3
+S18,GRU,same,14,1,1,8,3
+S18,GRU,same,15,1,1,8,6
+S18,GRU,same,16,1,1,8,3
+S18,GRU,same,17,1,1,8,5
+S18,GRU,same,18,1,0,8,2
+S18,GRU,same,19,1,1,8,6
+S18,GRU,same,20,1,1,8,3
+S18,GRU,same,21,1,0,8,2
+S18,GRU,same,22,1,1,8,4
+S18,GRU,same,23,1,0,8,0
+S18,GRU,same,24,1,1,8,3
+S18,GRU,same,25,1,1,8,3
+S18,GRU,same,26,1,1,8,4
+S18,GRU,same,27,1,1,8,5
+S18,GRU,same,28,1,1,8,3
+S18,GRU,same,29,1,1,8,3
+S18,GRU,same,30,1,0,8,2
+S18,GRU,same,31,1,0,8,2
+S18,GRU,same,32,1,1,8,4
+S18,GRU,same,33,1,1,8,4
+S18,GRU,same,34,1,1,8,4
+S18,GRU,cross,1,6,2,48,14
+S18,GRU,cross,2,6,6,48,34
+S18,GRU,cross,3,6,6,48,33
+S18,GRU,cross,4,6,6,48,38
+S18,GRU,cross,5,6,6,48,41
+S18,GRU,cross,6,6,2,48,8
+S18,GRU,cross,7,5,5,40,30
+S18,GRU,cross,8,6,6,48,32
+S18,GRU,cross,9,6,4,48,22
+S18,GRU,cross,10,6,6,48,36
+S18,GRU,cross,11,6,3,48,17
+S18,GRU,cross,12,6,6,48,35
+S18,GRU,cross,13,6,2,48,14
+S18,GRU,cross,14,6,5,48,23
+S18,GRU,cross,15,6,3,48,16
+S18,GRU,cross,16,6,0,48,2
+S18,GRU,cross,17,6,6,48,28
+S18,GRU,cross,18,6,2,48,13
+S18,GRU,cross,19,6,2,48,10
+S18,GRU,cross,20,6,2,48,7
+S18,GRU,cross,21,6,1,48,9
+S18,GRU,cross,22,6,5,48,18
+S18,GRU,cross,23,6,1,48,8
+S18,GRU,cross,24,6,4,48,26
+S18,GRU,cross,25,6,6,48,27
+S18,GRU,cross,26,6,5,48,16
+S18,GRU,cross,27,6,3,48,27
+S18,GRU,cross,28,6,3,48,23
+S18,GRU,cross,29,6,0,48,6
+S18,GRU,cross,30,6,5,48,21
+S18,GRU,cross,31,6,4,48,15
+S18,GRU,cross,32,6,4,48,21
+S18,GRU,cross,33,6,6,48,31
+S18,GRU,cross,34,6,6,48,25
+S19,LDA,same,1,1,1,8,5
+S19,LDA,same,2,1,1,8,5
+S19,LDA,same,3,1,1,8,6
+S19,LDA,same,4,1,1,8,8
+S19,LDA,same,5,1,1,8,5
+S19,LDA,same,6,1,1,8,7
+S19,LDA,same,7,1,1,8,7
+S19,LDA,same,8,1,1,8,6
+S19,LDA,same,9,1,1,8,5
+S19,LDA,same,10,1,1,8,6
+S19,LDA,same,11,1,1,8,7
+S19,LDA,same,12,1,0,8,4
+S19,LDA,same,13,1,1,8,7
+S19,LDA,same,14,1,1,8,6
+S19,LDA,same,15,1,1,8,4
+S19,LDA,same,16,1,1,8,4
+S19,LDA,same,17,1,1,8,7
+S19,LDA,same,18,1,1,8,4
+S19,LDA,same,19,1,1,8,6
+S19,LDA,same,20,1,1,8,5
+S19,LDA,same,21,1,1,8,4
+S19,LDA,same,22,1,1,8,6
+S19,LDA,same,23,1,1,8,6
+S19,LDA,same,24,1,1,8,5
+S19,LDA,same,25,1,1,8,7
+S19,LDA,same,26,1,1,8,6
+S19,LDA,same,27,1,1,8,3
+S19,LDA,same,28,1,1,8,7
+S19,LDA,same,29,1,1,8,5
+S19,LDA,same,30,1,1,8,6
+S19,LDA,same,31,1,1,8,5
+S19,LDA,same,32,1,1,8,5
+S19,LDA,same,33,1,1,8,6
+S19,LDA,same,34,1,1,8,7
+S19,LDA,cross,1,6,3,48,12
+S19,LDA,cross,2,6,5,48,21
+S19,LDA,cross,3,6,2,48,9
+S19,LDA,cross,4,6,1,48,5
+S19,LDA,cross,5,6,0,48,0
+S19,LDA,cross,6,6,0,48,0
+S19,LDA,cross,7,6,0,48,0
+S19,LDA,cross,8,6,2,48,12
+S19,LDA,cross,9,6,0,48,0
+S19,LDA,cross,10,5,0,40,0
+S19,LDA,cross,12,6,2,48,15
+S19,LDA,cross,13,6,0,48,2
+S19,LDA,cross,14,6,3,48,15
+S19,LDA,cross,15,6,6,48,25
+S19,LDA,cross,16,6,1,48,14
+S19,LDA,cross,17,6,6,48,35
+S19,LDA,cross,18,6,4,48,25
+S19,LDA,cross,19,6,3,48,22
+S19,LDA,cross,20,6,6,48,26
+S19,LDA,cross,21,6,6,48,34
+S19,LDA,cross,22,6,6,48,28
+S19,LDA,cross,23,6,6,48,29
+S19,LDA,cross,24,6,4,48,23
+S19,LDA,cross,25,6,6,48,26
+S19,LDA,cross,26,6,6,48,30
+S19,LDA,cross,27,6,6,48,32
+S19,LDA,cross,28,6,5,48,25
+S19,LDA,cross,29,6,5,48,24
+S19,LDA,cross,30,6,3,48,17
+S19,LDA,cross,31,6,5,48,27
+S19,LDA,cross,32,6,6,48,33
+S19,LDA,cross,33,6,3,48,24
+S19,LDA,cross,34,6,3,48,16
+S19,1D CNN,same,1,1,1,8,7
+S19,1D CNN,same,2,1,1,8,7
+S19,1D CNN,same,3,1,1,8,7
+S19,1D CNN,same,4,1,1,8,8
+S19,1D CNN,same,5,1,1,8,6
+S19,1D CNN,same,6,1,1,8,5
+S19,1D CNN,same,7,1,1,8,7
+S19,1D CNN,same,8,1,1,8,6
+S19,1D CNN,same,9,1,1,8,6
+S19,1D CNN,same,10,1,1,8,6
+S19,1D CNN,same,11,1,1,8,7
+S19,1D CNN,same,12,1,1,8,6
+S19,1D CNN,same,13,1,1,8,8
+S19,1D CNN,same,14,1,1,8,7
+S19,1D CNN,same,15,1,1,8,4
+S19,1D CNN,same,16,1,1,8,6
+S19,1D CNN,same,17,1,1,8,5
+S19,1D CNN,same,18,1,1,8,4
+S19,1D CNN,same,19,1,1,8,5
+S19,1D CNN,same,20,1,1,8,7
+S19,1D CNN,same,21,1,1,8,6
+S19,1D CNN,same,22,1,1,8,6
+S19,1D CNN,same,23,1,1,8,8
+S19,1D CNN,same,24,1,1,8,5
+S19,1D CNN,same,25,1,1,8,8
+S19,1D CNN,same,26,1,1,8,8
+S19,1D CNN,same,27,1,1,8,6
+S19,1D CNN,same,28,1,1,8,7
+S19,1D CNN,same,29,1,1,8,5
+S19,1D CNN,same,30,1,1,8,7
+S19,1D CNN,same,31,1,1,8,6
+S19,1D CNN,same,32,1,1,8,6
+S19,1D CNN,same,33,1,1,8,6
+S19,1D CNN,same,34,1,1,8,8
+S19,1D CNN,cross,1,6,6,48,32
+S19,1D CNN,cross,2,6,6,48,31
+S19,1D CNN,cross,3,6,6,48,25
+S19,1D CNN,cross,4,6,6,48,26
+S19,1D CNN,cross,5,6,4,48,14
+S19,1D CNN,cross,6,6,5,48,17
+S19,1D CNN,cross,7,6,0,48,2
+S19,1D CNN,cross,8,6,6,48,21
+S19,1D CNN,cross,9,6,2,48,14
+S19,1D CNN,cross,10,5,5,40,19
+S19,1D CNN,cross,12,6,6,48,29
+S19,1D CNN,cross,13,6,5,48,23
+S19,1D CNN,cross,14,6,6,48,24
+S19,1D CNN,cross,15,6,6,48,28
+S19,1D CNN,cross,16,6,5,48,26
+S19,1D CNN,cross,17,6,6,48,37
+S19,1D CNN,cross,18,6,5,48,28
+S19,1D CNN,cross,19,6,5,48,25
+S19,1D CNN,cross,20,6,6,48,38
+S19,1D CNN,cross,21,6,5,48,33
+S19,1D CNN,cross,22,6,6,48,31
+S19,1D CNN,cross,23,6,6,48,43
+S19,1D CNN,cross,24,6,6,48,29
+S19,1D CNN,cross,25,6,6,48,28
+S19,1D CNN,cross,26,6,6,48,44
+S19,1D CNN,cross,27,6,6,48,42
+S19,1D CNN,cross,28,6,6,48,32
+S19,1D CNN,cross,29,6,4,48,24
+S19,1D CNN,cross,30,6,2,48,11
+S19,1D CNN,cross,31,6,2,48,21
+S19,1D CNN,cross,32,6,1,48,10
+S19,1D CNN,cross,33,6,3,48,18
+S19,1D CNN,cross,34,6,4,48,20
+S19,TCN,same,1,1,1,8,6
+S19,TCN,same,2,1,1,8,6
+S19,TCN,same,3,1,1,8,8
+S19,TCN,same,4,1,1,8,8
+S19,TCN,same,5,1,1,8,6
+S19,TCN,same,6,1,1,8,4
+S19,TCN,same,7,1,1,8,6
+S19,TCN,same,8,1,1,8,6
+S19,TCN,same,9,1,1,8,5
+S19,TCN,same,10,1,1,8,4
+S19,TCN,same,11,1,1,8,7
+S19,TCN,same,12,1,1,8,5
+S19,TCN,same,13,1,1,8,7
+S19,TCN,same,14,1,1,8,5
+S19,TCN,same,15,1,1,8,3
+S19,TCN,same,16,1,1,8,5
+S19,TCN,same,17,1,1,8,6
+S19,TCN,same,18,1,1,8,4
+S19,TCN,same,19,1,1,8,6
+S19,TCN,same,20,1,1,8,5
+S19,TCN,same,21,1,1,8,6
+S19,TCN,same,22,1,1,8,6
+S19,TCN,same,23,1,1,8,5
+S19,TCN,same,24,1,1,8,6
+S19,TCN,same,25,1,1,8,6
+S19,TCN,same,26,1,1,8,4
+S19,TCN,same,27,1,1,8,8
+S19,TCN,same,28,1,1,8,7
+S19,TCN,same,29,1,1,8,5
+S19,TCN,same,30,1,1,8,6
+S19,TCN,same,31,1,1,8,5
+S19,TCN,same,32,1,1,8,3
+S19,TCN,same,33,1,1,8,6
+S19,TCN,same,34,1,1,8,8
+S19,TCN,cross,1,6,6,48,32
+S19,TCN,cross,2,6,6,48,32
+S19,TCN,cross,3,6,6,48,34
+S19,TCN,cross,4,6,6,48,27
+S19,TCN,cross,5,6,6,48,25
+S19,TCN,cross,6,6,3,48,11
+S19,TCN,cross,7,6,2,48,11
+S19,TCN,cross,8,6,4,48,16
+S19,TCN,cross,9,6,6,48,27
+S19,TCN,cross,10,5,3,40,18
+S19,TCN,cross,12,6,5,48,20
+S19,TCN,cross,13,6,6,48,26
+S19,TCN,cross,14,6,3,48,18
+S19,TCN,cross,15,6,4,48,21
+S19,TCN,cross,16,6,0,48,4
+S19,TCN,cross,17,6,6,48,24
+S19,TCN,cross,18,6,6,48,36
+S19,TCN,cross,19,6,6,48,33
+S19,TCN,cross,20,6,6,48,28
+S19,TCN,cross,21,6,6,48,32
+S19,TCN,cross,22,6,6,48,39
+S19,TCN,cross,23,6,6,48,25
+S19,TCN,cross,24,6,6,48,42
+S19,TCN,cross,25,6,5,48,20
+S19,TCN,cross,26,6,1,48,7
+S19,TCN,cross,27,6,6,48,42
+S19,TCN,cross,28,6,6,48,30
+S19,TCN,cross,29,6,4,48,23
+S19,TCN,cross,30,6,0,48,9
+S19,TCN,cross,31,6,6,48,34
+S19,TCN,cross,32,6,1,48,8
+S19,TCN,cross,33,6,6,48,36
+S19,TCN,cross,34,6,1,48,15
+S19,GRU,same,1,1,1,8,6
+S19,GRU,same,2,1,1,8,5
+S19,GRU,same,3,1,1,8,6
+S19,GRU,same,4,1,1,8,7
+S19,GRU,same,5,1,1,8,7
+S19,GRU,same,6,1,1,8,5
+S19,GRU,same,7,1,1,8,7
+S19,GRU,same,8,1,1,8,6
+S19,GRU,same,9,1,1,8,5
+S19,GRU,same,10,1,1,8,5
+S19,GRU,same,11,1,1,8,5
+S19,GRU,same,12,1,1,8,4
+S19,GRU,same,13,1,1,8,6
+S19,GRU,same,14,1,1,8,3
+S19,GRU,same,15,1,1,8,4
+S19,GRU,same,16,1,1,8,4
+S19,GRU,same,17,1,1,8,5
+S19,GRU,same,18,1,1,8,6
+S19,GRU,same,19,1,1,8,3
+S19,GRU,same,20,1,1,8,7
+S19,GRU,same,21,1,1,8,5
+S19,GRU,same,22,1,1,8,6
+S19,GRU,same,23,1,1,8,5
+S19,GRU,same,24,1,1,8,6
+S19,GRU,same,25,1,1,8,5
+S19,GRU,same,26,1,1,8,6
+S19,GRU,same,27,1,0,8,1
+S19,GRU,same,28,1,1,8,5
+S19,GRU,same,29,1,1,8,3
+S19,GRU,same,30,1,1,8,3
+S19,GRU,same,31,1,1,8,4
+S19,GRU,same,32,1,0,8,1
+S19,GRU,same,33,1,0,8,2
+S19,GRU,same,34,1,1,8,5
+S19,GRU,cross,1,6,6,48,21
+S19,GRU,cross,2,6,6,48,31
+S19,GRU,cross,3,6,6,48,24
+S19,GRU,cross,4,6,6,48,17
+S19,GRU,cross,5,6,5,48,16
+S19,GRU,cross,6,6,1,48,7
+S19,GRU,cross,7,6,3,48,12
+S19,GRU,cross,8,6,6,48,28
+S19,GRU,cross,9,6,6,48,36
+S19,GRU,cross,10,5,5,40,21
+S19,GRU,cross,12,6,5,48,25
+S19,GRU,cross,13,6,0,48,8
+S19,GRU,cross,14,6,3,48,12
+S19,GRU,cross,15,6,6,48,23
+S19,GRU,cross,16,6,2,48,14
+S19,GRU,cross,17,6,2,48,18
+S19,GRU,cross,18,6,6,48,32
+S19,GRU,cross,19,6,2,48,10
+S19,GRU,cross,20,6,6,48,35
+S19,GRU,cross,21,6,6,48,26
+S19,GRU,cross,22,6,6,48,34
+S19,GRU,cross,23,6,5,48,25
+S19,GRU,cross,24,6,6,48,31
+S19,GRU,cross,25,6,6,48,31
+S19,GRU,cross,26,6,6,48,30
+S19,GRU,cross,27,6,4,48,20
+S19,GRU,cross,28,6,6,48,29
+S19,GRU,cross,29,6,2,48,14
+S19,GRU,cross,30,6,1,48,10
+S19,GRU,cross,31,6,6,48,31
+S19,GRU,cross,32,6,2,48,8
+S19,GRU,cross,33,6,6,48,34
+S19,GRU,cross,34,6,6,48,30
+S20,LDA,same,1,1,1,8,8
+S20,LDA,same,2,1,1,8,8
+S20,LDA,same,3,1,1,8,5
+S20,LDA,same,4,1,1,8,8
+S20,LDA,same,5,1,1,8,6
+S20,LDA,same,6,1,1,8,7
+S20,LDA,same,7,1,1,8,7
+S20,LDA,same,8,1,1,8,5
+S20,LDA,same,9,1,1,8,7
+S20,LDA,same,10,1,1,8,5
+S20,LDA,same,11,1,1,8,8
+S20,LDA,same,12,1,1,8,7
+S20,LDA,same,13,1,1,8,6
+S20,LDA,same,14,1,1,8,6
+S20,LDA,same,15,1,1,8,5
+S20,LDA,same,16,1,1,8,6
+S20,LDA,same,17,1,1,8,6
+S20,LDA,same,18,1,1,8,7
+S20,LDA,same,19,1,1,8,8
+S20,LDA,same,20,1,1,8,5
+S20,LDA,same,21,1,1,8,7
+S20,LDA,same,22,1,1,8,5
+S20,LDA,same,23,1,1,8,7
+S20,LDA,same,24,1,1,8,6
+S20,LDA,same,25,1,1,8,6
+S20,LDA,same,26,1,1,8,8
+S20,LDA,same,27,1,1,8,8
+S20,LDA,same,28,1,1,8,6
+S20,LDA,same,29,1,1,8,7
+S20,LDA,same,30,1,1,8,5
+S20,LDA,same,31,1,1,8,6
+S20,LDA,same,32,1,0,8,0
+S20,LDA,same,33,1,1,8,7
+S20,LDA,same,34,1,1,8,6
+S20,LDA,cross,1,6,0,48,3
+S20,LDA,cross,2,6,0,48,0
+S20,LDA,cross,3,6,0,48,1
+S20,LDA,cross,4,6,0,48,2
+S20,LDA,cross,5,6,0,48,0
+S20,LDA,cross,6,6,0,48,0
+S20,LDA,cross,7,6,0,48,3
+S20,LDA,cross,8,6,1,48,7
+S20,LDA,cross,9,6,0,48,0
+S20,LDA,cross,10,6,6,48,34
+S20,LDA,cross,11,6,6,48,37
+S20,LDA,cross,12,6,2,48,15
+S20,LDA,cross,13,6,0,48,0
+S20,LDA,cross,14,6,0,48,1
+S20,LDA,cross,15,6,0,48,0
+S20,LDA,cross,16,6,1,48,8
+S20,LDA,cross,17,6,0,48,5
+S20,LDA,cross,18,6,0,48,1
+S20,LDA,cross,19,6,0,48,0
+S20,LDA,cross,20,6,0,48,0
+S20,LDA,cross,21,6,0,48,1
+S20,LDA,cross,22,6,2,48,16
+S20,LDA,cross,23,6,0,48,0
+S20,LDA,cross,24,6,0,48,3
+S20,LDA,cross,25,6,0,48,0
+S20,LDA,cross,26,6,0,48,0
+S20,LDA,cross,27,6,0,48,0
+S20,LDA,cross,28,6,0,48,0
+S20,LDA,cross,29,6,0,48,0
+S20,LDA,cross,30,6,0,48,1
+S20,LDA,cross,31,6,0,48,1
+S20,LDA,cross,32,6,0,48,5
+S20,LDA,cross,33,6,2,48,13
+S20,LDA,cross,34,6,2,48,14
+S20,1D CNN,same,1,1,1,8,8
+S20,1D CNN,same,2,1,1,8,8
+S20,1D CNN,same,3,1,1,8,6
+S20,1D CNN,same,4,1,1,8,8
+S20,1D CNN,same,5,1,1,8,8
+S20,1D CNN,same,6,1,1,8,7
+S20,1D CNN,same,7,1,1,8,7
+S20,1D CNN,same,8,1,1,8,6
+S20,1D CNN,same,9,1,1,8,8
+S20,1D CNN,same,10,1,1,8,3
+S20,1D CNN,same,11,1,1,8,8
+S20,1D CNN,same,12,1,1,8,6
+S20,1D CNN,same,13,1,1,8,8
+S20,1D CNN,same,14,1,1,8,7
+S20,1D CNN,same,15,1,1,8,6
+S20,1D CNN,same,16,1,1,8,6
+S20,1D CNN,same,17,1,1,8,7
+S20,1D CNN,same,18,1,1,8,7
+S20,1D CNN,same,19,1,1,8,8
+S20,1D CNN,same,20,1,1,8,8
+S20,1D CNN,same,21,1,1,8,7
+S20,1D CNN,same,22,1,1,8,6
+S20,1D CNN,same,23,1,1,8,7
+S20,1D CNN,same,24,1,1,8,8
+S20,1D CNN,same,25,1,1,8,8
+S20,1D CNN,same,26,1,1,8,5
+S20,1D CNN,same,27,1,1,8,5
+S20,1D CNN,same,28,1,1,8,6
+S20,1D CNN,same,29,1,1,8,6
+S20,1D CNN,same,30,1,1,8,7
+S20,1D CNN,same,31,1,1,8,7
+S20,1D CNN,same,32,1,0,8,0
+S20,1D CNN,same,33,1,1,8,8
+S20,1D CNN,same,34,1,1,8,7
+S20,1D CNN,cross,1,6,0,48,0
+S20,1D CNN,cross,2,6,0,48,9
+S20,1D CNN,cross,3,6,0,48,0
+S20,1D CNN,cross,4,6,0,48,0
+S20,1D CNN,cross,5,6,0,48,0
+S20,1D CNN,cross,6,6,0,48,0
+S20,1D CNN,cross,7,6,0,48,0
+S20,1D CNN,cross,8,6,0,48,0
+S20,1D CNN,cross,9,6,0,48,0
+S20,1D CNN,cross,10,6,6,48,34
+S20,1D CNN,cross,11,6,6,48,29
+S20,1D CNN,cross,12,6,6,48,36
+S20,1D CNN,cross,13,6,0,48,0
+S20,1D CNN,cross,14,6,5,48,24
+S20,1D CNN,cross,15,6,0,48,1
+S20,1D CNN,cross,16,6,0,48,3
+S20,1D CNN,cross,17,6,0,48,11
+S20,1D CNN,cross,18,6,1,48,6
+S20,1D CNN,cross,19,6,4,48,23
+S20,1D CNN,cross,20,6,0,48,0
+S20,1D CNN,cross,21,6,1,48,7
+S20,1D CNN,cross,22,6,0,48,0
+S20,1D CNN,cross,23,6,0,48,1
+S20,1D CNN,cross,24,6,0,48,1
+S20,1D CNN,cross,25,6,0,48,6
+S20,1D CNN,cross,26,6,0,48,1
+S20,1D CNN,cross,27,6,0,48,0
+S20,1D CNN,cross,28,6,0,48,12
+S20,1D CNN,cross,29,6,0,48,0
+S20,1D CNN,cross,30,6,0,48,8
+S20,1D CNN,cross,31,6,0,48,1
+S20,1D CNN,cross,32,6,0,48,2
+S20,1D CNN,cross,33,6,0,48,0
+S20,1D CNN,cross,34,6,2,48,21
+S20,TCN,same,1,1,1,8,8
+S20,TCN,same,2,1,1,8,8
+S20,TCN,same,3,1,1,8,8
+S20,TCN,same,4,1,1,8,8
+S20,TCN,same,5,1,1,8,8
+S20,TCN,same,6,1,1,8,7
+S20,TCN,same,7,1,1,8,7
+S20,TCN,same,8,1,1,8,6
+S20,TCN,same,9,1,1,8,8
+S20,TCN,same,10,1,1,8,4
+S20,TCN,same,11,1,1,8,8
+S20,TCN,same,12,1,1,8,6
+S20,TCN,same,13,1,1,8,6
+S20,TCN,same,14,1,1,8,5
+S20,TCN,same,15,1,1,8,6
+S20,TCN,same,16,1,1,8,6
+S20,TCN,same,17,1,1,8,6
+S20,TCN,same,18,1,1,8,7
+S20,TCN,same,19,1,1,8,5
+S20,TCN,same,20,1,1,8,3
+S20,TCN,same,21,1,1,8,7
+S20,TCN,same,22,1,1,8,8
+S20,TCN,same,23,1,1,8,6
+S20,TCN,same,24,1,1,8,7
+S20,TCN,same,25,1,1,8,7
+S20,TCN,same,26,1,1,8,4
+S20,TCN,same,27,1,1,8,5
+S20,TCN,same,28,1,1,8,6
+S20,TCN,same,29,1,1,8,6
+S20,TCN,same,30,1,1,8,5
+S20,TCN,same,31,1,1,8,8
+S20,TCN,same,32,1,0,8,0
+S20,TCN,same,33,1,1,8,6
+S20,TCN,same,34,1,1,8,7
+S20,TCN,cross,1,6,2,48,19
+S20,TCN,cross,2,6,0,48,1
+S20,TCN,cross,3,6,0,48,0
+S20,TCN,cross,4,6,0,48,0
+S20,TCN,cross,5,6,0,48,1
+S20,TCN,cross,6,6,0,48,6
+S20,TCN,cross,7,6,1,48,12
+S20,TCN,cross,8,6,0,48,9
+S20,TCN,cross,9,6,0,48,0
+S20,TCN,cross,10,6,3,48,16
+S20,TCN,cross,11,6,1,48,4
+S20,TCN,cross,12,6,4,48,22
+S20,TCN,cross,13,6,0,48,0
+S20,TCN,cross,14,6,1,48,5
+S20,TCN,cross,15,6,0,48,0
+S20,TCN,cross,16,6,6,48,29
+S20,TCN,cross,17,6,2,48,13
+S20,TCN,cross,18,6,6,48,33
+S20,TCN,cross,19,6,2,48,13
+S20,TCN,cross,20,6,0,48,0
+S20,TCN,cross,21,6,0,48,0
+S20,TCN,cross,22,6,0,48,2
+S20,TCN,cross,23,6,1,48,2
+S20,TCN,cross,24,6,4,48,20
+S20,TCN,cross,25,6,0,48,0
+S20,TCN,cross,26,6,2,48,8
+S20,TCN,cross,27,6,0,48,6
+S20,TCN,cross,28,6,0,48,3
+S20,TCN,cross,29,6,0,48,0
+S20,TCN,cross,30,6,0,48,0
+S20,TCN,cross,31,6,1,48,5
+S20,TCN,cross,32,6,2,48,16
+S20,TCN,cross,33,6,0,48,5
+S20,TCN,cross,34,6,4,48,25
+S20,GRU,same,1,1,1,8,7
+S20,GRU,same,2,1,1,8,8
+S20,GRU,same,3,1,1,8,7
+S20,GRU,same,4,1,1,8,5
+S20,GRU,same,5,1,1,8,7
+S20,GRU,same,6,1,1,8,6
+S20,GRU,same,7,1,1,8,6
+S20,GRU,same,8,1,1,8,6
+S20,GRU,same,9,1,1,8,6
+S20,GRU,same,10,1,1,8,3
+S20,GRU,same,11,1,1,8,8
+S20,GRU,same,12,1,1,8,6
+S20,GRU,same,13,1,1,8,6
+S20,GRU,same,14,1,1,8,3
+S20,GRU,same,15,1,1,8,6
+S20,GRU,same,16,1,1,8,6
+S20,GRU,same,17,1,1,8,7
+S20,GRU,same,18,1,1,8,7
+S20,GRU,same,19,1,1,8,6
+S20,GRU,same,20,1,1,8,4
+S20,GRU,same,21,1,1,8,6
+S20,GRU,same,22,1,1,8,6
+S20,GRU,same,23,1,1,8,7
+S20,GRU,same,24,1,1,8,4
+S20,GRU,same,25,1,1,8,6
+S20,GRU,same,26,1,1,8,5
+S20,GRU,same,27,1,1,8,5
+S20,GRU,same,28,1,1,8,7
+S20,GRU,same,29,1,1,8,6
+S20,GRU,same,30,1,1,8,3
+S20,GRU,same,31,1,1,8,7
+S20,GRU,same,32,1,0,8,0
+S20,GRU,same,33,1,1,8,4
+S20,GRU,same,34,1,1,8,7
+S20,GRU,cross,1,6,4,48,21
+S20,GRU,cross,2,6,0,48,4
+S20,GRU,cross,3,6,0,48,1
+S20,GRU,cross,4,6,1,48,4
+S20,GRU,cross,5,6,2,48,14
+S20,GRU,cross,6,6,2,48,9
+S20,GRU,cross,7,6,0,48,5
+S20,GRU,cross,8,6,4,48,21
+S20,GRU,cross,9,6,0,48,2
+S20,GRU,cross,10,6,6,48,30
+S20,GRU,cross,11,6,5,48,26
+S20,GRU,cross,12,6,1,48,13
+S20,GRU,cross,13,6,0,48,1
+S20,GRU,cross,14,6,1,48,7
+S20,GRU,cross,15,6,4,48,16
+S20,GRU,cross,16,6,6,48,27
+S20,GRU,cross,17,6,6,48,28
+S20,GRU,cross,18,6,2,48,12
+S20,GRU,cross,19,6,0,48,5
+S20,GRU,cross,20,6,0,48,0
+S20,GRU,cross,21,6,4,48,20
+S20,GRU,cross,22,6,0,48,1
+S20,GRU,cross,23,6,3,48,12
+S20,GRU,cross,24,6,0,48,3
+S20,GRU,cross,25,6,6,48,33
+S20,GRU,cross,26,6,2,48,10
+S20,GRU,cross,27,6,0,48,3
+S20,GRU,cross,28,6,0,48,2
+S20,GRU,cross,29,6,0,48,3
+S20,GRU,cross,30,6,3,48,16
+S20,GRU,cross,31,6,0,48,1
+S20,GRU,cross,32,6,1,48,8
+S20,GRU,cross,33,6,0,48,3
+S20,GRU,cross,34,6,6,48,37

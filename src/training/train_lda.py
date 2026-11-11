@@ -33,11 +33,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from src.common.manifest import load_manifest
 from src.features.time_domain import extract_feature_vector
 from src.training.metrics import (
+    per_session_accuracies,
     per_trial_majority_vote_accuracy,
+    expand_proba,
     per_window_accuracy,
     trial_majority_vote,
+    trial_mean_probability,
 )
-from src.training.splits import subject_dependent_split
+from src.training.splits import make_split
+from src.training.dataset import load_trial_label, set_class_map
+from src.training.class_maps import resolve_class_map
 from src.training.train import select_trials
 
 
@@ -50,15 +55,16 @@ def featurise(trials, feat_cfg: dict):
     """Windows of every trial -> (features, y, trial_id). y is 0-indexed."""
     F, y, tid = [], [], []
     for i, (_, row) in enumerate(trials.iterrows()):
-        windows = np.load(row["windowed_path"])["X"]
+        windows = np.load(row["windowed_path"])["X"].astype(np.float32, copy=False)
         for w in windows:
             F.append(extract_feature_vector(w, feat_cfg["features"], feat_cfg))
-        y.append(np.full(len(windows), int(row["gesture_label"]) - 1))
+        y.append(np.full(len(windows), load_trial_label(row)))
         tid.append(np.full(len(windows), i))
     return np.asarray(F, dtype=np.float64), np.concatenate(y), np.concatenate(tid)
 
 
-def run_lda(config_path: str | Path, seed: int | None = None) -> dict:
+def run_lda(config_path: str | Path, seed: int | None = None, class_map: str | None = None) -> dict:
+    n_classes = set_class_map(resolve_class_map(class_map) if class_map else None)
     cfg = load_config(config_path)
     base_seed = cfg["split"]["random_seed"]
     if seed is not None:
@@ -71,9 +77,7 @@ def run_lda(config_path: str | Path, seed: int | None = None) -> dict:
     in_scope = manifest[manifest["session"].astype(str).isin(train_sessions)].reset_index(drop=True)
 
     s = cfg["split"]
-    splits = subject_dependent_split(
-        in_scope, s["train_fraction"], s["val_fraction"], s["test_fraction"], s["random_seed"]
-    )
+    splits = make_split(in_scope, s)
     # LDA has no validation loop, so val trials are folded into training.
     train_trials = pd.concat([splits["train"], splits["val"]], ignore_index=True)
 
@@ -85,6 +89,7 @@ def run_lda(config_path: str | Path, seed: int | None = None) -> dict:
     scaler = StandardScaler().fit(F_tr)
     lda = LinearDiscriminantAnalysis(solver="lsqr", shrinkage="auto").fit(scaler.transform(F_tr), y_tr)
     y_pred = lda.predict(scaler.transform(F_te))
+    prob_te = expand_proba(lda.predict_proba(scaler.transform(F_te)), lda.classes_, n_classes)
 
     trial_true, trial_pred = trial_majority_vote(tid_te, y_te, y_pred)
     metrics = {
@@ -109,18 +114,27 @@ def run_lda(config_path: str | Path, seed: int | None = None) -> dict:
         if len(other):
             F_o, y_o, tid_o = featurise(other, feat_cfg)
             p_o = lda.predict(scaler.transform(F_o))
+            pb_o = expand_proba(lda.predict_proba(scaler.transform(F_o)), lda.classes_, n_classes)
+            ct, cp = trial_majority_vote(tid_o, y_o, p_o)
+            cross_preds = dict(y_true=y_o, y_pred=p_o, trial_id=tid_o, trial_true=ct, trial_pred=cp,
+                               trial_session=other["session"].to_numpy(),
+                               y_prob=pb_o, trial_prob=trial_mean_probability(tid_o, pb_o))
             metrics["cross_session"] = {
                 "eval_sessions": sorted(other["session"].astype(str).unique().tolist()),
                 "n_trials": int(len(other)),
                 "per_window_accuracy": per_window_accuracy(y_o, p_o),
                 "per_trial_accuracy": per_trial_majority_vote_accuracy(tid_o, y_o, p_o),
+                "per_session": per_session_accuracies(other["session"].to_numpy(), tid_o, y_o, p_o),
             }
 
     run_name = "lda" + ("" if cfg["split"]["random_seed"] == base_seed else f"_seed{cfg['split']['random_seed']}")
     out = Path(cfg["output_dir"]) / run_name / cfg["dataset"]
     out.mkdir(parents=True, exist_ok=True)
     np.savez(out / "test_predictions.npz", y_true=y_te, y_pred=y_pred, trial_id=tid_te,
-             trial_true=trial_true, trial_pred=trial_pred)
+             trial_true=trial_true, trial_pred=trial_pred,
+             y_prob=prob_te, trial_prob=trial_mean_probability(tid_te, prob_te))
+    if "cross_preds" in locals():
+        np.savez(out / "cross_session_predictions.npz", **cross_preds)
     with open(out / "metrics.json", "w") as f:
         json.dump(metrics, f, indent=2)
 
@@ -136,8 +150,9 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--config", type=Path, default=Path("configs/training.yaml"))
     p.add_argument("--seed", type=int, default=None, help="Override split.random_seed (repeat-split runs)")
+    p.add_argument("--class-map", default=None, help="Gesture grouping, see src/training/class_maps.py")
     a = p.parse_args()
-    run_lda(a.config, a.seed)
+    run_lda(a.config, a.seed, a.class_map)
 
 
 if __name__ == "__main__":

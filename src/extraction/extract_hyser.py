@@ -161,6 +161,7 @@ def extract_hyser(
     subjects: set[str] | None = None,
     verify_hashes: bool = True,
     workers: int = 12,
+    task_types: set[str] | None = None,
 ) -> pd.DataFrame:
     """
     Download Hyser's pr_dataset from PhysioNet into `out_dir` (preserving
@@ -191,6 +192,8 @@ def extract_hyser(
         if subjects and parsed["subject_id"].replace("subject", "") not in subjects:
             continue
         if sig_types and parsed["sig_type"] is not None and parsed["sig_type"] not in sig_types:
+            continue
+        if task_types and parsed["task_type"] is not None and parsed["task_type"] not in task_types:
             continue
         jobs.append((rel_path, expected_hash, parsed))
 
@@ -261,6 +264,12 @@ def main():
         help="Comma-separated signal types to download: raw,preprocess (default: both)",
     )
     parser.add_argument(
+        "--task-types",
+        type=str,
+        default=None,
+        help="Comma-separated task types to keep: dynamic,maintenance (default: both). Label files are kept for the chosen task types only.",
+    )
+    parser.add_argument(
         "--subjects",
         type=str,
         default=None,
@@ -281,6 +290,7 @@ def main():
 
     sig_types = set(s.strip().lower() for s in args.sig_types.split(",")) if args.sig_types else None
     subjects = set(s.strip() for s in args.subjects.split(",")) if args.subjects else None
+    task_types = set(s.strip().lower() for s in args.task_types.split(",")) if args.task_types else None
 
     manifest = extract_hyser(
         args.out,
@@ -288,6 +298,7 @@ def main():
         subjects=subjects,
         verify_hashes=not args.no_verify,
         workers=args.workers,
+        task_types=task_types,
     )
 
     args.manifest_out.parent.mkdir(parents=True, exist_ok=True)

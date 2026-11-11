@@ -1,0 +1,302 @@
+--- a/configs/preprocessing.yaml
++++ b/configs/preprocessing.yaml
+@@ -17,7 +17,10 @@
+ 
+ normalization:
+   method: zscore
+-  scope: per_subject_session   # mean/std computed independently per subject-session recording
++  scope: per_subject_session   # per_subject_session | reference_session | per_recording
++  # per_subject_session: mean/std computed independently per subject-session (current results)
++  # reference_session:   every session is z-scored with the statistics of `reference_session` (deployment-like)
++  # reference_session: 1
+ 
+ # Scope filters (leave a key out or empty to process everything in the manifest).
+ # Subject 01 only for the Stage 0-3 proof run; widen to ["01","02","03"] etc. later.
+--- a/scripts/run_hyser_subjects.py
++++ b/scripts/run_hyser_subjects.py
+@@ -15,6 +15,8 @@
+     python scripts/run_hyser_subjects.py --subjects 02 --dry-run                # print commands only
+ Gesture grouping (Solution A): add --class-map A1,A2-s1:22 --results-root results/hyser_grouped to retrain on
+ grouped labels. Raw data is downloaded and windowed once; each spec trains into <results-root>/<spec>/<subject>.
++Deployment-like normalisation test: add --norm-reference-session 1 --results-root results/hyser_refnorm (session 2 is
++z-scored with session 1 statistics; session 1 and the seed are unchanged, so only cross-session results should move).
+ Re-running skips subjects whose results already exist (use --force to redo).
+ """
+ 
+@@ -113,6 +115,10 @@
+                input_manifest=str(man / f"hyser_manifest_{sub}.csv"),
+                output_dir=str(work / "preprocessed"),
+                output_manifest=str(man / f"hyser_preprocessed_manifest_{sub}.csv"))
++    if a.norm_reference_session:
++        # deployment-like normalisation: every session uses the reference (training) session's statistics
++        pre["normalization"] = {**pre["normalization"], "scope": "reference_session",
++                                "reference_session": a.norm_reference_session}
+     win = load_yaml("windowing.yaml")
+     win.update(input_manifest=pre["output_manifest"], output_dir=str(work / "windows"),
+                output_manifest=str(man / f"hyser_windowed_manifest_{sub}.csv"))
+@@ -164,6 +170,9 @@
+     ap.add_argument("--keep-checkpoints", action="store_true")
+     ap.add_argument("--class-map", default=None,
+                     help="comma-separated gesture groupings, e.g. A1,A2-s1:22 (see src/training/class_maps.py)")
++    ap.add_argument("--norm-reference-session", type=int, default=None,
++                    help="Normalise all sessions with this session's statistics (e.g. 1) instead of each session's own. "
++                         "Use with a separate --results-root, e.g. results/hyser_refnorm")
+     ap.add_argument("--force", action="store_true")
+     ap.add_argument("--dry-run", action="store_true")
+     a = ap.parse_args()
+--- a/src/training/train.py
++++ b/src/training/train.py
+@@ -44,6 +44,7 @@
+     per_trial_majority_vote_accuracy,
+     per_window_accuracy,
+     trial_majority_vote,
++    trial_mean_probability,
+ )
+ from src.training.splits import make_split
+ 
+@@ -110,15 +111,17 @@
+ 
+ 
+ def predict_trials(model, trials, batch_size: int):
+-    """Stream trial by trial (keeps RAM low). Returns y_true, y_pred, trial_id."""
+-    y_true, y_pred, tid = [], [], []
++    """Stream trial by trial (keeps RAM low). Returns y_true, y_pred, trial_id, y_prob (softmax per window)."""
++    y_true, y_pred, tid, prob = [], [], [], []
+     for i, (_, row) in enumerate(trials.iterrows()):
+         w = np.load(row["windowed_path"])["X"].astype(np.float32)
+-        p = model.predict(w, batch_size=batch_size, verbose=0).argmax(-1)
++        pr = model.predict(w, batch_size=batch_size, verbose=0)
++        p = pr.argmax(-1)
++        prob.append(pr.astype(np.float32))
+         y_pred.append(p)
+         y_true.append(np.full(len(p), load_trial_label(row)))
+         tid.append(np.full(len(p), i))
+-    return np.concatenate(y_true), np.concatenate(y_pred), np.concatenate(tid)
++    return np.concatenate(y_true), np.concatenate(y_pred), np.concatenate(tid), np.concatenate(prob)
+ 
+ 
+ def run_training(
+@@ -204,7 +207,7 @@
+     del X_train, y_train, X_val, y_val
+ 
+     # Held-out test split (trials never seen in training or validation).
+-    y_test, y_pred, trial_id_test = predict_trials(model, splits["test"], train_cfg["batch_size"])
++    y_test, y_pred, trial_id_test, prob_test = predict_trials(model, splits["test"], train_cfg["batch_size"])
+     window_acc = per_window_accuracy(y_test, y_pred)
+     trial_acc = per_trial_majority_vote_accuracy(trial_id_test, y_test, y_pred)
+     trial_true, trial_pred = trial_majority_vote(trial_id_test, y_test, y_pred)
+@@ -236,7 +239,15 @@
+         output_dir / "test_predictions.npz",
+         y_true=y_test, y_pred=y_pred, trial_id=trial_id_test,
+         trial_true=trial_true, trial_pred=trial_pred,
++        y_prob=prob_test, trial_prob=trial_mean_probability(trial_id_test, prob_test),
+     )
++    # Validation-split predictions (session 1, never used as test). Saved so a second-layer
++    # classifier can be trained on predictions the base models did not fit. Note the val split
++    # chose the early-stopping epoch, so these are slightly optimistic.
++    yv, ypv, tidv, pbv = predict_trials(model, splits["val"], train_cfg["batch_size"])
++    vt, vp = trial_majority_vote(tidv, yv, ypv)
++    np.savez(output_dir / "val_predictions.npz", y_true=yv, y_pred=ypv, trial_id=tidv,
++             trial_true=vt, trial_pred=vp, y_prob=pbv, trial_prob=trial_mean_probability(tidv, pbv))
+     with open(output_dir / "history.json", "w") as f:
+         json.dump({k: [float(v) for v in vs] for k, vs in history.history.items()}, f)
+ 
+@@ -244,10 +255,11 @@
+     if cfg.get("cross_session_eval"):
+         other = manifest[~manifest["session"].astype(str).isin(train_sessions)].reset_index(drop=True)
+         if len(other):
+-            yt, yp, tid = predict_trials(model, other, train_cfg["batch_size"])
++            yt, yp, tid, pb = predict_trials(model, other, train_cfg["batch_size"])
+             ct, cp = trial_majority_vote(tid, yt, yp)
+             np.savez(output_dir / "cross_session_predictions.npz", y_true=yt, y_pred=yp, trial_id=tid,
+-                     trial_true=ct, trial_pred=cp, trial_session=other["session"].to_numpy())
++                     trial_true=ct, trial_pred=cp, trial_session=other["session"].to_numpy(),
++                     y_prob=pb, trial_prob=trial_mean_probability(tid, pb))
+             metrics["cross_session"] = {
+                 "eval_sessions": sorted(other["session"].astype(str).unique().tolist()),
+                 "n_trials": int(len(other)),
+--- a/src/training/metrics.py
++++ b/src/training/metrics.py
+@@ -52,3 +52,19 @@
+             "n_trials": int(len(np.unique(trial_id[m]))),
+         }
+     return out
++
++
++def trial_mean_probability(trial_id: np.ndarray, y_prob: np.ndarray) -> np.ndarray:
++    """
++    Mean of a trial's window probabilities, one row per unique trial_id, in the same
++    order as `trial_majority_vote`. Stored so layered / soft-voting classifiers can be
++    evaluated later without re-running inference.
++    """
++    return np.stack([y_prob[trial_id == t].mean(axis=0) for t in np.unique(trial_id)])
++
++
++def expand_proba(proba: np.ndarray, classes, n_classes: int) -> np.ndarray:
++    """Place a classifier's predict_proba columns (ordered by `classes`) into an (n, n_classes) array."""
++    out = np.zeros((proba.shape[0], n_classes), dtype=np.float32)
++    out[:, np.asarray(classes, dtype=int)] = proba
++    return out
+--- a/src/training/train_lda.py
++++ b/src/training/train_lda.py
+@@ -35,8 +35,10 @@
+ from src.training.metrics import (
+     per_session_accuracies,
+     per_trial_majority_vote_accuracy,
++    expand_proba,
+     per_window_accuracy,
+     trial_majority_vote,
++    trial_mean_probability,
+ )
+ from src.training.splits import make_split
+ from src.training.dataset import load_trial_label, set_class_map
+@@ -62,7 +64,7 @@
+ 
+ 
+ def run_lda(config_path: str | Path, seed: int | None = None, class_map: str | None = None) -> dict:
+-    set_class_map(resolve_class_map(class_map) if class_map else None)
++    n_classes = set_class_map(resolve_class_map(class_map) if class_map else None)
+     cfg = load_config(config_path)
+     base_seed = cfg["split"]["random_seed"]
+     if seed is not None:
+@@ -87,6 +89,7 @@
+     scaler = StandardScaler().fit(F_tr)
+     lda = LinearDiscriminantAnalysis(solver="lsqr", shrinkage="auto").fit(scaler.transform(F_tr), y_tr)
+     y_pred = lda.predict(scaler.transform(F_te))
++    prob_te = expand_proba(lda.predict_proba(scaler.transform(F_te)), lda.classes_, n_classes)
+ 
+     trial_true, trial_pred = trial_majority_vote(tid_te, y_te, y_pred)
+     metrics = {
+@@ -111,9 +114,11 @@
+         if len(other):
+             F_o, y_o, tid_o = featurise(other, feat_cfg)
+             p_o = lda.predict(scaler.transform(F_o))
++            pb_o = expand_proba(lda.predict_proba(scaler.transform(F_o)), lda.classes_, n_classes)
+             ct, cp = trial_majority_vote(tid_o, y_o, p_o)
+             cross_preds = dict(y_true=y_o, y_pred=p_o, trial_id=tid_o, trial_true=ct, trial_pred=cp,
+-                               trial_session=other["session"].to_numpy())
++                               trial_session=other["session"].to_numpy(),
++                               y_prob=pb_o, trial_prob=trial_mean_probability(tid_o, pb_o))
+             metrics["cross_session"] = {
+                 "eval_sessions": sorted(other["session"].astype(str).unique().tolist()),
+                 "n_trials": int(len(other)),
+@@ -126,7 +131,8 @@
+     out = Path(cfg["output_dir"]) / run_name / cfg["dataset"]
+     out.mkdir(parents=True, exist_ok=True)
+     np.savez(out / "test_predictions.npz", y_true=y_te, y_pred=y_pred, trial_id=tid_te,
+-             trial_true=trial_true, trial_pred=trial_pred)
++             trial_true=trial_true, trial_pred=trial_pred,
++             y_prob=prob_te, trial_prob=trial_mean_probability(tid_te, prob_te))
+     if "cross_preds" in locals():
+         np.savez(out / "cross_session_predictions.npz", **cross_preds)
+     with open(out / "metrics.json", "w") as f:
+--- a/src/preprocessing/pipeline.py
++++ b/src/preprocessing/pipeline.py
+@@ -22,7 +22,12 @@
+ from src.common.manifest import filter_manifest, load_manifest, write_manifest
+ from src.preprocessing.filters import apply_filter_chain
+ from src.preprocessing.io_hyser import read_hyser_record
+-from src.preprocessing.normalization import RunningChannelStats, zscore_normalize, zscore_with_stats
++from src.preprocessing.normalization import (
++    RunningChannelStats,
++    resolve_group_stats,
++    zscore_normalize,
++    zscore_with_stats,
++)
+ 
+ 
+ def load_config(config_path: str | Path) -> dict:
+@@ -61,8 +66,16 @@
+     output_dir.mkdir(parents=True, exist_ok=True)
+ 
+     scope = cfg["normalization"]["scope"]
+-    if scope not in ("per_subject_session", "per_recording"):
++    if scope not in ("per_subject_session", "per_recording", "reference_session"):
+         raise ValueError(f"Unknown normalization scope '{scope}'")
++    # reference_session: every session of a subject is z-scored with the statistics of the
++    # reference (training) session, as a deployed device would. Default reference is session 1.
++    reference_session = str(cfg["normalization"].get("reference_session", 1))
++    groups = list(signal_rows.groupby(["subject_id", "session"], sort=True))
++    if scope == "reference_session":
++        # reference session first within each subject so its statistics exist for the others
++        groups.sort(key=lambda kv: (kv[0][0], str(kv[0][1]) != reference_session, str(kv[0][1])))
++    reference_stats = {}
+ 
+     output_rows = []
+     done = 0
+@@ -70,7 +83,7 @@
+     # group while accumulating per-channel statistics; pass 2 normalises with
+     # those session-wide statistics. (Filtered float32 arrays for one session
+     # are ~0.4 GB for 202 one-second trials, so they are held in memory.)
+-    for (subject_id, session), group in signal_rows.groupby(["subject_id", "session"], sort=True):
++    for (subject_id, session), group in groups:
+         filtered, stats = [], None
+         for _, row in group.iterrows():
+             f = filter_recording(row["file_path"], cfg)
+@@ -79,7 +92,9 @@
+             stats.update(f)
+             filtered.append(f)
+ 
+-        mean, std = stats.mean, stats.std
++        mean, std = resolve_group_stats(
++            scope, subject_id, session, (stats.mean, stats.std), reference_session, reference_stats
++        )
+         stats_path = output_dir / subject_id / f"session{session}" / "norm_stats.npz"
+         stats_path.parent.mkdir(parents=True, exist_ok=True)
+         np.savez(stats_path, mean=mean, std=std, n_samples=stats.n)
+@@ -87,7 +102,7 @@
+         for (_, row), f in zip(group.iterrows(), filtered):
+             done += 1
+             print(f"[{done}/{len(signal_rows)}] Preprocessing {row['filename']} ...")
+-            if scope == "per_subject_session":
++            if scope in ("per_subject_session", "reference_session"):
+                 processed = zscore_with_stats(f, mean, std).astype(np.float32)
+             else:
+                 processed = zscore_normalize(f).astype(np.float32)
+--- a/src/preprocessing/normalization.py
++++ b/src/preprocessing/normalization.py
+@@ -49,3 +49,44 @@
+     forces every channel of every trial to unit RMS).
+     """
+     return (signal - mean[:, None]) / (std[:, None] + eps)
++
++
++def resolve_group_stats(scope, subject_id, session, own_stats, reference_session, reference_store):
++    """
++    Pick the (mean, std) used to z-score one subject-session group.
++
++    scope "per_subject_session": the group's own statistics (the original behaviour).
++    scope "reference_session":   the statistics of the subject's reference session (default
++        session 1, the training session) are applied to every other session, as a deployed
++        device would do. The reference session must be processed first for each subject;
++        its statistics are stored in `reference_store`.
++    """
++    if scope != "reference_session":
++        return own_stats
++    if str(session) == str(reference_session):
++        reference_store[subject_id] = own_stats
++        return own_stats
++    if subject_id not in reference_store:
++        raise ValueError(
++            f"{subject_id}: reference session {reference_session} has not been processed, "
++            f"so session {session} cannot be normalised with its statistics"
++        )
++    return reference_store[subject_id]
++
++
++def calibration_indices(n_trials: int, n_cal: int, scheme: str) -> np.ndarray:
++    """
++    Which trials (0-based, in recording order) a device would use to estimate normalisation
++    statistics without labels. Hyser stores trials in gesture order (6 in a row per gesture),
++    so the two schemes behave very differently:
++      "first":  the first n_cal trials (a start-up calibration; sees only the first few gestures)
++      "spread": n_cal trials evenly spaced over the session (a short mixed calibration routine)
++    """
++    n_cal = max(0, min(int(n_cal), n_trials))
++    if n_cal == 0:
++        return np.array([], dtype=int)
++    if scheme == "first":
++        return np.arange(n_cal)
++    if scheme == "spread":
++        return np.unique(np.round(np.linspace(0, n_trials - 1, n_cal)).astype(int))
++    raise ValueError(f"Unknown calibration scheme '{scheme}'")

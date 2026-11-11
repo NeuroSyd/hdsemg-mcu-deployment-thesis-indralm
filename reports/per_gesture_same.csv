@@ -1,0 +1,35 @@
+gesture,name,trials,LDA,1D CNN,TCN,GRU
+1,G01 Thumb ext,20,95.0,85.0,90.0,80.0
+2,G02 Index ext,20,100.0,100.0,100.0,95.0
+3,G03 Middle ext,20,100.0,100.0,100.0,100.0
+4,G04 Ring ext,19,100.0,100.0,100.0,89.5
+5,G05 Little ext,20,95.0,95.0,95.0,95.0
+6,G06 Wrist flex,20,90.0,90.0,95.0,90.0
+7,G07 Wrist ext,20,100.0,100.0,100.0,95.0
+8,G08 Wrist radial,19,94.7,94.7,89.5,94.7
+9,G09 Wrist ulnar,20,100.0,95.0,95.0,90.0
+10,G10 Wrist pronation,20,85.0,100.0,100.0,85.0
+11,G11 Wrist supination,20,90.0,90.0,90.0,85.0
+12,G12 Thumb+index ext,20,95.0,100.0,95.0,100.0
+13,G13 Index+middle ext,20,100.0,100.0,100.0,100.0
+14,G14 Wrist flex + close,20,100.0,95.0,90.0,95.0
+15,G15 Wrist ext + close,20,95.0,95.0,100.0,90.0
+16,G16 Wrist radial + close,20,100.0,100.0,100.0,85.0
+17,G17 Wrist ulnar + close,20,90.0,95.0,85.0,90.0
+18,G18 Wrist pron + close,20,90.0,90.0,95.0,80.0
+19,G19 Wrist sup + close,20,100.0,95.0,95.0,90.0
+20,G20 Wrist flex + open,20,100.0,100.0,100.0,90.0
+21,G21 Wrist ext + open,20,95.0,95.0,90.0,75.0
+22,G22 Wrist radial + open,20,95.0,100.0,90.0,90.0
+23,G23 Wrist ulnar + open,20,90.0,90.0,90.0,80.0
+24,G24 Wrist pron + open,20,95.0,90.0,95.0,90.0
+25,G25 Wrist sup + open,20,100.0,90.0,95.0,90.0
+26,G26 Thumb+index+middle ext,20,95.0,100.0,95.0,95.0
+27,G27 Index+middle+ring ext,20,100.0,95.0,95.0,85.0
+28,G28 Middle+ring+little ext,20,100.0,100.0,95.0,95.0
+29,G29 Index to little ext,20,95.0,100.0,95.0,85.0
+30,G30 Hand close,20,95.0,100.0,90.0,80.0
+31,G31 Hand open,20,100.0,100.0,95.0,90.0
+32,G32 Thumb+index pinch,20,95.0,85.0,85.0,85.0
+33,G33 Thumb+index+middle pinch,20,95.0,95.0,90.0,85.0
+34,G34 Thumb+middle pinch,19,100.0,84.2,100.0,94.7

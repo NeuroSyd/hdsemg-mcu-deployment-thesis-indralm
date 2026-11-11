@@ -22,7 +22,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from src.common.manifest import filter_manifest, load_manifest, write_manifest
 from src.preprocessing.filters import apply_filter_chain
 from src.preprocessing.io_hyser import read_hyser_record
-from src.preprocessing.normalization import RunningChannelStats, zscore_normalize, zscore_with_stats
+from src.preprocessing.normalization import (
+    RunningChannelStats,
+    resolve_group_stats,
+    zscore_normalize,
+    zscore_with_stats,
+)
 
 
 def load_config(config_path: str | Path) -> dict:
@@ -61,8 +66,16 @@ def run_preprocessing(config_path: str | Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     scope = cfg["normalization"]["scope"]
-    if scope not in ("per_subject_session", "per_recording"):
+    if scope not in ("per_subject_session", "per_recording", "reference_session"):
         raise ValueError(f"Unknown normalization scope '{scope}'")
+    # reference_session: every session of a subject is z-scored with the statistics of the
+    # reference (training) session, as a deployed device would. Default reference is session 1.
+    reference_session = str(cfg["normalization"].get("reference_session", 1))
+    groups = list(signal_rows.groupby(["subject_id", "session"], sort=True))
+    if scope == "reference_session":
+        # reference session first within each subject so its statistics exist for the others
+        groups.sort(key=lambda kv: (kv[0][0], str(kv[0][1]) != reference_session, str(kv[0][1])))
+    reference_stats = {}
 
     output_rows = []
     done = 0
@@ -70,7 +83,7 @@ def run_preprocessing(config_path: str | Path) -> None:
     # group while accumulating per-channel statistics; pass 2 normalises with
     # those session-wide statistics. (Filtered float32 arrays for one session
     # are ~0.4 GB for 202 one-second trials, so they are held in memory.)
-    for (subject_id, session), group in signal_rows.groupby(["subject_id", "session"], sort=True):
+    for (subject_id, session), group in groups:
         filtered, stats = [], None
         for _, row in group.iterrows():
             f = filter_recording(row["file_path"], cfg)
@@ -79,7 +92,9 @@ def run_preprocessing(config_path: str | Path) -> None:
             stats.update(f)
             filtered.append(f)
 
-        mean, std = stats.mean, stats.std
+        mean, std = resolve_group_stats(
+            scope, subject_id, session, (stats.mean, stats.std), reference_session, reference_stats
+        )
         stats_path = output_dir / subject_id / f"session{session}" / "norm_stats.npz"
         stats_path.parent.mkdir(parents=True, exist_ok=True)
         np.savez(stats_path, mean=mean, std=std, n_samples=stats.n)
@@ -87,7 +102,7 @@ def run_preprocessing(config_path: str | Path) -> None:
         for (_, row), f in zip(group.iterrows(), filtered):
             done += 1
             print(f"[{done}/{len(signal_rows)}] Preprocessing {row['filename']} ...")
-            if scope == "per_subject_session":
+            if scope in ("per_subject_session", "reference_session"):
                 processed = zscore_with_stats(f, mean, std).astype(np.float32)
             else:
                 processed = zscore_normalize(f).astype(np.float32)

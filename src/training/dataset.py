@@ -12,9 +12,20 @@ import numpy as np
 import pandas as pd
 
 
+_CLASS_MAP = None   # optional gesture -> class map (Solution A, gesture grouping); None = the 34 gestures
+
+
+def set_class_map(class_map) -> int:
+    """Group gestures into fewer classes. Returns the number of classes (34 when class_map is None)."""
+    global _CLASS_MAP
+    _CLASS_MAP = None if class_map is None else np.asarray(class_map, dtype=int)
+    return 34 if _CLASS_MAP is None else int(_CLASS_MAP.max()) + 1
+
+
 def load_trial_label(row: pd.Series) -> int:
     """0-indexed class for one trial (one windowed manifest row)."""
-    return int(row["gesture_label"]) - 1
+    g = int(row["gesture_label"]) - 1
+    return g if _CLASS_MAP is None else int(_CLASS_MAP[g])
 
 
 def build_dataset(manifest: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray]:

@@ -44,7 +44,7 @@ Notes: normalisation uses per-channel statistics over the whole subject-session 
 - Channel counts and layouts stay dataset-specific until Stage 6; no forced cross-dataset channel reduction.
 - All three deep architectures receive an identical input tensor, so any accuracy/latency/size difference is attributable to architecture choice alone.
 - Compression order is PTQ → QAT → pruning (not pruning first), so sparsity is set on weights that already reflect their deployed quantised distribution.
-- Every MCU parameter sweep reports accuracy, latency, size, and power together — no existing HD-sEMG MCU deployment work does this jointly.
+- Every MCU parameter sweep reports accuracy, latency, size, and power together (no existing HD-sEMG MCU deployment work does this jointly).
 
 ## Supervisor
 

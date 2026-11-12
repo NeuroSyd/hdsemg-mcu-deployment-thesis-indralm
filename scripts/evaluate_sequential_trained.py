@@ -62,6 +62,12 @@ def get(z, runs, key):
     return np.mean([z[f"{r}__{key}"] for r in runs], axis=0)
 
 
+def tex_rows(lines):
+    """Join rows; ASCII minus before a digit becomes a LaTeX math minus (no dashes in the text)."""
+    import re
+    return re.sub(r"(?<![A-Za-z$])-(?=\d)", "$-$", "\n".join(lines)) + "\n"
+
+
 def paired(a, b):
     d = np.asarray(a) - np.asarray(b)
     boots = rng.choice(d, (10000, len(d))).mean(1)
@@ -165,7 +171,7 @@ def main():
     ax.set_ylim(0, 100)
     ax.grid(axis="y", color="#e4e3df", lw=0.6)
     ax.set_axisbelow(True)
-    ax.legend(frameon=False, fontsize=8, loc="upper left")
+    ax.legend(frameon=False, fontsize=8, loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=2)
     fig.tight_layout()
     fig.savefig(out / "figures" / "fig_ladder.png", dpi=300)
     plt.close(fig)
@@ -182,10 +188,12 @@ def main():
                 r = r.iloc[0]
                 diff = "reference" if (c == "No adaptation" and dec == "flat") else \
                     f"{r.d_gesture:+.1f} ({r.d_lo:+.1f} to {r.d_hi:+.1f})"
-                lines.append(f"{c} & {'Flat' if dec == 'flat' else 'Sequential'} & "
+                short = (c.replace("Labelled last layer, ", "Labelled, ").replace(" trials per gesture", " per gesture")
+                         .replace(" trial per gesture", " per gesture").replace(" unlabelled trials", " unlabelled"))
+                lines.append(f"{short} & {'Flat' if dec == 'flat' else 'Sequential (gated)'} & "
                              f"{r.gesture_acc:.1f} $\\pm$ {r.gesture_acc_sd:.1f} & {r.group_acc:.1f} & "
                              f"{r.severity:.1f} & {diff} \\\\")
-        (ld / "tab_ladder.tex").write_text("\n".join(lines) + "\n")
+        (ld / "tab_ladder.tex").write_text(tex_rows(lines))
         per_model = summary[(summary.grouping == a.grouping) & (summary.condition == "No adaptation")]
         lines = []
         for mdl in ["1D CNN", "TCN", "GRU", "Soft vote"]:
@@ -195,11 +203,13 @@ def main():
                     continue
                 r = r.iloc[0]
                 diff = "reference" if dec == "flat" else f"{r.d_gesture:+.1f} ({r.d_lo:+.1f} to {r.d_hi:+.1f})"
-                lines.append(f"{mdl} & {dec.capitalize()} & {r.gesture_acc:.1f} & {r.group_acc:.1f} & "
+                lines.append(f"{mdl} & {dict(flat='Flat', sequential='Sequential').get(dec, 'Gated')} & {r.gesture_acc:.1f} & {r.group_acc:.1f} & "
                              f"{r.containment:.1f} & {r.severity:.1f} & {diff} \\\\")
-        (ld / "tab_seq_trained.tex").write_text("\n".join(lines) + "\n")
+        (ld / "tab_seq_trained.tex").write_text(tex_rows(lines))
         n = int(lad.n_subjects.max())
         (ld / "numbers_seq_trained.tex").write_text(f"\\newcommand{{\\SeqTrainedN}}{{{n}}}\n")
+        import shutil
+        shutil.copy(out / "figures" / "fig_ladder.png", ld / "fig_ladder.png")
     print(f"wrote {out}")
 
 
